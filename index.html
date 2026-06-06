@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PMP 復習クイズ</title>
+  <style>
+    :root {
+      --primary:      #4F46E5;
+      --primary-dark: #3730A3;
+      --primary-bg:   #EEF2FF;
+      --success:      #059669;
+      --success-bg:   #D1FAE5;
+      --error:        #DC2626;
+      --error-bg:     #FEE2E2;
+      --warning:      #D97706;
+      --bg:           #F1F5F9;
+      --card:         #FFFFFF;
+      --text:         #1E293B;
+      --text-muted:   #64748B;
+      --border:       #E2E8F0;
+      --radius:       14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ---- Screen management ---- */
+    .screen {
+      display: none;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 16px 16px 32px;
+      gap: 14px;
+    }
+    .screen.active { display: flex; }
+
+    /* ---- Cards ---- */
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+
+    /* ---- Buttons ---- */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+    .btn:active  { transform: scale(0.98); opacity: 0.85; }
+    .btn-primary   { background: var(--primary); color: #fff; }
+    .btn-secondary { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
+    .btn-sm { padding: 10px 16px; font-size: 14px; }
+
+    /* ---- Labels ---- */
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    /* ---- Tags ---- */
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .tag-primary  { background: var(--primary-bg); color: var(--primary); }
+    .tag-success  { background: var(--success-bg); color: var(--success); }
+
+    /* ======================================
+       HOME SCREEN
+    ====================================== */
+    #screen-home { padding-top: 28px; }
+
+    .home-header { text-align: center; padding-bottom: 4px; }
+    .home-header h1 { font-size: 22px; font-weight: 800; color: var(--primary); }
+    .home-header p  { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+    .stats-row { display: flex; gap: 10px; }
+    .stat-card {
+      flex: 1;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .stat-num   { font-size: 26px; font-weight: 800; color: var(--primary); }
+    .stat-label { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+    .mode-row { display: flex; gap: 8px; }
+    .mode-btn {
+      flex: 1;
+      padding: 12px 8px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .mode-btn.active { border-color: var(--primary); background: var(--primary-bg); color: var(--primary); }
+
+    select {
+      width: 100%;
+      padding: 11px 36px 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 15px;
+      background: #fff;
+      color: var(--text);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748B' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+    }
+    select + select { margin-top: 8px; }
+
+    .home-actions { display: flex; gap: 8px; }
+    .home-actions .btn { flex: 1; }
+
+    .notice {
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .notice-error { background: var(--error-bg); color: var(--error); }
+    .notice-info  { background: var(--primary-bg); color: var(--primary); }
+
+    /* ======================================
+       LOADING SCREEN
+    ====================================== */
+    #screen-loading {
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+    }
+    .spinner {
+      width: 46px; height: 46px;
+      border: 4px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ======================================
+       QUIZ SCREEN
+    ====================================== */
+    #screen-quiz { gap: 12px; }
+
+    .quiz-header { display: flex; flex-direction: column; gap: 6px; }
+    .quiz-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .quiz-progress-text { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+    .timer {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .timer.warn { color: var(--warning); }
+    .progress-track {
+      height: 5px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 99px;
+      transition: width 0.4s ease;
+    }
+
+    .question-meta {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 15px;
+      line-height: 1.75;
+      font-weight: 500;
+    }
+
+    .choices { display: flex; flex-direction: column; gap: 10px; }
+    .choice-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 14px;
+      line-height: 1.55;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+      width: 100%;
+      color: var(--text);
+    }
+    .choice-btn:hover:not(.disabled) { border-color: var(--primary); background: var(--primary-bg); }
+    .choice-btn:active:not(.disabled) { transform: scale(0.99); }
+    .choice-btn.state-correct   { border-color: var(--success); background: var(--success-bg); }
+    .choice-btn.state-incorrect { border-color: var(--error);   background: var(--error-bg);   }
+    .choice-btn.disabled { cursor: default; pointer-events: none; }
+
+    .choice-num {
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--primary-bg);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .choice-btn.state-correct   .choice-num { background: var(--success-bg); color: var(--success); }
+    .choice-btn.state-incorrect .choice-num { background: var(--error-bg);   color: var(--error);   }
+
+    /* ======================================
+       ANSWER SCREEN
+    ====================================== */
+    #screen-answer { gap: 12px; }
+
+    .result-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px;
+      border-radius: var(--radius);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .result-banner.correct   { background: var(--success-bg); color: var(--success); }
+    .result-banner.incorrect { background: var(--error-bg);   color: var(--error);   }
+
+    .answer-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .answer-text { font-size: 14px; line-height: 1.65; font-weight: 500; }
+    .answer-text.correct-ans { color: var(--success); }
+
+    .explanation-text {
+      font-size: 14px;
+      line-height: 1.85;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+
+    /* ======================================
+       COMPLETE SCREEN
+    ====================================== */
+    #screen-complete { justify-content: center; padding-top: 40px; }
+
+    .score-ring {
+      width: 130px; height: 130px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(79,70,229,0.35);
+    }
+    .score-pct { font-size: 36px; font-weight: 800; }
+    .score-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
+
+    .complete-title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .complete-subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-row span:last-child { font-weight: 700; }
+
+    .complete-actions { display: flex; flex-direction: column; gap: 10px; }
+  </style>
+</head>
+<body>
+
+<!-- ==================== HOME ==================== -->
+<div id="screen-home" class="screen active">
+  <div class="home-header">
+    <h1>PMP 復習クイズ</h1>
+    <p>間違えた問題を徹底的に復習しよう</p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num" id="stat-total">-</div>
+      <div class="stat-label">全問題数</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-mastered">-</div>
+      <div class="stat-label">マスター済み</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-remaining">-</div>
+      <div class="stat-label">未マスター</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-label">出題モード</div>
+    <div class="mode-row">
+      <button class="mode-btn active" id="mode-btn-random"      onclick="setMode('random')">ランダム</button>
+      <button class="mode-btn"        id="mode-btn-sequential"  onclick="setMode('sequential')">順番</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-label">絞り込み（任意）</div>
+    <select id="filter-difficulty">
+      <option value="">難易度: すべて</option>
+      <option value="Moderate">Moderate</option>
+      <option value="Difficult">Difficult</option>
+    </select>
+    <select id="filter-domain">
+      <option value="">領域: すべて</option>
+    </select>
+  </div>
+
+  <div id="home-notice" class="notice notice-error" style="display:none"></div>
+
+  <button class="btn btn-primary" onclick="startSession()">クイズを開始する</button>
+
+  <div class="home-actions">
+    <button class="btn btn-secondary btn-sm" onclick="reloadQuestions()">データ更新</button>
+    <button class="btn btn-secondary btn-sm" onclick="confirmResetAll()">マスターをリセット</button>
+  </div>
+</div>
+
+<!-- ==================== LOADING ==================== -->
+<div id="screen-loading" class="screen">
+  <div class="spinner"></div>
+  <p style="color:var(--text-muted); font-size:15px">問題を読み込み中...</p>
+</div>
+
+<!-- ==================== QUIZ ==================== -->
+<div id="screen-quiz" class="screen">
+  <div class="quiz-header">
+    <div class="quiz-top-row">
+      <span class="quiz-progress-text" id="quiz-progress-text">1 / 10</span>
+      <span class="timer" id="quiz-timer">0:00</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="quiz-progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="question-meta">
+      <span class="tag tag-primary" id="quiz-domain"></span>
+      <span class="tag" id="quiz-difficulty" style="background:var(--bg); color:var(--text-muted)"></span>
+    </div>
+    <p class="question-text" id="quiz-question"></p>
+  </div>
+
+  <div class="choices" id="quiz-choices"></div>
+</div>
+
+<!-- ==================== ANSWER ==================== -->
+<div id="screen-answer" class="screen">
+  <div id="answer-banner" class="result-banner"></div>
+
+  <div class="card">
+    <div class="answer-label">あなたの回答</div>
+    <p class="answer-text" id="answer-user"></p>
+  </div>
+
+  <div class="card">
+    <div class="answer-label">正解</div>
+    <p class="answer-text correct-ans" id="answer-correct"></p>
+  </div>
+
+  <div class="card">
+    <div class="answer-label">解説</div>
+    <p class="explanation-text" id="answer-explanation"></p>
+  </div>
+
+  <button class="btn btn-primary" id="btn-next" onclick="nextQuestion()">次の問題へ</button>
+</div>
+
+<!-- ==================== COMPLETE ==================== -->
+<div id="screen-complete" class="screen">
+  <div>
+    <div class="score-ring">
+      <div class="score-pct" id="complete-pct">0%</div>
+      <div class="score-sub">正解率</div>
+    </div>
+    <div class="complete-title" id="complete-title"></div>
+    <div class="complete-subtitle" id="complete-subtitle"></div>
+  </div>
+
+  <div class="card">
+    <div class="detail-row"><span>出題数</span><span id="c-total"></span></div>
+    <div class="detail-row"><span>正解</span><span id="c-correct" style="color:var(--success)"></span></div>
+    <div class="detail-row"><span>不正解</span><span id="c-incorrect" style="color:var(--error)"></span></div>
+    <div class="detail-row"><span>新たにマスターした問題</span><span id="c-mastered" style="color:var(--primary)"></span></div>
+  </div>
+
+  <div class="complete-actions">
+    <button class="btn btn-primary"    onclick="startSession()">もう一度</button>
+    <button class="btn btn-secondary"  onclick="goHome()">ホームへ戻る</button>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  //  Apps Script の URL をここに貼り付けてください
+  // ============================================================
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzTxmxUSZB458lTgvkyX1wNnMvfK2qtSLkci1tW5whfXyt_cTIJMmrsRSAEm66jIDlQKA/exec';
+  // ============================================================
+
+  // ---- State ----
+  let allQuestions    = [];
+  let sessionQuestions = [];
+  let currentIndex    = 0;
+  let sessionCorrect  = 0;
+  let newMastered     = 0;
+  let timerSec        = 0;
+  let timerHandle     = null;
+  let selectedMode    = 'random';
+  let currentQ        = null;
+
+  // ---- Screen ----
+  function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  function goHome() {
+    updateStats();
+    showScreen('screen-home');
+  }
+
+  // ---- Mode ----
+  function setMode(mode) {
+    selectedMode = mode;
+    document.getElementById('mode-btn-random').classList.toggle('active', mode === 'random');
+    document.getElementById('mode-btn-sequential').classList.toggle('active', mode === 'sequential');
+  }
+
+  // ---- Load questions ----
+  async function loadQuestions() {
+    if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+      showNotice('SCRIPT_URL が設定されていません。index.html の SCRIPT_URL を設定してください。', true);
+      return;
+    }
+
+    showScreen('screen-loading');
+    try {
+      const res  = await fetch(`${SCRIPT_URL}?action=getQuestions`);
+      const data = await res.json();
+
+      if (!Array.isArray(data)) throw new Error(JSON.stringify(data));
+
+      allQuestions = data;
+      populateDomainFilter();
+      updateStats();
+      hideNotice();
+      showScreen('screen-home');
+    } catch (err) {
+      showScreen('screen-home');
+      showNotice('問題の読み込みに失敗しました。SCRIPT_URL または Apps Script の設定を確認してください。\n詳細: ' + err.message, true);
+    }
+  }
+
+  function reloadQuestions() { loadQuestions(); }
+
+  function populateDomainFilter() {
+    const domains = [...new Set(allQuestions.map(q => q.domain))].sort();
+    const sel = document.getElementById('filter-domain');
+    sel.innerHTML = '<option value="">領域: すべて</option>';
+    domains.forEach(d => {
+      const opt = document.createElement('option');
+      opt.value = d;
+      opt.textContent = d;
+      sel.appendChild(opt);
+    });
+  }
+
+  function updateStats() {
+    const mastered   = allQuestions.filter(q => q.mastered).length;
+    const remaining  = allQuestions.length - mastered;
+    document.getElementById('stat-total').textContent     = allQuestions.length;
+    document.getElementById('stat-mastered').textContent  = mastered;
+    document.getElementById('stat-remaining').textContent = remaining;
+  }
+
+  // ---- Session ----
+  function startSession() {
+    if (allQuestions.length === 0) {
+      showNotice('問題が読み込まれていません。「データ更新」を押してください。', true);
+      return;
+    }
+
+    const difficulty = document.getElementById('filter-difficulty').value;
+    const domain     = document.getElementById('filter-domain').value;
+
+    let filtered = allQuestions.filter(q => {
+      if (difficulty && q.difficulty !== difficulty) return false;
+      if (domain     && q.domain     !== domain)     return false;
+      return true;
+    });
+
+    if (selectedMode === 'random') {
+      filtered = filtered.filter(q => !q.mastered);
+      if (filtered.length === 0) {
+        showNotice('この条件の問題はすべてマスター済みです。フィルターを変えるか、マスターをリセットしてください。', false);
+        return;
+      }
+      shuffle(filtered);
+    }
+
+    if (filtered.length === 0) {
+      showNotice('該当する問題がありません。フィルターを変更してください。', true);
+      return;
+    }
+
+    sessionQuestions = filtered;
+    currentIndex     = 0;
+    sessionCorrect   = 0;
+    newMastered      = 0;
+
+    renderQuestion();
+    showScreen('screen-quiz');
+  }
+
+  // ---- Question ----
+  function renderQuestion() {
+    currentQ  = sessionQuestions[currentIndex];
+    const total = sessionQuestions.length;
+
+    document.getElementById('quiz-progress-text').textContent = `${currentIndex + 1} / ${total}`;
+    document.getElementById('quiz-progress-fill').style.width = `${(currentIndex / total) * 100}%`;
+    document.getElementById('quiz-domain').textContent     = currentQ.domain;
+    document.getElementById('quiz-difficulty').textContent = currentQ.difficulty;
+    document.getElementById('quiz-question').textContent   = currentQ.question;
+
+    const choicesEl = document.getElementById('quiz-choices');
+    choicesEl.innerHTML = '';
+
+    currentQ.choices.forEach((choice, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = `<span class="choice-num">${i + 1}</span><span>${choice}</span>`;
+      btn.addEventListener('click', () => selectAnswer(i));
+      choicesEl.appendChild(btn);
+    });
+
+    startTimer();
+  }
+
+  // ---- Timer ----
+  function startTimer() {
+    stopTimer();
+    timerSec = 0;
+    renderTimer();
+    timerHandle = setInterval(() => { timerSec++; renderTimer(); }, 1000);
+  }
+
+  function stopTimer() {
+    if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
+  }
+
+  function renderTimer() {
+    const m = Math.floor(timerSec / 60);
+    const s = timerSec % 60;
+    const el = document.getElementById('quiz-timer');
+    el.textContent = `${m}:${String(s).padStart(2, '0')}`;
+    el.className = 'timer' + (timerSec >= 120 ? ' warn' : '');
+  }
+
+  // ---- Answer selection ----
+  function selectAnswer(choiceIndex) {
+    stopTimer();
+
+    const isCorrect = (choiceIndex === currentQ.correctIndex);
+
+    // Highlight choices
+    document.querySelectorAll('.choice-btn').forEach((btn, i) => {
+      btn.classList.add('disabled');
+      if (i === currentQ.correctIndex) btn.classList.add('state-correct');
+      else if (i === choiceIndex)       btn.classList.add('state-incorrect');
+    });
+
+    if (isCorrect) sessionCorrect++;
+
+    // Update mastered locally
+    if (isCorrect && !currentQ.mastered) {
+      currentQ.mastered = true;
+      newMastered++;
+      const orig = allQuestions.find(q => q.id === currentQ.id);
+      if (orig) orig.mastered = true;
+    }
+
+    // Send to Apps Script (non-blocking)
+    sendRecord(currentQ.id, isCorrect);
+
+    setTimeout(() => renderAnswer(choiceIndex, isCorrect), 350);
+  }
+
+  function renderAnswer(choiceIndex, isCorrect) {
+    const banner = document.getElementById('answer-banner');
+    if (isCorrect) {
+      banner.textContent = '正解';
+      banner.className   = 'result-banner correct';
+    } else {
+      banner.textContent = '不正解';
+      banner.className   = 'result-banner incorrect';
+    }
+
+    document.getElementById('answer-user').textContent    = `${choiceIndex + 1}. ${currentQ.choices[choiceIndex]}`;
+    document.getElementById('answer-correct').textContent = `${currentQ.correctIndex + 1}. ${currentQ.choices[currentQ.correctIndex]}`;
+    document.getElementById('answer-explanation').textContent = currentQ.explanation || '解説なし';
+
+    const isLast = currentIndex >= sessionQuestions.length - 1;
+    document.getElementById('btn-next').textContent = isLast ? '結果を見る' : '次の問題へ';
+
+    showScreen('screen-answer');
+  }
+
+  // ---- Next / Complete ----
+  function nextQuestion() {
+    currentIndex++;
+    if (currentIndex >= sessionQuestions.length) {
+      renderComplete();
+    } else {
+      renderQuestion();
+      showScreen('screen-quiz');
+    }
+  }
+
+  function renderComplete() {
+    const total     = sessionQuestions.length;
+    const incorrect = total - sessionCorrect;
+    const pct       = Math.round((sessionCorrect / total) * 100);
+
+    document.getElementById('complete-pct').textContent      = pct + '%';
+    document.getElementById('c-total').textContent           = total + ' 問';
+    document.getElementById('c-correct').textContent         = sessionCorrect + ' 問';
+    document.getElementById('c-incorrect').textContent       = incorrect + ' 問';
+    document.getElementById('c-mastered').textContent        = newMastered + ' 問';
+    document.getElementById('complete-subtitle').textContent = `${total} 問中 ${sessionCorrect} 問正解`;
+
+    let title = '';
+    if (pct === 100) title = 'パーフェクト！';
+    else if (pct >= 80) title = '素晴らしい出来です！';
+    else if (pct >= 60) title = 'もう少し！';
+    else title = '繰り返し練習しましょう！';
+    document.getElementById('complete-title').textContent = title;
+
+    updateStats();
+    showScreen('screen-complete');
+  }
+
+  // ---- Apps Script calls ----
+  async function sendRecord(questionId, correct) {
+    if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') return;
+    try {
+      const url = `${SCRIPT_URL}?action=recordAnswer&questionId=${encodeURIComponent(questionId)}&correct=${correct}`;
+      await fetch(url);
+    } catch (e) {
+      console.warn('recordAnswer failed:', e);
+    }
+  }
+
+  async function confirmResetAll() {
+    if (!confirm('マスター済みをすべてリセットします。よろしいですか？\n（スプレッドシートのデータも更新されます）')) return;
+    showScreen('screen-loading');
+    try {
+      await fetch(`${SCRIPT_URL}?action=resetAll`);
+      allQuestions.forEach(q => q.mastered = false);
+      updateStats();
+      hideNotice();
+    } catch (e) {
+      showNotice('リセットに失敗しました: ' + e.message, true);
+    }
+    showScreen('screen-home');
+  }
+
+  // ---- Notices ----
+  function showNotice(msg, isError) {
+    const el = document.getElementById('home-notice');
+    el.textContent = msg;
+    el.className   = 'notice ' + (isError ? 'notice-error' : 'notice-info');
+    el.style.display = 'block';
+  }
+  function hideNotice() {
+    document.getElementById('home-notice').style.display = 'none';
+  }
+
+  // ---- Utils ----
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+  }
+
+  // ---- Init ----
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+      showNotice('SCRIPT_URL が未設定です。Apps Script を設定してから index.html の SCRIPT_URL を書き換えてください。', true);
+    } else {
+      loadQuestions();
+    }
+  });
+</script>
+</body>
+</html>
