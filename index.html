@@ -379,11 +379,27 @@
     <div class="section-label">絞り込み（任意）</div>
     <select id="filter-difficulty">
       <option value="">難易度: すべて</option>
-      <option value="Moderate">Moderate</option>
-      <option value="Difficult">Difficult</option>
+      <option value="Easy">Easy（3問）</option>
+      <option value="Moderate">Moderate（37問）</option>
+      <option value="Difficult">Difficult（115問）</option>
+      <option value="Expert">Expert（56問）</option>
     </select>
     <select id="filter-domain">
       <option value="">領域: すべて</option>
+      <option value="統合">統合マネジメント</option>
+      <option value="スコープ">スコープマネジメント</option>
+      <option value="スケジュール">スケジュールマネジメント</option>
+      <option value="費用">コストマネジメント</option>
+      <option value="品質">品質マネジメント</option>
+      <option value="リソース">リソースマネジメント</option>
+      <option value="コミュニケーション">コミュニケーションマネジメント</option>
+      <option value="リスク">リスクマネジメント</option>
+      <option value="調達">調達マネジメント</option>
+      <option value="ステークホルダー">ステークホルダーマネジメント</option>
+      <option value="ビジネス環境">ビジネス環境</option>
+      <option value="ガバナンス">ガバナンス</option>
+      <option value="リーダーシップ">リーダーシップ</option>
+      <option value="アジャイル">アジャイル（横断）</option>
     </select>
   </div>
 
@@ -525,7 +541,6 @@
       if (!Array.isArray(data)) throw new Error(JSON.stringify(data));
 
       allQuestions = data;
-      populateDomainFilter();
       updateStats();
       hideNotice();
       showScreen('screen-home');
@@ -569,7 +584,7 @@
 
     let filtered = allQuestions.filter(q => {
       if (difficulty && q.difficulty !== difficulty) return false;
-      if (domain     && q.domain     !== domain)     return false;
+      if (domain     && !q.domain.includes(domain))  return false;
       return true;
     });
 
