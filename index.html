@@ -238,9 +238,21 @@
     }
     .choice-btn:hover:not(.disabled) { border-color: var(--primary); background: var(--primary-bg); }
     .choice-btn:active:not(.disabled) { transform: scale(0.99); }
-    .choice-btn.state-correct   { border-color: var(--success); background: var(--success-bg); }
-    .choice-btn.state-incorrect { border-color: var(--error);   background: var(--error-bg);   }
-    .choice-btn.disabled { cursor: default; pointer-events: none; }
+    .choice-btn.state-correct        { border-color: var(--success); background: var(--success-bg); }
+    .choice-btn.state-incorrect      { border-color: var(--error);   background: var(--error-bg);   }
+    .choice-btn.state-missed         { border-color: var(--success); background: #fff; }
+    .choice-btn.selected             { border-color: var(--primary); background: var(--primary-bg); }
+    .choice-btn.disabled             { cursor: default; pointer-events: none; }
+
+    .multi-instruction {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-bg);
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-align: center;
+    }
 
     .choice-num {
       min-width: 24px;
@@ -258,6 +270,8 @@
     }
     .choice-btn.state-correct   .choice-num { background: var(--success-bg); color: var(--success); }
     .choice-btn.state-incorrect .choice-num { background: var(--error-bg);   color: var(--error);   }
+    .choice-btn.state-missed    .choice-num { background: var(--success-bg); color: var(--success); }
+    .choice-btn.selected        .choice-num { background: var(--primary);    color: #fff; }
 
     /* ======================================
        ANSWER SCREEN
@@ -286,7 +300,7 @@
       letter-spacing: 0.06em;
       margin-bottom: 8px;
     }
-    .answer-text { font-size: 14px; line-height: 1.65; font-weight: 500; }
+    .answer-text { font-size: 14px; line-height: 1.65; font-weight: 500; white-space: pre-wrap; }
     .answer-text.correct-ans { color: var(--success); }
 
     .explanation-text {
@@ -439,7 +453,9 @@
     <p class="question-text" id="quiz-question"></p>
   </div>
 
+  <div id="quiz-multi-instruction" class="multi-instruction" style="display:none"></div>
   <div class="choices" id="quiz-choices"></div>
+  <button class="btn btn-primary" id="btn-submit-multi" style="display:none" disabled onclick="submitMultiAnswer()">回答する</button>
 </div>
 
 <!-- ==================== ANSWER ==================== -->
@@ -497,15 +513,16 @@
   // ============================================================
 
   // ---- State ----
-  let allQuestions    = [];
+  let allQuestions     = [];
   let sessionQuestions = [];
-  let currentIndex    = 0;
-  let sessionCorrect  = 0;
-  let newMastered     = 0;
-  let timerSec        = 0;
-  let timerHandle     = null;
-  let selectedMode    = 'random';
-  let currentQ        = null;
+  let currentIndex     = 0;
+  let sessionCorrect   = 0;
+  let newMastered      = 0;
+  let timerSec         = 0;
+  let timerHandle      = null;
+  let selectedMode     = 'random';
+  let currentQ         = null;
+  let selectedIndices  = new Set(); // 複数選択用
 
   // ---- Screen ----
   function showScreen(id) {
@@ -624,12 +641,29 @@
 
     const choicesEl = document.getElementById('quiz-choices');
     choicesEl.innerHTML = '';
+    selectedIndices = new Set();
+
+    const instruction = document.getElementById('quiz-multi-instruction');
+    const submitBtn   = document.getElementById('btn-submit-multi');
+
+    if (currentQ.isMultiple) {
+      instruction.textContent = `${currentQ.correctIndices.length}つ選択してください`;
+      instruction.style.display = 'block';
+      submitBtn.style.display   = 'block';
+      submitBtn.disabled        = true;
+    } else {
+      instruction.style.display = 'none';
+      submitBtn.style.display   = 'none';
+    }
 
     currentQ.choices.forEach((choice, i) => {
       const btn = document.createElement('button');
       btn.className = 'choice-btn';
       btn.innerHTML = `<span class="choice-num">${i + 1}</span><span>${choice}</span>`;
-      btn.addEventListener('click', () => selectAnswer(i));
+      btn.addEventListener('click', () => {
+        if (currentQ.isMultiple) toggleChoice(i);
+        else selectAnswer(i);
+      });
       choicesEl.appendChild(btn);
     });
 
@@ -656,48 +690,82 @@
     el.className = 'timer' + (timerSec >= 120 ? ' warn' : '');
   }
 
-  // ---- Answer selection ----
+  // ---- 単一選択 ----
   function selectAnswer(choiceIndex) {
     stopTimer();
 
-    const isCorrect = (choiceIndex === currentQ.correctIndex);
+    const correct    = currentQ.correctIndices[0];
+    const isCorrect  = (choiceIndex === correct);
 
-    // Highlight choices
     document.querySelectorAll('.choice-btn').forEach((btn, i) => {
       btn.classList.add('disabled');
-      if (i === currentQ.correctIndex) btn.classList.add('state-correct');
-      else if (i === choiceIndex)       btn.classList.add('state-incorrect');
+      if (i === correct)                    btn.classList.add('state-correct');
+      else if (i === choiceIndex)           btn.classList.add('state-incorrect');
     });
 
-    if (isCorrect) sessionCorrect++;
+    applyResult([choiceIndex], isCorrect);
+    setTimeout(() => renderAnswer([choiceIndex], isCorrect), 350);
+  }
 
-    // Update mastered locally
+  // ---- 複数選択 ----
+  function toggleChoice(i) {
+    const btns = document.querySelectorAll('.choice-btn');
+    if (selectedIndices.has(i)) {
+      selectedIndices.delete(i);
+      btns[i].classList.remove('selected');
+    } else {
+      selectedIndices.add(i);
+      btns[i].classList.add('selected');
+    }
+    document.getElementById('btn-submit-multi').disabled = selectedIndices.size === 0;
+  }
+
+  function submitMultiAnswer() {
+    stopTimer();
+    document.getElementById('btn-submit-multi').style.display = 'none';
+
+    const correct  = currentQ.correctIndices;
+    const selected = [...selectedIndices];
+    const isCorrect = correct.length === selected.length &&
+                      correct.every(i => selected.includes(i));
+
+    document.querySelectorAll('.choice-btn').forEach((btn, i) => {
+      btn.classList.add('disabled');
+      btn.classList.remove('selected');
+      if (correct.includes(i) && selected.includes(i))  btn.classList.add('state-correct');
+      else if (!correct.includes(i) && selected.includes(i)) btn.classList.add('state-incorrect');
+      else if (correct.includes(i) && !selected.includes(i)) btn.classList.add('state-missed');
+    });
+
+    applyResult(selected, isCorrect);
+    setTimeout(() => renderAnswer(selected, isCorrect), 350);
+  }
+
+  // ---- 正誤共通処理 ----
+  function applyResult(selected, isCorrect) {
+    if (isCorrect) sessionCorrect++;
     if (isCorrect && !currentQ.mastered) {
       currentQ.mastered = true;
       newMastered++;
       const orig = allQuestions.find(q => q.id === currentQ.id);
       if (orig) orig.mastered = true;
     }
-
-    // Send to Apps Script (non-blocking)
     sendRecord(currentQ.id, isCorrect);
-
-    setTimeout(() => renderAnswer(choiceIndex, isCorrect), 350);
   }
 
-  function renderAnswer(choiceIndex, isCorrect) {
+  function renderAnswer(selectedArr, isCorrect) {
     const banner = document.getElementById('answer-banner');
-    if (isCorrect) {
-      banner.textContent = '正解';
-      banner.className   = 'result-banner correct';
-    } else {
-      banner.textContent = '不正解';
-      banner.className   = 'result-banner incorrect';
-    }
+    banner.textContent = isCorrect ? '正解' : '不正解';
+    banner.className   = 'result-banner ' + (isCorrect ? 'correct' : 'incorrect');
 
-    document.getElementById('answer-user').textContent    = `${choiceIndex + 1}. ${currentQ.choices[choiceIndex]}`;
-    document.getElementById('answer-correct').textContent = `${currentQ.correctIndex + 1}. ${currentQ.choices[currentQ.correctIndex]}`;
-    document.getElementById('answer-explanation').textContent = currentQ.explanation || '解説なし';
+    document.getElementById('answer-user').textContent =
+      selectedArr.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n');
+
+    document.getElementById('answer-correct').textContent =
+      currentQ.correctIndices.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n');
+
+    document.getElementById('answer-explanation').textContent =
+      currentQ.explanation || '解説なし';
 
     const isLast = currentIndex >= sessionQuestions.length - 1;
     document.getElementById('btn-next').textContent = isLast ? '結果を見る' : '次の問題へ';
