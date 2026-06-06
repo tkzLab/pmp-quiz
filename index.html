@@ -476,7 +476,8 @@
   // ============================================================
   //  Apps Script の URL をここに貼り付けてください
   // ============================================================
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzTxmxUSZB458lTgvkyX1wNnMvfK2qtSLkci1tW5whfXyt_cTIJMmrsRSAEm66jIDlQKA/exec';
+  const SCRIPT_URL   = 'https://script.google.com/macros/s/AKfycbzTxmxUSZB458lTgvkyX1wNnMvfK2qtSLkci1tW5whfXyt_cTIJMmrsRSAEm66jIDlQKA/exec';
+  const WRITE_TOKEN  = 'mVSNq3Pf-GSwhXvi1yL_nKxYfwvR1ocZ';
   // ============================================================
 
   // ---- State ----
@@ -727,7 +728,7 @@
   async function sendRecord(questionId, correct) {
     if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') return;
     try {
-      const url = `${SCRIPT_URL}?action=recordAnswer&questionId=${encodeURIComponent(questionId)}&correct=${correct}`;
+      const url = `${SCRIPT_URL}?action=recordAnswer&questionId=${encodeURIComponent(questionId)}&correct=${correct}&token=${WRITE_TOKEN}`;
       await fetch(url);
     } catch (e) {
       console.warn('recordAnswer failed:', e);
@@ -738,7 +739,7 @@
     if (!confirm('マスター済みをすべてリセットします。よろしいですか？\n（スプレッドシートのデータも更新されます）')) return;
     showScreen('screen-loading');
     try {
-      await fetch(`${SCRIPT_URL}?action=resetAll`);
+      await fetch(`${SCRIPT_URL}?action=resetAll&token=${WRITE_TOKEN}`);
       allQuestions.forEach(q => q.mastered = false);
       updateStats();
       hideNotice();
