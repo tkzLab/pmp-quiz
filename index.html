@@ -759,10 +759,24 @@
     banner.className   = 'result-banner ' + (isCorrect ? 'correct' : 'incorrect');
 
     document.getElementById('answer-user').textContent =
-      selectedArr.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n');
+      selectedArr
+        .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length)
+        .map(i => `${i + 1}. ${currentQ.choices[i]}`)
+        .join('\n');
+
+    const validCorrect = (currentQ.correctIndices || [])
+      .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length);
+
+    // デバッグ用（次回の問題切り分けに使用）
+    if (validCorrect.length !== (currentQ.correctIndices || []).length) {
+      console.warn('[quiz] correctIndices に不正な値:', JSON.stringify(currentQ.correctIndices),
+        '| choices数:', currentQ.choices.length, '| 問題ID:', currentQ.id);
+    }
 
     document.getElementById('answer-correct').textContent =
-      currentQ.correctIndices.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n');
+      validCorrect.length > 0
+        ? validCorrect.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n')
+        : '（正解データを取得できませんでした）';
 
     document.getElementById('answer-explanation').textContent =
       currentQ.explanation || '解説なし';
