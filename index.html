@@ -146,6 +146,18 @@
     }
     select + select { margin-top: 8px; }
 
+    .count-input {
+      width: 100%;
+      margin-top: 8px;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 15px;
+      background: #fff;
+      color: var(--text);
+    }
+    .count-input::placeholder { color: var(--text-muted); }
+
     .home-actions { display: flex; gap: 8px; }
     .home-actions .btn { flex: 1; }
 
@@ -186,6 +198,20 @@
       justify-content: space-between;
       align-items: center;
     }
+    .quiz-abort-btn {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px 8px;
+      margin: -4px -8px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .quiz-abort-btn:active { background: var(--error-bg); color: var(--error); }
+
     .quiz-progress-text { font-size: 13px; font-weight: 600; color: var(--text-muted); }
     .timer {
       font-size: 17px;
@@ -392,6 +418,16 @@
   </div>
 
   <div class="card">
+    <div class="section-label">出題数</div>
+    <div class="mode-row">
+      <button class="mode-btn count-btn active" data-count="10" onclick="setCount(10)">10問</button>
+      <button class="mode-btn count-btn"        data-count="20" onclick="setCount(20)">20問</button>
+      <button class="mode-btn count-btn"        data-count="60" onclick="setCount(60)">60問</button>
+    </div>
+    <input type="number" id="custom-count" class="count-input" inputmode="numeric" min="1" placeholder="件数を直接入力（任意）" oninput="onCustomCountInput()">
+  </div>
+
+  <div class="card">
     <div class="section-label">絞り込み（任意）</div>
     <select id="filter-difficulty">
       <option value="">難易度: すべて</option>
@@ -439,6 +475,7 @@
 <div id="screen-quiz" class="screen">
   <div class="quiz-header">
     <div class="quiz-top-row">
+      <button class="quiz-abort-btn" onclick="confirmAbortQuiz()">✕ 中断</button>
       <span class="quiz-progress-text" id="quiz-progress-text">1 / 10</span>
       <span class="timer" id="quiz-timer">0:00</span>
     </div>
@@ -523,6 +560,7 @@
   let timerSec         = 0;
   let timerHandle      = null;
   let selectedMode     = 'random';
+  let selectedCount    = 10;
   let currentQ         = null;
   let selectedIndices  = new Set(); // 複数選択用
 
@@ -538,11 +576,44 @@
     showScreen('screen-home');
   }
 
+  function confirmAbortQuiz() {
+    if (!confirm('クイズを中断してホームへ戻りますか？')) return;
+    stopTimer();
+    goHome();
+  }
+
   // ---- Mode ----
   function setMode(mode) {
     selectedMode = mode;
     document.getElementById('mode-btn-random').classList.toggle('active', mode === 'random');
     document.getElementById('mode-btn-sequential').classList.toggle('active', mode === 'sequential');
+  }
+
+  // ---- Count ----
+  function setCount(n) {
+    selectedCount = n;
+    document.querySelectorAll('.count-btn').forEach(b => {
+      b.classList.toggle('active', parseInt(b.dataset.count, 10) === n);
+    });
+    document.getElementById('custom-count').value = '';
+  }
+
+  function onCustomCountInput() {
+    const raw = document.getElementById('custom-count').value.trim();
+    const val = parseInt(raw, 10);
+
+    if (raw === '') {
+      selectedCount = 10;
+      document.querySelectorAll('.count-btn').forEach(b => {
+        b.classList.toggle('active', parseInt(b.dataset.count, 10) === 10);
+      });
+      return;
+    }
+
+    if (!isNaN(val) && val > 0) {
+      selectedCount = val;
+      document.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
+    }
   }
 
   // ---- Load questions ----
@@ -621,7 +692,7 @@
       return;
     }
 
-    sessionQuestions = filtered;
+    sessionQuestions = filtered.slice(0, selectedCount);
     currentIndex     = 0;
     sessionCorrect   = 0;
     newMastered      = 0;
