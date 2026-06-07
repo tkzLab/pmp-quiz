@@ -1,0 +1,19 @@
+# Excelファイル（データはGoogle Sheetsで管理）
+*.xlsx
+*.xls
+
+# macOS
+.DS_Store
+
+# Officeのロックファイル
+~$*
+
+# ローカル作業用ドキュメント・素材（公開リポジトリには含めない）
+CLAUDE.md
+資格クイズサイト_セットアップガイド.md
+スプレッドシート入力ルール.md
+create_ppt.py
+pmp.json
+IMG_9675.PNG
+スクリーンショット*.png
+資格学習サイト制作ノウハウ.pptx
