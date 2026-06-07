@@ -823,7 +823,13 @@
       const orig = allQuestions.find(q => q.id === currentQ.id);
       if (orig) orig.mastered = true;
     }
-    sendRecord(currentQ.id, isCorrect);
+
+    const selectedText = selected
+      .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length)
+      .map(i => currentQ.choices[i])
+      .join(' / ');
+
+    sendRecord(currentQ.id, isCorrect, selectedText);
   }
 
   function renderAnswer(selectedArr, isCorrect) {
@@ -895,10 +901,14 @@
   }
 
   // ---- Apps Script calls ----
-  async function sendRecord(questionId, correct) {
+  async function sendRecord(questionId, correct, selectedText) {
     if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') return;
     try {
-      const url = `${SCRIPT_URL}?action=recordAnswer&questionId=${encodeURIComponent(questionId)}&correct=${correct}&token=${WRITE_TOKEN}`;
+      const url = `${SCRIPT_URL}?action=recordAnswer`
+        + `&questionId=${encodeURIComponent(questionId)}`
+        + `&correct=${correct}`
+        + `&selected=${encodeURIComponent(selectedText)}`
+        + `&token=${WRITE_TOKEN}`;
       await fetch(url);
     } catch (e) {
       console.warn('recordAnswer failed:', e);

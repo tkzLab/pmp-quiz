@@ -2,6 +2,7 @@
 // Google スプレッドシートで Extensions > Apps Script を開き、このコードを貼り付けてください
 
 const SHEET_NAME = 'シート1';
+const LOG_SHEET_NAME = '回答ログ';
 const MASTERED_COL = 15; // 列O（選択肢6追加により1列シフト）
 const WRITE_TOKEN = 'mVSNq3Pf-GSwhXvi1yL_nKxYfwvR1ocZ';
 
@@ -14,7 +15,7 @@ function doGet(e) {
       result = getQuestions();
     } else if (action === 'recordAnswer') {
       if (e.parameter.token !== WRITE_TOKEN) return forbidden();
-      result = recordAnswer(e.parameter.questionId, e.parameter.correct === 'true');
+      result = recordAnswer(e.parameter.questionId, e.parameter.correct === 'true', e.parameter.selected || '');
     } else if (action === 'resetAll') {
       if (e.parameter.token !== WRITE_TOKEN) return forbidden();
       result = resetAll();
@@ -99,7 +100,7 @@ function getQuestions() {
   return questions;
 }
 
-function recordAnswer(questionId, correct) {
+function recordAnswer(questionId, correct, selected) {
   if (!questionId) return { error: 'questionId is required' };
 
   const sheet = getSheet();
@@ -113,11 +114,31 @@ function recordAnswer(questionId, correct) {
       if (correct) {
         sheet.getRange(i + 2, MASTERED_COL).setValue(true);
       }
+      try {
+        appendLog(questionId, correct, selected);
+      } catch (err) {
+        console.error('appendLog failed: ' + err);
+      }
       return { success: true };
     }
   }
 
   return { error: 'Question not found: ' + questionId };
+}
+
+function getLogSheet() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sheet = ss.getSheetByName(LOG_SHEET_NAME);
+  if (!sheet) {
+    sheet = ss.insertSheet(LOG_SHEET_NAME);
+    sheet.appendRow(['日時', '問題ID', '正誤', '選んだ選択肢']);
+  }
+  return sheet;
+}
+
+function appendLog(questionId, correct, selected) {
+  const sheet = getLogSheet();
+  sheet.appendRow([new Date(), questionId, correct ? '正解' : '不正解', selected]);
 }
 
 function resetAll() {
