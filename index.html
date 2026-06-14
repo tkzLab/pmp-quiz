@@ -383,6 +383,41 @@
     .detail-row span:last-child { font-weight: 700; }
 
     .complete-actions { display: flex; flex-direction: column; gap: 10px; }
+
+    /* ======================================
+       REFERENCE SCREEN
+    ====================================== */
+    #screen-reference { gap: 12px; }
+    .ref-section .section-label { margin-bottom: 6px; }
+    .ref-section p.ref-sub {
+      font-size: 13px;
+      font-weight: 700;
+      margin: 10px 0 4px;
+      color: var(--text);
+    }
+    .ref-section p.ref-sub:first-child { margin-top: 0; }
+    .ref-section ul, .ref-section ol {
+      font-size: 13px;
+      line-height: 1.65;
+      padding-left: 20px;
+      margin: 4px 0;
+    }
+    .ref-section ol > li { margin-bottom: 6px; }
+    .ref-section ul > li { margin-bottom: 3px; }
+    .ref-section ul ul { margin: 4px 0; }
+    .ref-section table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin: 6px 0 10px;
+    }
+    .ref-section th, .ref-section td {
+      border: 1px solid var(--border);
+      padding: 5px 7px;
+      text-align: left;
+    }
+    .ref-section th { background: var(--bg); font-weight: 700; }
+    .ref-open-btn { margin-top: 4px; }
   </style>
 </head>
 <body>
@@ -463,6 +498,8 @@
     <button class="btn btn-secondary btn-sm" onclick="reloadQuestions()">データ更新</button>
     <button class="btn btn-secondary btn-sm" onclick="confirmResetAll()">マスターをリセット</button>
   </div>
+
+  <button class="btn btn-secondary ref-open-btn" onclick="openReference()">📋 解き方ガイドを見る</button>
 </div>
 
 <!-- ==================== LOADING ==================== -->
@@ -517,6 +554,7 @@
   </div>
 
   <button class="btn btn-primary" id="btn-next" onclick="nextQuestion()">次の問題へ</button>
+  <button class="btn btn-secondary btn-sm" onclick="openReference()">📋 解き方ガイドを見る</button>
 </div>
 
 <!-- ==================== COMPLETE ==================== -->
@@ -540,6 +578,98 @@
   <div class="complete-actions">
     <button class="btn btn-primary"    onclick="startSession()">もう一度</button>
     <button class="btn btn-secondary"  onclick="goHome()">ホームへ戻る</button>
+  </div>
+</div>
+
+<!-- ==================== REFERENCE ==================== -->
+<div id="screen-reference" class="screen">
+  <div class="quiz-top-row">
+    <span class="quiz-progress-text">解き方ガイド</span>
+    <button class="quiz-abort-btn" onclick="closeReference()">✕ 閉じる</button>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">入口：ドメイン判定ルーター</div>
+    <ul>
+      <li><b>People（42%）</b>：チーム・個人・ステークホルダーとの関わり方が中心 → ③へ</li>
+      <li><b>Process（50%・最重要）</b>：計画・実行・変更管理・成果物・リスク・スコープ等が中心 → ①→②の順</li>
+      <li><b>Business Environment（8%）</b>：外部環境変化・コンプライアンス・ビジネス価値が中心 → ①②のロジック＋⑤の知識で補完</li>
+    </ul>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">① まず／最初に何をすべきか（Process中心）</div>
+    <ol>
+      <li>問題・変化は「今まさに発生・判明」したばかりで、影響範囲や原因がまだ不明か？
+        <ul>
+          <li>YES → <b>分析・評価系</b>を選ぶ（ベースラインへの影響確認／依存関係・現行プロセスの理由の理解／既存ログ・登録簿の確認）。「改善案」「対応策」のような行動系はまだ早い。</li>
+        </ul>
+      </li>
+      <li>（NOの場合）解決には正式な変更管理プロセス（CCB承認等）を伴う計画変更が必要か？
+        <ul>
+          <li>YES → <b>プロセスに従う</b>（CCBへ変更要求）。自分で代替案・プロトタイプを考えない。</li>
+        </ul>
+      </li>
+      <li>（NOの場合）「文書を更新する」系の選択肢は、今後のルール・仕組みを直接定義し直すものか？
+        <ul>
+          <li>YES（ルールを再定義） → <b>文書更新系</b>を選ぶ（例：コミュニケーション計画書を更新し連携の頻度・ツールを定め直す）</li>
+          <li>NO（記録・申請にすぎない） → <b>人を動かす系</b>を選ぶ（例：ステークホルダーを巻き込む、適切な人に作業を割り当てる）</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">② 何をすべきだったか（予防・振り返り、Process中心）</div>
+    <ul>
+      <li>「継続的に」「プロジェクト全体を通じて」「事前に」を含む選択肢 → 優先候補</li>
+      <li>「一度だけ実施する」「問題が起きてから対応する」内容 → 不正解候補</li>
+      <li>根本原因＝初期段階・計画段階での確認・分析・関与の不足ではないか？ → それを補う選択肢を選ぶ</li>
+    </ul>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">③ 状況→アプローチ選択（People最大の弱点：チーム）</div>
+    <p class="ref-sub">チームの成熟度 → リーダーシップスタイル</p>
+    <table>
+      <tr><th>設問内のキーワード</th><th>ステージ</th><th>適切なスタイル</th></tr>
+      <tr><td>新規結成、不慣れ、指示が必要</td><td>形成期</td><td>指示型</td></tr>
+      <tr><td>対立、意見の衝突</td><td>混乱期</td><td>コーチング型</td></tr>
+      <tr><td>協力的、徐々に自律</td><td>統一期</td><td>支援型</td></tr>
+      <tr><td>経験豊富、自律的、実績あり、長期間経過</td><td>機能期</td><td>権限委譲型</td></tr>
+    </table>
+    <p class="ref-sub">プロジェクトの不確実性 → 手法選定</p>
+    <ul>
+      <li>制約が厳しく確定的な部分（生産ライン・規制・契約条件など）→ 予測型で管理</li>
+      <li>不確実で変化しうる部分（要件・市場・規制の細部など）→ アジャイルで反復対応</li>
+      <li>両方が混在 → ハイブリッド（不確実な部分はアジャイル、確定部分は予測型のマイルストーンで管理）</li>
+    </ul>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">④ 複数選択（2つ/3つ選ぶ）</div>
+    <ul>
+      <li>「最も良い1つ」ではなく、各選択肢を個別にYES/NOで評価する</li>
+      <li>設問に複数の対象（顧客／チーム、現状／将来など）が出てくる場合、それぞれに1つずつ対応する選択肢を選ぶ構造になっていないか確認する</li>
+    </ul>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">⑤ 知識・フレームワーク（要暗記）</div>
+    <ul>
+      <li>タックマンの5段階（形成期・混乱期・統一期・機能期・解散期）の特徴</li>
+      <li>ステークホルダー分析で考慮すべき項目（権限・関心・影響力・期待値など）</li>
+      <li>ビジネスケース記述書に含まれる典型的な項目（Business Environment：出題比率8%だが未マスター率74%の「コスパの良い穴」）</li>
+    </ul>
+  </div>
+
+  <div class="card ref-section">
+    <div class="section-label">補足：Business Environmentのコスパの良い穴埋め</div>
+    <ul>
+      <li>「外部要因（規制・市場・競合の変化）が発生」→ ベネフィット/価値への影響を再評価する（①Q1と同じロジック）</li>
+      <li>「ビジネスケース」「ベネフィットマネジメント計画書」の内容を問う設問 → 定義の暗記（⑤）</li>
+      <li>「組織変革」関連 → 「継続的なコミュニケーション・トレーニングによる定着支援」が正解になりやすい（②と同じロジック）</li>
+    </ul>
   </div>
 </div>
 
@@ -580,6 +710,17 @@
     if (!confirm('クイズを中断してホームへ戻りますか？')) return;
     stopTimer();
     goHome();
+  }
+
+  // ---- Reference guide ----
+  let referenceReturnScreen = 'screen-home';
+  function openReference() {
+    const active = document.querySelector('.screen.active');
+    if (active && active.id !== 'screen-reference') referenceReturnScreen = active.id;
+    showScreen('screen-reference');
+  }
+  function closeReference() {
+    showScreen(referenceReturnScreen);
   }
 
   // ---- Mode ----
