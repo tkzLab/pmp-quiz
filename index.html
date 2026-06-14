@@ -418,6 +418,62 @@
     }
     .ref-section th { background: var(--bg); font-weight: 700; }
     .ref-open-btn { margin-top: 4px; }
+
+    /* ======================================
+       REVIEW SCREEN
+    ====================================== */
+    #screen-review { gap: 12px; }
+
+    .review-filter-row { display: flex; gap: 8px; }
+    .review-filter-btn {
+      flex: 1;
+      padding: 10px 8px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      color: var(--text-muted);
+      transition: all 0.15s;
+    }
+    .review-filter-btn.active { border-color: var(--primary); background: var(--primary-bg); color: var(--primary); }
+
+    .review-list { display: flex; flex-direction: column; gap: 10px; }
+    .review-item {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      overflow: hidden;
+    }
+    .review-item-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 16px;
+      cursor: pointer;
+    }
+    .review-item-id { font-size: 12px; font-weight: 700; color: var(--primary); flex-shrink: 0; }
+    .review-q-preview {
+      flex: 1;
+      font-size: 13px;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .review-chevron { font-size: 12px; color: var(--text-muted); transition: transform 0.2s; flex-shrink: 0; }
+    .review-item.open .review-chevron { transform: rotate(180deg); }
+    .review-item-body { display: none; padding: 0 16px 16px; }
+    .review-item.open .review-item-body { display: block; }
+    .review-item-body .question-text { margin-bottom: 12px; white-space: pre-wrap; }
+    .review-item-body .choices { margin-bottom: 14px; }
+    .review-item-body .answer-label:not(:first-child) { margin-top: 14px; }
+    .review-choice-tag { margin-left: 8px; }
+
+    .tag-error { background: var(--error-bg); color: var(--error); }
+    .tag-muted { background: var(--bg); color: var(--text-muted); }
   </style>
 </head>
 <body>
@@ -500,6 +556,7 @@
   </div>
 
   <button class="btn btn-secondary ref-open-btn" onclick="openReference()">📋 解き方ガイドを見る</button>
+  <button class="btn btn-secondary ref-open-btn" onclick="openReview()">📝 誤答問題の振り返り（EE-2 / J-15）</button>
 </div>
 
 <!-- ==================== LOADING ==================== -->
@@ -673,6 +730,23 @@
   </div>
 </div>
 
+<!-- ==================== REVIEW ==================== -->
+<div id="screen-review" class="screen">
+  <div class="quiz-top-row">
+    <span class="quiz-progress-text">誤答問題の振り返り</span>
+    <button class="quiz-abort-btn" onclick="closeReview()">✕ 閉じる</button>
+  </div>
+
+  <div class="review-filter-row">
+    <button class="review-filter-btn active" data-source="" onclick="setReviewFilter('')">すべて</button>
+    <button class="review-filter-btn" data-source="EE-2" onclick="setReviewFilter('EE-2')">EE-2</button>
+    <button class="review-filter-btn" data-source="J-15" onclick="setReviewFilter('J-15')">J-15</button>
+  </div>
+
+  <div class="review-list" id="review-list"></div>
+</div>
+
+<script src="review-data.js"></script>
 <script>
   // ============================================================
   //  Apps Script の URL をここに貼り付けてください
@@ -721,6 +795,83 @@
   }
   function closeReference() {
     showScreen(referenceReturnScreen);
+  }
+
+  // ---- Review (誤答問題の振り返り) ----
+  let reviewFilter = '';
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  function openReview() {
+    if (!document.getElementById('review-list').dataset.rendered) {
+      renderReviewList();
+      document.getElementById('review-list').dataset.rendered = '1';
+    }
+    showScreen('screen-review');
+  }
+
+  function closeReview() {
+    goHome();
+  }
+
+  function setReviewFilter(source) {
+    reviewFilter = source;
+    document.querySelectorAll('.review-filter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.source === source);
+    });
+    renderReviewList();
+  }
+
+  function toggleReviewItem(id) {
+    const el = document.getElementById('review-item-' + id);
+    el.classList.toggle('open');
+  }
+
+  function buildReviewChoiceHtml(q) {
+    return q.choices.map(c => {
+      const isCorrect = q.correctAnswers.includes(c.label);
+      const isUser    = q.userAnswers.includes(c.label);
+      let cls = 'choice-btn disabled';
+      let tag = '';
+      if (isCorrect && isUser) {
+        cls += ' state-correct';
+        tag = '<span class="tag tag-success review-choice-tag">正解（あなたの回答）</span>';
+      } else if (isCorrect && !isUser) {
+        cls += ' state-missed';
+        tag = '<span class="tag tag-success review-choice-tag">正解（未選択）</span>';
+      } else if (!isCorrect && isUser) {
+        cls += ' state-incorrect';
+        tag = '<span class="tag tag-error review-choice-tag">あなたの回答（誤り）</span>';
+      }
+      return `<div class="${cls}"><span class="choice-num">${c.label}</span><span>${escapeHtml(c.text)}${tag}</span></div>`;
+    }).join('');
+  }
+
+  function renderReviewList() {
+    const listEl = document.getElementById('review-list');
+    const items = REVIEW_DATA.filter(q => !reviewFilter || q.source === reviewFilter);
+
+    listEl.innerHTML = items.map(q => `
+      <div class="review-item" id="review-item-${q.id}">
+        <div class="review-item-header" onclick="toggleReviewItem('${q.id}')">
+          <span class="tag tag-primary review-item-id">${q.id}</span>
+          <span class="tag tag-muted">${escapeHtml(q.difficulty)}</span>
+          <span class="review-q-preview">${escapeHtml(q.question.split('\n').find(l => l.trim()) || '')}</span>
+          <span class="review-chevron">▾</span>
+        </div>
+        <div class="review-item-body">
+          <p class="question-text">${escapeHtml(q.question)}</p>
+          <div class="choices">${buildReviewChoiceHtml(q)}</div>
+          <div class="answer-label">解説</div>
+          <p class="explanation-text">${escapeHtml(q.explanation)}</p>
+        </div>
+      </div>
+    `).join('');
   }
 
   // ---- Mode ----
