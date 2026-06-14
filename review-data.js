@@ -1,25 +1,25 @@
-// Auto-generated from EE-2-xx.md / J-15-xx.md review exports.
+// Auto-generated from PMP復習(3).xlsx (EE-2, Japanese) / J-15-xx.md review exports.
 const REVIEW_DATA = [
   {
     "id": "EE-2-4",
     "source": "EE-2",
-    "question": "A project team is creating a stakeholder engagement assessment matrix to govern stakeholder management activities during project execution. The team learns that a key stakeholder is aware of the project, but is unsupportive of the outcome. \n\nWhat type of stakeholder is this?",
+    "question": "プロジェクトチームは、プロジェクト実行中のステークホルダーマネジメント活動を管理するために、ステークホルダーエンゲージメント評価マトリックスを作成している。チームは、ある重要なステークホルダーがプロジェクトを認識しているものの、その成果には協力的でないことを知った。このステークホルダーはどのタイプに該当するか？",
     "choices": [
       {
         "label": "A",
-        "text": "Resistant"
+        "text": "抵抗的"
       },
       {
         "label": "B",
-        "text": "Leading"
+        "text": "主導的"
       },
       {
         "label": "C",
-        "text": "Neutral"
+        "text": "中立的"
       },
       {
         "label": "D",
-        "text": "Supportive"
+        "text": "支援的"
       }
     ],
     "correctAnswers": [
@@ -28,29 +28,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The key stakeholder is aware of the project but is unsupportive of the work or outcomes of the project, which makes them a resistant stakeholder. These stakeholders will be unsupportive of the work or outcomes of the project. The project manager can use the stakeholder engagement matrix to quickly assess stakeholders, prioritize focus, and develop a plan to address and improve those relationships.\n\nThe other answers are incorrect.\n\nStakeholders can be classified based on their level of engagement, such as unaware, resistant, neutral, supportive, or leading.\n\nUnaware - Unaware of the project and its potential impacts.\n\nResistant - Aware of the project and potential impacts but resistant to any changes that may occur as a result of the work or the outcomes of the project. These stakeholders will be unsupportive of the work of the outcomes of the project.\n\nNeutral - Aware of the project but neither supportive nor unsupportive. \n\nSupportive - Aware of the project and potential impacts and supportive of the work and its outcomes. \n\nLeading - Aware of the project and potential impacts and actively engaged in ensuring that the project is a success.",
+    "explanation": "この重要なステークホルダーはプロジェクトを認識しているが、プロジェクトの作業や成果に協力的でないため、抵抗的なステークホルダーに該当する。これらのステークホルダーはプロジェクトの作業や成果に協力的ではない。プロジェクトマネージャーはステークホルダーエンゲージメントマトリックスを使用して、ステークホルダーを迅速に評価し、優先順位を付け、これらの関係を改善するための計画を策定できる。他の選択肢は誤り。ステークホルダーは、エンゲージメントのレベルに基づいて、非認識、抵抗的、中立的、支援的、主導的のいずれかに分類できる。非認識とは、プロジェクトおよびその潜在的な影響を認識していない状態を指す。抵抗的とは、プロジェクトおよびその潜在的な影響を認識しているが、プロジェクトの作業や成果として生じる可能性のある変化に抵抗する状態を指し、これらのステークホルダーはプロジェクトの作業や成果に協力的ではない。中立的とは、プロジェクトを認識しているが、協力的でも非協力的でもない状態を指す。支援的とは、プロジェクトおよびその潜在的な影響を認識しており、プロジェクトの作業やその成果に協力的である状態を指す。主導的とは、プロジェクトおよびその潜在的な影響を認識しており、プロジェクトを成功させるために積極的に関与している状態を指す。(出典：O'Reillyプラットフォーム『Project Stakeholder Management』第4章 ステークホルダー分析の手法／『プロセス群実践ガイド』(2022) PMI 6.1.0 ステークホルダー・エンゲージメントのマネジメント)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-9",
     "source": "EE-2",
-    "question": "An agile project is in the first of six iterations. The team is located globally, so the meetings are in a virtual environment. After the fifth daily meeting, the project manager realizes that not all members are actively participating.\n\nWhat should the project manager do?",
+    "question": "あるアジャイルプロジェクトは、6回のイテレーションのうち最初のイテレーションを実施している。チームは全世界に分散しているため、ミーティングはバーチャル環境で行われている。5回目のデイリーミーティングの後、プロジェクトマネージャーは、全員が積極的に参加していないことに気づいた。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Ask the team members why participation is lacking."
+        "text": "チームメンバーに参加が少ない理由を尋ねる。"
       },
       {
         "label": "B",
-        "text": "Engage and guide the team to encourage all members to participate."
+        "text": "全メンバーが参加できるよう、チームに働きかけ、導く。"
       },
       {
         "label": "C",
-        "text": "Ask each team member individually to participate in future meetings."
+        "text": "今後のミーティングに参加するよう、各チームメンバーに個別に依頼する。"
       },
       {
         "label": "D",
-        "text": "Allow the team to find their own way to fully participate."
+        "text": "チームが自分たちで十分に参加する方法を見つけられるようにする。"
       }
     ],
     "correctAnswers": [
@@ -59,33 +59,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The project manager should engage and guide the team to encourage all members to participate. The project manager has to be sure that the environment can accommodate member participation.",
+    "explanation": "プロジェクトマネージャーは、全メンバーが参加できるようチームに働きかけ、導くべきである。プロジェクトマネージャーは、メンバーの参加を可能にする環境が整っているかを確認する必要がある。(出典：O'Reillyプラットフォーム『Agile Software Development』第4章 コミュニケーションと信頼の構築／PMBOKガイド第6版(2018) PMI／アジャイル実践ガイド p.46)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-10",
     "source": "EE-2",
-    "question": "A stakeholder on an agile project has attended the sprint demo where the team shows the minimum viable product (MVP) as defined by the product owner. During the session, the stakeholder complains that there were no release notes or technical product guides provided.\n\nWhich two actions should the project manager take? (Choose 2)",
+    "question": "アジャイルプロジェクトのあるステークホルダーが、プロダクトオーナーが定義した最小限の機能を持つプロダクト(MVP)をチームが示すスプリントデモに参加した。セッション中、そのステークホルダーは、リリースノートや技術的なプロダクトガイドが提供されていないと不満を述べた。プロジェクトマネージャーが取るべき行動を2つ選べ。",
     "choices": [
       {
         "label": "A",
-        "text": "Explain that technical product guides are not part of the agile process."
+        "text": "技術的なプロダクトガイドはアジャイルプロセスの一部ではないと説明する。"
       },
       {
         "label": "B",
-        "text": "Tell the stakeholder to contact the product owner for documentation."
+        "text": "ドキュメントについてはプロダクトオーナーに連絡するようステークホルダーに伝える。"
       },
       {
         "label": "C",
-        "text": "Clarify the stakeholder's need for release notes and technical product guides."
+        "text": "リリースノートや技術的なプロダクトガイドに関するステークホルダーのニーズを明確にする。"
       },
       {
         "label": "D",
-        "text": "Acknowledge the stakeholder's concerns over missing documentation."
+        "text": "ドキュメントが不足していることに対するステークホルダーの懸念を認める。"
       },
       {
         "label": "E",
-        "text": "Provide the release notes and technical product guides as soon as possible."
+        "text": "できるだけ早くリリースノートと技術的なプロダクトガイドを提供する。"
       }
     ],
     "correctAnswers": [
@@ -96,29 +96,29 @@ const REVIEW_DATA = [
       "A",
       "C"
     ],
-    "explanation": "D. Acknowledge the stakeholder's concerns over missing documentation.\n\nE. Provide the release notes and technical product guides as soon as possible.\n\nThe project manager should acknowledge the stakeholder's concerns over missing documentation and provide the release notes and technical product guides as soon as possible. By taking these two actions, the project manager can help to address the stakeholder's concerns and ensure that they have the information they need to use the MVP effectively.\n\nThe other answer choices are incorrect. Explaining that technical product guides are not part of the agile process is not helpful to the stakeholder. The stakeholder is still concerned about the lack of documentation, and the project manager should address their concerns. Telling the stakeholder to contact the product owner for documentation is incorrect because the project manager is responsible for providing the stakeholder with the documentation. Clarifying the stakeholder's need for release notes and technical product guides is incorrect because the stakeholder is right to be concerned about the lack of release notes and technical product guides.",
+    "explanation": "プロジェクトマネージャーは、ドキュメント不足に対するステークホルダーの懸念を認め、できるだけ早くリリースノートと技術的なプロダクトガイドを提供すべきである。この2つの行動により、プロジェクトマネージャーはステークホルダーの懸念に対応し、MVPを効果的に使用するために必要な情報を提供できる。他の選択肢は誤り。技術的なプロダクトガイドがアジャイルプロセスの一部ではないと説明することは、ステークホルダーにとって役に立たない。ステークホルダーはドキュメント不足について依然として懸念しており、プロジェクトマネージャーはその懸念に対応すべきである。ドキュメントについてプロダクトオーナーに連絡するよう伝えることは誤りである。プロジェクトマネージャーがステークホルダーにドキュメントを提供する責任を負っているためである。リリースノートと技術的なプロダクトガイドに関するニーズを明確にすることは誤りである。ステークホルダーがドキュメント不足を懸念するのは正当だからである。(出典：Agile Foundations - Principles, practices and frameworks 11.1 ビジネス側と開発者の協働／アジャイル実践ガイド(The Agile Practice Guide) PMI 2/8)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-15",
     "source": "EE-2",
-    "question": "During a project closing review meeting, the project manager notes that a software development task took longer to complete than was planned. Which action should the project manager take for continuous project improvement?",
+    "question": "プロジェクトクローズアウトのレビュー会議で、プロジェクトマネージャーは、あるソフトウェア開発タスクが計画よりも完了に時間がかかったことに気づいた。継続的なプロジェクト改善のために、プロジェクトマネージャーが取るべき行動はどれか？",
     "choices": [
       {
         "label": "A",
-        "text": "Update the performance data in the lessons learned register."
+        "text": "教訓登録簿のパフォーマンスデータを更新する。"
       },
       {
         "label": "B",
-        "text": "Update the risk register so the problem will not happen in the future."
+        "text": "今後同様の問題が発生しないように、リスク登録簿を更新する。"
       },
       {
         "label": "C",
-        "text": "Update the problem in the issue log and distribute it to the project team."
+        "text": "課題ログにこの問題を記録し、プロジェクトチームに配布する。"
       },
       {
         "label": "D",
-        "text": "Update the communications management plan with details of the problem."
+        "text": "この問題の詳細をコミュニケーションマネジメント計画に反映して更新する。"
       }
     ],
     "correctAnswers": [
@@ -127,29 +127,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project is at the project closing phase, so the issue is documented in the lesson learned register for continuous project improvement. \n\nThe other options are only employed in execution, not during closing.",
+    "explanation": "プロジェクトはクローズアウトの段階にあるため、継続的なプロジェクト改善のために、この問題は教訓登録簿に記録される。他の選択肢は、実行フェーズでのみ使用されるものであり、クローズアウト時には使用されない。(出典：O'Reillyプラットフォーム『The Project Management Tool Kit: 100 Tips and Techniques for getting the job done right』第8章 コントロールプロセス／PMBOKガイド第6版(2018) PMI 4.7.3.4 p.128)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-16",
     "source": "EE-2",
-    "question": "A project manager is delivering a complex project for a client who has their own project manager. The client's project manager is the sole decision maker for the project but is not the delegated financial authority. For every financial decision, the client's project manager must seek approval from a higher authority. This additional step has caused significant impacts on resource management, cost, and time of project delivery.\n\nHow can the project manager resolve this problem?",
+    "question": "プロジェクトマネージャーは、独自のプロジェクトマネージャーを持つクライアントのために、複雑なプロジェクトを遂行している。クライアント側のプロジェクトマネージャーはプロジェクトに関する唯一の意思決定者であるが、財務権限を委任されていない。財務に関する決定を行うたびに、クライアント側のプロジェクトマネージャーはより上位の権限者の承認を得る必要がある。この追加のステップは、プロジェクトの資源管理、コスト、デリバリーの期間に大きな影響を及ぼしている。プロジェクトマネージャーはこの問題をどのように解決すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Raise this problem in the quarterly project status report."
+        "text": "この問題を四半期ごとのプロジェクトステータスレポートで提起する。"
       },
       {
         "label": "B",
-        "text": "Add the problem to the lessons learned report."
+        "text": "この問題を教訓レポートに追加する。"
       },
       {
         "label": "C",
-        "text": "Escalate the problem to the project steering committee."
+        "text": "この問題をプロジェクトのステアリングコミッティに上申する。"
       },
       {
         "label": "D",
-        "text": "Discuss the problem with the client's project manager."
+        "text": "この問題についてクライアント側のプロジェクトマネージャーと話し合う。"
       }
     ],
     "correctAnswers": [
@@ -158,29 +158,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The steering committee is an advisory body that is made up of senior stakeholders and experts that provide guidance on a lot of different issues that could face companies and projects such as budgets, new endeavors, company policy, marketing strategies, and project management concerns. An authority issue should only be resolved by the steering committee. In this case, the project team cannot resolve this issue on their own, so the problem should be escalated.\n\nIn this case, the client's project manager is not the delegated financial authority. The client's project manager must seek approval from a higher authority for all financial decisions, which has caused significant impacts on resource management, cost, and time of project delivery. Addressing the issue with the client's project manager would not address the core issue as the client's project manager does not have the financial authority, which is causing the issue, so it must be escalated. Adding the problem to the lessons learned report is incorrect because it does not proactively address the issue. Waiting to review the issue at the next quarterly meeting/status report is inappropriate due to the significance of the impacts. The next meeting/status report may be months away and this issue is already causing significant impacts and should be addressed as soon as possible to prevent further issues.",
+    "explanation": "ステアリングコミッティは、企業やプロジェクトが直面しうる予算、新規事業、企業方針、マーケティング戦略、プロジェクトマネジメントに関する課題など、様々な問題に対して助言を行う上級ステークホルダーや専門家で構成される諮問機関である。権限に関する問題はステアリングコミッティによってのみ解決されるべきであり、この場合、プロジェクトチーム単独ではこの問題を解決できないため、上申すべきである。クライアント側のプロジェクトマネージャーは財務権限を委任されておらず、すべての財務上の決定について上位の承認を得る必要があり、それがプロジェクトの資源管理、コスト、デリバリー期間に大きな影響を及ぼしている。クライアント側のプロジェクトマネージャーと話し合うことは、財務権限を持たないという問題の核心に対応できないため誤りである。教訓レポートに問題を追加することは、問題に積極的に対応していないため誤りである。この問題はすでに大きな影響を及ぼしているため、次の四半期会議やステータスレポートまで待つのは不適切である。次の会議やレポートは数か月先になる可能性があり、さらなる問題を防ぐためにできるだけ早く対応する必要がある。(出典：PMBOKガイド第6版(2018) PMI 2.4 p.42／Project Managers Portable HandBook 第3版 5.4.6 対立解消モード／PMBOKガイド第7版(2022) 2.3 プロジェクトに関連する機能、4.4.3 会議とイベント)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-19",
     "source": "EE-2",
-    "question": "The tables show the requirements for an agile project with the anticipated return on investment (ROI) and identified project risks, along with the analysis details.\n\nItem\tPriority\tROI ($)\nRequirement 1\t1\t10,000\nRequirement 2\t1\t8,000\nRequirement 3\t1\t25,000\nRisk\tRisk Impact ($)\tRisk Probability\nRisk 1\t5,000\t75%\nRisk 2\t4,000\t50%\nRisk 3\t20,000\t45%\nWhat should the priority order be in the risk-adjusted product backlog?",
+    "question": "下表は、想定される投資収益率(ROI)が示されたアジャイルプロジェクトの要求事項と、識別されたプロジェクトリスクおよびその分析の詳細を示している。要求事項：要求1(優先度1、ROI 10,000ドル)、要求2(優先度1、ROI 8,000ドル)、要求3(優先度1、ROI 25,000ドル)。リスク：リスク1(リスクインパクト5,000ドル、発生確率75%)、リスク2(リスクインパクト4,000ドル、発生確率50%)、リスク3(リスクインパクト20,000ドル、発生確率45%)。リスク調整後のプロダクトバックログにおける優先順位はどのようになるべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Requirement 3, Requirement 1, Requirement 2, Risk 3"
+        "text": "要求3、要求1、要求2、リスク3"
       },
       {
         "label": "B",
-        "text": "Risk 3, Risk 1, Risk 2, Requirement 3, Requirement 1, Requirement 2"
+        "text": "リスク3、リスク1、リスク2、要求3、要求1、要求2"
       },
       {
         "label": "C",
-        "text": "Requirement 3, Risk 3, Requirement 1, Requirement 2, Risk 2"
+        "text": "要求3、リスク3、要求1、要求2、リスク2"
       },
       {
         "label": "D",
-        "text": "Requirement 3, Requirement 1, Risk 3, Requirement 2, Risk 1, Risk 2"
+        "text": "要求3、要求1、リスク3、要求2、リスク1、リスク2"
       }
     ],
     "correctAnswers": [
@@ -189,29 +189,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The expected monetary value (EMV) after risk analysis is:\n\nEMV = P*I\n\nRisk 1 = 3750\n\nRisk 2 = 2000\n\nRisk 3 = 9000\n\nThe requirements based on the return on investment (ROI) are:\n\nRequirement 1 = 10,000\n\nRequirement 2 = 8,000\n\nRequirement 3 = 25,000\n\nPrioritizing based on monetary value, the order of risk-adjusted backlog becomes:\n\nRequirement 3, Requirement 1, Risk 3, Requirement 2, Risk 1, Risk 2",
+    "explanation": "リスク分析後の期待金額価値(EMV=P×I)は、リスク1が3,750ドル、リスク2が2,000ドル、リスク3が9,000ドルとなる。投資収益率(ROI)に基づく要求事項の価値は、要求1が10,000ドル、要求2が8,000ドル、要求3が25,000ドルである。これらの金額価値に基づいて優先順位を付けると、リスク調整後バックログの順序は「要求3、要求1、リスク3、要求2、リスク1、リスク2」となる。(出典：O'Reillyプラットフォーム『Agile for Project Managers』第10章 アジャイルリスクマネジメント／PMBOKガイド第6版(2018) PMI 11/435)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-22",
     "source": "EE-2",
-    "question": "A client has contracted a company to manage a large project in an agile environment with many subcontractors. The client is giving direct orders to the subcontractors, rather than to the contractor's project manager. This has created conflict within the team.\n\nWhat should the project manager do to prevent this situation from occurring again?",
+    "question": "クライアントは、多数のサブコントラクターが関わるアジャイル環境での大規模プロジェクトの管理を、ある企業に委託した。クライアントは、契約者側のプロジェクトマネージャーではなく、サブコントラクターに直接指示を出している。これによりチーム内に対立が生じている。この状況が再発しないようにするために、プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Keep the team informed about client expectations."
+        "text": "クライアントの期待についてチームに常に知らせておく。"
       },
       {
         "label": "B",
-        "text": "Invite the client to the team planning meeting."
+        "text": "チームの計画会議にクライアントを招待する。"
       },
       {
         "label": "C",
-        "text": "Tell the team to avoid conflicts with the client."
+        "text": "クライアントとの対立を避けるようチームに伝える。"
       },
       {
         "label": "D",
-        "text": "Ask the client not to give direct orders to the subcontractors."
+        "text": "サブコントラクターに直接指示を出さないようクライアントに依頼する。"
       }
     ],
     "correctAnswers": [
@@ -220,29 +220,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The best way for a project manager to prevent a client from giving direct orders to subcontractors on an agile project with many subcontractors is to ask the client not to do so. This is the most direct and effective way to address the problem.\n\nThe other answer choices are not as effective. Keeping the team informed about client expectations is important, but it will not prevent the client from giving direct orders to subcontractors. Inviting the client to the team planning meeting can help to improve communication between the client and the project team, but it will not prevent the client from giving direct orders to subcontractors. Telling the team to avoid conflicts with the client is not a realistic expectation, and it will not prevent the client from giving direct orders to subcontractors. By asking the client not to give direct orders to subcontractors, the project manager can help to create a more harmonious and productive working environment for the project team.",
+    "explanation": "多数のサブコントラクターが関わるアジャイルプロジェクトにおいて、クライアントがサブコントラクターに直接指示を出すことを防ぐ最善の方法は、クライアントにそうしないよう依頼することである。これはこの問題に対処する最も直接的かつ効果的な方法である。他の選択肢はそれほど効果的ではない。クライアントの期待についてチームに知らせておくことは重要であるが、クライアントがサブコントラクターに直接指示を出すことを防ぐことはできない。チームの計画会議にクライアントを招待することはコミュニケーション改善に役立つ可能性があるが、直接指示を防ぐことはできない。クライアントとの対立を避けるようチームに伝えることは現実的な期待ではなく、問題の解決にはならない。サブコントラクターに直接指示を出さないようクライアントに依頼することで、プロジェクトマネージャーはチームにとってより協調的で生産的な作業環境を作ることができる。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid 第6章 p.234-236／Essential Scrum: A Practical Guide to the Most Popular Agile Process Kenneth S. Rubin 第11章 p.205)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-29",
     "source": "EE-2",
-    "question": "A new project has a team divided between onsite and offshore locations. The project manager observed a rising conflict between the two parts of the team during project initiation.\n\nWhat should the project manager do first?",
+    "question": "新しいプロジェクトでは、チームがオンサイトとオフショアの拠点に分かれている。プロジェクトマネージャーは、プロジェクトの立ち上げ段階で、チームの両方のグループ間で対立が高まっていることに気づいた。プロジェクトマネージャーが最初に行うべきことは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Communicate the project scope to all team members."
+        "text": "プロジェクトのスコープを全チームメンバーに伝達する。"
       },
       {
         "label": "B",
-        "text": "Organize a face-to-face meeting during project kick-off."
+        "text": "プロジェクトのキックオフ時に対面のミーティングを開催する。"
       },
       {
         "label": "C",
-        "text": "Identify this conflict in the risk register log."
+        "text": "この対立をリスク登録簿に記録する。"
       },
       {
         "label": "D",
-        "text": "Record this conflict in the project issue log."
+        "text": "この対立をプロジェクトの課題ログに記録する。"
       }
     ],
     "correctAnswers": [
@@ -251,33 +251,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The best way for a project manager to address a rising conflict between onsite and offshore team members is to identify this conflict in the risk register log. This will help the project manager to track the conflict and to develop mitigation strategies.\n\nThe other answer choices are also important, but they are not as effective in addressing the underlying conflict. By identifying the conflict in the risk register log, the project manager can develop a plan to mitigate the risk and ensure that the project is successful.",
+    "explanation": "オンサイトとオフショアのチームメンバー間で高まっている対立に対処する最善の方法は、この対立をリスク登録簿に記録することである。これにより、プロジェクトマネージャーは対立を追跡し、緩和策を策定できるようになる。他の選択肢も重要であるが、根本的な対立への対処としてはそれほど効果的ではない。対立をリスク登録簿に記録することで、プロジェクトマネージャーはリスクを緩和する計画を策定し、プロジェクトを成功させることができる。(出典：O'Reillyプラットフォーム 第8章 チーム 文化の違いの管理とバーチャルチームとのミーティング／PMBOKガイド第7版(2021)／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第7章 7.4 対立のマネジメント、7.5 対立解消モード)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-32",
     "source": "EE-2",
-    "question": "The government of a country intends to construct a multibillion-dollar railway across three major cities and hires a contractor to oversee construction. The project's design will be finalized within a few months of signing the contract, but the government has time constraints and expects the project to be completed within 24 months. The project manager wants to ensure a balanced distribution of risk between the government and the contractor. \n\nWhich two techniques should be considered during the development of the project management plan? (Choose two)",
+    "question": "ある国の政府は、3つの主要都市を結ぶ数十億ドル規模の鉄道を建設する計画を立て、建設の監督を行う請負業者を雇用した。プロジェクトの設計は契約締結後数か月以内に確定する予定だが、政府には時間的制約があり、プロジェクトは24か月以内に完了することが期待されている。プロジェクトマネージャーは、政府と請負業者の間でリスクを均等に分配したいと考えている。プロジェクトマネジメント計画書を作成する際に検討すべき技法を2つ選べ。",
     "choices": [
       {
         "label": "A",
-        "text": "Fixed-price increments"
+        "text": "段階的固定価格"
       },
       {
         "label": "B",
-        "text": "Not-to-exceed time"
+        "text": "上限時間設定"
       },
       {
         "label": "C",
-        "text": "Early cancellation option"
+        "text": "早期キャンセルオプション"
       },
       {
         "label": "D",
-        "text": "Dynamic scope option"
+        "text": "動的スコープオプション"
       },
       {
         "label": "E",
-        "text": "Graduated time and materials"
+        "text": "段階的タイム・アンド・マテリアル"
       }
     ],
     "correctAnswers": [
@@ -288,33 +288,33 @@ const REVIEW_DATA = [
       "B",
       "D"
     ],
-    "explanation": "A. Fixed-price increments\n\nE. Graduated time and materials\n\nFixed-price increments and graduated time and materials can help to ensure that both parties are sharing the risk equally and can help mitigate any potential issues that may arise during the project. Fixed-price increments allow for the project to be broken down into smaller, more manageable pieces, with payment being made upon completion of each increment. This helps to ensure that both parties are sharing the risk equally. Graduated time and materials is a pricing model that allows for the project to be completed within a certain timeframe, with the cost of materials and labor increasing as the project progresses. This helps to ensure that both parties are sharing the risk equally, as any delays or unforeseen circumstances will result in increased costs for both parties. \n\nThe other answer choices are not as effective in sharing risk.\n\nNot-to-exceed time sets a maximum amount of time for a project to be completed.\n\nAn early cancellation option is a clause that allows for the cancellation of a project before it is completed. \n\nA dynamic scope option allows for changes to the project scope during the project lifecycle, to ensure that the project meets the needs of the stakeholders.",
+    "explanation": "段階的固定価格と段階的タイム・アンド・マテリアルは、双方が等しくリスクを分担し、プロジェクト中に発生しうる潜在的な問題を緩和するのに役立つ。段階的固定価格では、プロジェクトをより管理しやすい小さな単位に分割し、各単位の完了時に支払いを行うため、双方が等しくリスクを分担することになる。段階的タイム・アンド・マテリアルは、特定の期間内にプロジェクトを完了させる価格モデルで、プロジェクトが進むにつれて材料費や人件費が増加するため、遅延や予期せぬ事態が発生した場合に双方のコストが増加し、リスクが均等に分担される。他の選択肢はリスク分担の点でそれほど効果的ではない。上限時間設定は、プロジェクト完了までの最大期間を設定するものである。早期キャンセルオプションは、プロジェクトが完了する前にキャンセルできる条項である。動的スコープオプションは、ステークホルダーのニーズに応じてプロジェクト期間中にスコープを変更できるようにするものである。(出典：Effective Project Management 第8版 Robert K. Wysocki 第5章 契約の種類／アジャイル実践ガイド(The Agile Practice Guide) PMI 6. プロジェクトアジリティのための組織的考慮事項 p.77)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-36",
     "source": "EE-2",
-    "question": "A project manager has just taken over an ongoing project from another project manager. During a review of the project management plan, the new project manager realizes that the cost variance and schedule variance are largely negative. Several reported issues have not been resolved, vendors have not been paid for work done, and risk mitigation is quickly depleting the budget.\n\nWhich two actions should the original project manager have taken to avoid this situation? (Choose two)",
+    "question": "プロジェクトマネージャーは、別のプロジェクトマネージャーから進行中のプロジェクトを引き継いだ。プロジェクトマネジメント計画書をレビューしたところ、新しいプロジェクトマネージャーは、コスト差異とスケジュール差異が大きくマイナスになっていることに気づいた。報告されたいくつかの課題が未解決のままであり、ベンダーは完了した作業に対する支払いを受けておらず、リスク対応によって予算が急速に消費されている。この状況を避けるために、前任のプロジェクトマネージャーが取るべきだった行動を2つ選べ。",
     "choices": [
       {
         "label": "A",
-        "text": "Outlined the project's assumptions and documented them in the project charter."
+        "text": "プロジェクトの前提条件を整理し、プロジェクト憲章に文書化する。"
       },
       {
         "label": "B",
-        "text": "Added a substantial contingency reserve budget to the project charter."
+        "text": "プロジェクト憲章に大幅なコンティンジェンシー予備予算を追加する。"
       },
       {
         "label": "C",
-        "text": "Identified high-level risks and risk responses in the project planning phase."
+        "text": "プロジェクト計画フェーズで高レベルのリスクとリスク対応策を識別する。"
       },
       {
         "label": "D",
-        "text": "Identified appropriate and comprehensive project handoff procedures."
+        "text": "適切で包括的なプロジェクト引き継ぎ手順を識別する。"
       },
       {
         "label": "E",
-        "text": "Ensured that the project governance controls were approved and implemented."
+        "text": "プロジェクトのガバナンスコントロールが承認・実施されていることを確認する。"
       }
     ],
     "correctAnswers": [
@@ -325,29 +325,29 @@ const REVIEW_DATA = [
       "C",
       "E"
     ],
-    "explanation": "A. Outlined the project's assumptions and documented them in the project charter.\n\nC. Identified high-level risks and risk responses in the project planning phase.\n\nThe original project manager should have outlined and documented the project's assumptions in the project charter and identified high-level risks and responses in the project planning phase to avoid the situation described. Clear assumptions in the project charter can help ensure that all stakeholders have a common understanding of the project scope, objectives, and assumptions. Identifying high-level risks and responses in the project planning phase can help to ensure that potential risks are identified and addressed before they become issues. \n\nThe other answer choices are not as effective in avoiding this situation. \n\nAdding a contingency budget to the project charter may help to mitigate risks, but it does not address the root cause of the issues. \n\nIdentifying project handoff procedures and ensuring that project governance controls were approved and implemented are important, but they may not have prevented the negative cost variance and schedule variance.",
+    "explanation": "前任のプロジェクトマネージャーは、この状況を避けるために、プロジェクトの前提条件を整理してプロジェクト憲章に文書化し、プロジェクト計画フェーズで高レベルのリスクとその対応策を識別すべきであった。プロジェクト憲章に前提条件を明確に記載することで、すべてのステークホルダーがプロジェクトのスコープ、目標、前提条件について共通の理解を持つことができる。プロジェクト計画フェーズで高レベルのリスクと対応策を識別することは、潜在的なリスクが課題になる前に識別し対処するのに役立つ。他の選択肢はこの状況を避ける上でそれほど効果的ではない。プロジェクト憲章にコンティンジェンシー予算を追加することはリスクの緩和に役立つかもしれないが、問題の根本原因には対処していない。プロジェクトの引き継ぎ手順を識別し、プロジェクトガバナンスコントロールが承認・実施されていることを確認することは重要であるが、コスト差異とスケジュール差異がマイナスになることを防げたとは限らない。(出典：PMBOKガイド第7版(2021) PMI 2.4 計画パフォーマンスドメイン／Project Risk Management: A Practical Implementation Approach Michael M. Bissonette 第6章・第7章)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-37",
     "source": "EE-2",
-    "question": "A project team member informs the project manager that all items are complete and the team is ready to move on to the next iteration. The project manager reviews the iteration board and notices incomplete items. The iteration ends today, and the missed items will not be completed on time.\n\nWhat should the project manager have done to ensure that all of the iteration backlog items were completed on time?",
+    "question": "プロジェクトチームのメンバーが、すべてのアイテムが完了し、チームは次のイテレーションに進む準備ができているとプロジェクトマネージャーに報告した。プロジェクトマネージャーがイテレーションボードを確認すると、未完了のアイテムがあることに気づいた。イテレーションは本日終了し、未完了のアイテムは期限内に完了しない。すべてのイテレーションバックログアイテムが期限内に完了するように、プロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Validated iteration backlog items using the definition of done (DoD)."
+        "text": "完了の定義(DoD)を用いてイテレーションバックログアイテムを検証する。"
       },
       {
         "label": "B",
-        "text": "Scheduled longer delivery timelines for project iteration cycles."
+        "text": "プロジェクトのイテレーションサイクルにおいて、より長い納期を設定する。"
       },
       {
         "label": "C",
-        "text": "Requested that the team reports progress during daily standups."
+        "text": "デイリースタンドアップでチームに進捗を報告するよう依頼する。"
       },
       {
         "label": "D",
-        "text": "Asked team members to demo their work as soon as it was ready."
+        "text": "準備ができたらすぐにチームメンバーに作業内容をデモしてもらう。"
       }
     ],
     "correctAnswers": [
@@ -356,29 +356,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "Validating the iteration backlog items using the definition of done (DoD) is the best way to ensure that all of the iteration backlog items are completed on time. A DoD checklist lists all the criteria that are required for a deliverable to be considered ready for customer use. The team should regularly validate the iteration backlog items using the DoD established previously to avoid delays before the iteration ends. Before considering the iteration complete, the project manager should seek to confirm that all criteria are met.\n\nThe other options are incorrect.\n\nScheduling longer delivery timelines may not be feasible or practical, and asking the team to demo their work may not address the issue of incomplete items.\n\nAsking the team to report daily progress should be part of the process, but does not remove the need to validate the backlog items using the DoD. The team believes that they have completed all of the necessary items, suggesting that there is a disconnect between the DoD and the team's belief that all work has been completed.",
+    "explanation": "完了の定義(DoD)を用いてイテレーションバックログアイテムを検証することは、すべてのイテレーションバックログアイテムが期限内に完了することを保証する最善の方法である。DoDチェックリストには、成果物が顧客の使用に適していると見なされるために必要なすべての基準が記載されている。チームは、イテレーション終了前の遅延を避けるために、事前に確立されたDoDを用いてイテレーションバックログアイテムを定期的に検証すべきであり、イテレーションが完了したと見なす前に、プロジェクトマネージャーはすべての基準が満たされていることを確認すべきである。他の選択肢は誤り。より長い納期を設定することは現実的でも実用的でもない場合があり、チームに作業をデモしてもらうことも未完了アイテムの問題に対処しない可能性がある。チームに毎日の進捗報告を依頼することはプロセスの一部であるべきだが、DoDを用いてバックログアイテムを検証する必要性をなくすものではない。チームはすべての必要なアイテムを完了したと考えているが、これはDoDとチームの「完了した」という認識との間に齟齬があることを示している。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid Robert K. Wysocki ツール・テンプレート・プロセスを用いたプロジェクトのスコーピング p.104／O'Reillyプラットフォーム『The Age of Agile』Stephen Denning p.133 継続的な進捗モニタリング)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-40",
     "source": "EE-2",
-    "question": "A project is facing a one-month delay, and the project manager realizes that a change request is necessary. The change control board (CCB) will review the change request at their next meeting, which is in two weeks. However, if the implementation of this change is delayed by two weeks, upcoming supply chain disruptions will cause a two-month delay to the project schedule. \n\nWhat should the project manager do?",
+    "question": "プロジェクトは1か月の遅延に直面しており、プロジェクトマネージャーは変更要求が必要であると認識した。変更管理委員会(CCB)は、2週間後に開催される次回の会議でこの変更要求を審査する。しかし、この変更の実施が2週間遅れると、今後発生するサプライチェーンの混乱により、プロジェクトスケジュールがさらに2か月遅延することになる。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Implement the change immediately to avoid the upcoming supply chain disruptions and the two-month delay."
+        "text": "今後のサプライチェーンの混乱と2か月の遅延を避けるため、直ちに変更を実施する。"
       },
       {
         "label": "B",
-        "text": "Revise the change request to incorporate the additional two-month delay due to upcoming supply chain disruptions."
+        "text": "今後のサプライチェーンの混乱による追加の2か月の遅延を反映するよう、変更要求を修正する。"
       },
       {
         "label": "C",
-        "text": "Meet with the sponsor and ask them to contact the CCB and request their immediate approval."
+        "text": "スポンサーと面談し、CCBに連絡して即時承認を要請してもらうよう依頼する。"
       },
       {
         "label": "D",
-        "text": "Request that the CEO approve and implement the change to avoid the potential two-month delay."
+        "text": "潜在的な2か月の遅延を避けるため、CEOに変更の承認と実施を依頼する。"
       }
     ],
     "correctAnswers": [
@@ -387,29 +387,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The project manager should acknowledge the existing delay and recognize the potential for a two-month delay due to supply chain disruptions. This will ensure that the CCB has all of the necessary information to make an informed decision about the change request. This is essential for effective project management, as it ensures that all stakeholders are aware of and prepared for the extended timeline. The project manager should communicate the revised change request to all relevant stakeholders to ensure that everyone is aware of the delay and its impact on the project.\n\nThe other options are incorrect because the project manager should follow the established change management process and ensure that the change request accurately reflects the current situation.\n\nImmediately implementing the change is incorrect because the project manager does not have the authority to implement changes without approval from the CCB. Rushing the change without proper planning and review could lead to unforeseen issues.\n\nAsking the sponsor to contact the CCB and request their approval is incorrect because the project manager is responsible for following the change management process. \n\nAsking the CEO to approve and implement the change is incorrect because the project manager should follow the established change management process, which may not involve the CEO. Additionally, it is generally not advisable to escalate a change request to the CEO without first trying to get approval from the CCB.",
+    "explanation": "プロジェクトマネージャーは、既存の遅延を認識し、サプライチェーンの混乱による2か月の遅延の可能性を認識すべきである。これにより、CCBが変更要求について十分な情報に基づいた判断を下すために必要なすべての情報を持つことが保証される。これは効果的なプロジェクトマネジメントにとって不可欠であり、すべてのステークホルダーが延長されたスケジュールとその影響を認識し、準備できるようにする。プロジェクトマネージャーは、修正された変更要求をすべての関連ステークホルダーに伝達し、全員が遅延とそのプロジェクトへの影響を認識できるようにすべきである。他の選択肢は誤りである。プロジェクトマネージャーは、確立された変更管理プロセスに従い、変更要求が現状を正確に反映していることを確認すべきである。直ちに変更を実施することは誤りである。プロジェクトマネージャーはCCBの承認なしに変更を実施する権限を持っていない。適切な計画とレビューなしに変更を急ぐと、予期しない問題につながる可能性がある。スポンサーにCCBへ連絡し承認を依頼するよう求めることは、プロジェクトマネージャーが変更管理プロセスに従う責任を負っているため誤りである。CEOに変更の承認と実施を依頼することも誤りである。プロジェクトマネージャーは、CEOが関与しない場合もある確立された変更管理プロセスに従うべきであり、まずCCBの承認を得ようとせずにCEOにエスカレーションすることは一般的に推奨されない。(出典：O'Reillyプラットフォーム『Mastering Project Time Management, Cost Control, and Quality Management』第7章／PMBOKガイド第7版(2022) PMI 2.5.7 新たな作業と変更のモニタリング)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-42",
     "source": "EE-2",
-    "question": "While reviewing progress in the middle of an iteration, the scrum master points out a major risk due to a user story dependency.\n\nWhat should the project manager do next?",
+    "question": "イテレーションの中間で進捗をレビューしている際、スクラムマスターがユーザーストーリーの依存関係による重大なリスクを指摘した。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Update the product backlog."
+        "text": "プロダクトバックログを更新する。"
       },
       {
         "label": "B",
-        "text": "Update the project charter."
+        "text": "プロジェクト憲章を更新する。"
       },
       {
         "label": "C",
-        "text": "Update the risk register."
+        "text": "リスク登録簿を更新する。"
       },
       {
         "label": "D",
-        "text": "Update the issue log."
+        "text": "課題ログを更新する。"
       }
     ],
     "correctAnswers": [
@@ -418,29 +418,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The project manager should update the risk register next, upon learning about the major risk.\n\nThe other answer choices are incorrect. Updating the product backlog is not the best option because it does not address the immediate risk. Updating the project charter is not the best option because the project charter is a high-level document that does not typically include details about risks. Updating the issue log should not be done before the project manager has updated the risk register.",
+    "explanation": "プロジェクトマネージャーは、この重大なリスクを把握した後、次にリスク登録簿を更新すべきである。他の選択肢は誤り。プロダクトバックログを更新することは目下のリスクに対応するものではないため最善の選択肢ではない。プロジェクト憲章を更新することは、プロジェクト憲章が通常リスクに関する詳細を含まない高レベルの文書であるため最善の選択肢ではない。課題ログを更新することは、プロジェクトマネージャーがリスク登録簿を更新する前に行うべきではない。(出典：Essential Scrum: A Practical Guide to the Most Popular Agile Process Kenneth S. Rubin 第13章 マネージャー 表13.3 p.238／O'Reillyプラットフォーム 第24章 デイリースタンドアップ 望ましい行動 5c)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-44",
     "source": "EE-2",
-    "question": "A project manager has developed a schedule for a project involving various departments. The project manager met with each team member to develop a work breakdown structure (WBS). However, after the WBS was finalized, the project manager discovers that some tasks are redundant.\n\nWhat should the project manager have done to avoid this issue?",
+    "question": "プロジェクトマネージャーは、複数の部門が関わるプロジェクトのスケジュールを作成した。プロジェクトマネージャーは、ワークブレークダウンストラクチャー(WBS)を作成するために各チームメンバーと個別に面談した。しかし、WBSが確定した後、プロジェクトマネージャーは一部のタスクが重複していることに気づいた。この問題を避けるために、プロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Enlisted subject matter experts (SMEs) to provide scheduling guidance."
+        "text": "専門家(SME)を参加させ、スケジューリングの指針を提供してもらう。"
       },
       {
         "label": "B",
-        "text": "Organized group sessions for all team members to review the WBS together."
+        "text": "全チームメンバーが一緒にWBSをレビューするためのグループセッションを開催する。"
       },
       {
         "label": "C",
-        "text": "Improved the communication channels with all team members."
+        "text": "全チームメンバーとのコミュニケーションチャネルを改善する。"
       },
       {
         "label": "D",
-        "text": "Prepared a task assignment matrix to represent the WBS."
+        "text": "WBSを表すタスク割り当てマトリックスを作成する。"
       }
     ],
     "correctAnswers": [
@@ -449,29 +449,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "All the project planning activities should be discussed during the joint planning sessions. During these sessions, team members will share their approaches and this will minimize activity overlap, and increase awareness among the team members.\n\nThe other options are not as effective at avoiding redundant tasks.\n\nEnlisting SMEs, improving communication channels, and/or preparing a task assignment matrix can be part of the solution, but organizing group sessions to review the WBS is a more direct and effective way to pinpoint and avoid redundancy issues.",
+    "explanation": "すべてのプロジェクト計画活動は、共同計画セッションで議論されるべきである。これらのセッションでは、チームメンバーが自分のアプローチを共有し、これにより作業の重複を最小限に抑え、チームメンバー間の認識を高めることができる。他の選択肢は、重複タスクを避ける上でそれほど効果的ではない。SMEを参加させること、コミュニケーションチャネルを改善すること、タスク割り当てマトリックスを作成することは解決策の一部となりうるが、グループセッションを開催してWBSをレビューすることは、重複の問題を特定し回避するためのより直接的かつ効果的な方法である。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid Robert K. Wysocki 第5章 共同プロジェクト計画セッションの計画と実施 p.149／PMBOKガイド第7版(2022) 2.4 計画パフォーマンスドメイン)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-46",
     "source": "EE-2",
-    "question": "During a software development project, the team realized that several features failed to comply with quality requirements. After receiving instructions to fix the issues, one team member becomes frustrated, claiming that unclear requirements are causing the issues. Other team members argue that negligent testing is the real cause of these issues. The testers blame poor coding quality.\n\nWhat should the project manager do?",
+    "question": "ソフトウェア開発プロジェクトにおいて、チームはいくつかの機能が品質要件を満たしていないことに気づいた。問題を修正するよう指示を受けた後、あるチームメンバーは要件が不明確であることが問題の原因であると主張し、不満を募らせている。他のチームメンバーは、テストの不備が問題の本当の原因であると主張している。テスターはコーディング品質の低さを問題視している。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Support the project team in a retrospective to identify the root cause of the quality issues."
+        "text": "プロジェクトチームを支援し、レトロスペクティブで品質問題の根本原因を特定する。"
       },
       {
         "label": "B",
-        "text": "Remove the most frustrated resource from the team as the confusion is impacting team motivation."
+        "text": "混乱がチームのモチベーションに影響しているため、最もフラストレーションを抱えているリソースをチームから外す。"
       },
       {
         "label": "C",
-        "text": "Perform a quality review in each stage of the development life cycle to identify quality issues."
+        "text": "品質問題を特定するために、開発ライフサイクルの各段階で品質レビューを実施する。"
       },
       {
         "label": "D",
-        "text": "Discuss the issue with the management team to identify possible solutions to improve quality."
+        "text": "品質を改善する可能性のある解決策を特定するため、マネジメントチームとこの問題について話し合う。"
       }
     ],
     "correctAnswers": [
@@ -480,29 +480,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The project team is initially responsible for conflict resolution, but the project manager can facilitate it when required. Retrospective meetings provide an opportunity for the project team to review how they work and to suggest changes to improve processes and efficiency. Retrospectives can be used to identify threats to performance, and project team cohesion, and to seek improvements. Facilitation helps the project team create consensus around solutions, resolve conflicts, and make decisions.\n\nThe other answer choices do not promote the same level of collaboration and problem-solving within the team and may not address the underlying issues effectively.",
+    "explanation": "プロジェクトチームは対立解消の第一次的な責任を負うが、必要に応じてプロジェクトマネージャーがそれを促進することができる。レトロスペクティブミーティングは、プロジェクトチームが自分たちの働き方を振り返り、プロセスや効率を改善するための変更を提案する機会を提供する。レトロスペクティブは、パフォーマンスやプロジェクトチームの結束に対する脅威を特定し、改善策を探るために利用できる。ファシリテーションは、プロジェクトチームが解決策について合意を形成し、対立を解消し、意思決定を行うのに役立つ。他の選択肢は、チーム内の同レベルの協働や問題解決を促進するものではなく、根本的な問題に効果的に対処できない可能性がある。(出典：PMBOKガイド第7版(2022) 2.5.1 プロジェクトプロセス、2.3.3 ファシリテートと支援／The Project Management Tool Kit: 100 Tips and Techniques for Getting the Job Done Right 21 創造的問題解決、デルファイ法)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-50",
     "source": "EE-2",
-    "question": "A project manager is preparing for an organization-wide software system replacement project that will have a significant impact on business operations. It is crucial to provide training to ensure that everyone within the organization can effectively use the new software system, but training resources are limited. What is the most effective action the project manager should take to ensure successful training for all organization members?",
+    "question": "プロジェクトマネージャーは、ビジネスオペレーションに大きな影響を与える組織全体のソフトウェアシステム入れ替えプロジェクトを準備している。組織内の全員が新しいソフトウェアシステムを効果的に使用できるようにするための研修の提供が不可欠だが、研修リソースは限られている。組織の全メンバーに対する研修を成功させるために、プロジェクトマネージャーが取るべき最も効果的な行動は何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Incorporate a detailed training and coaching component as a project deliverable."
+        "text": "詳細な研修・コーチングのコンポーネントをプロジェクトの成果物として組み込む。"
       },
       {
         "label": "B",
-        "text": "Determine the specific needs and requirements of different user functions."
+        "text": "異なるユーザー機能ごとの具体的なニーズと要件を特定する。"
       },
       {
         "label": "C",
-        "text": "Recruit additional trainers to ensure adequate training coverage throughout the organization."
+        "text": "組織全体で十分な研修カバレッジを確保するために、追加の研修担当者を採用する。"
       },
       {
         "label": "D",
-        "text": "Prioritize training efforts by identifying which features are most essential."
+        "text": "どの機能が最も重要かを特定し、研修の取り組みに優先順位を付ける。"
       }
     ],
     "correctAnswers": [
@@ -511,29 +511,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "Incorporating a comprehensive training and coaching component into the project's scope directly addresses the need for training despite limited training resources and is a strategic approach to ensuring everyone can use the new software system effectively. This means that training is not an afterthought, but an integral part of the project plan. By including training and coaching as project deliverables, the project manager ensures that it is a well-defined and prioritized aspect of the project. The new software system is the output of the project, but the system itself does not enable the productivity outcome that is intended. In this case, adding a new deliverable of training and coaching on the use of the software can enable a better productivity outcome. If the project’s output fails to enable higher productivity, stakeholders may feel that the project has failed.\n\nWhile the other options are not the most effective actions for the project manager to take.\n\nDetermining the specific needs and requirements of different user functions is an important step in the training process, but it is not the most effective standalone action because it doesn't ensure that training will be delivered effectively.\n\nRecruiting additional trainers can be resource-intensive and may not be the most efficient solution, especially if resources are already limited. Additionally, there is no evidence that the organization would need additional trainers beyond the initial introduction of the new system. \n\nPrioritizing training efforts based on essential features does not provide a solution for how training will be delivered effectively; it only addresses what to prioritize in training.",
+    "explanation": "包括的な研修・コーチングのコンポーネントをプロジェクトのスコープに組み込むことは、研修リソースが限られている中でも研修の必要性に直接対応するものであり、組織内の全員が新しいソフトウェアシステムを効果的に使用できるようにするための戦略的なアプローチである。これにより、研修は後付けではなく、プロジェクト計画の不可欠な一部となる。研修・コーチングを成果物として含めることで、プロジェクトマネージャーは、それが明確に定義され優先順位付けされた側面であることを保証できる。新しいソフトウェアシステムはプロジェクトのアウトプットであるが、システム自体が意図された生産性の向上という成果を実現するわけではない。この場合、ソフトウェアの使用に関する研修・コーチングという新しい成果物を追加することで、より良い生産性の成果を実現できる。プロジェクトのアウトプットが生産性向上につながらない場合、ステークホルダーはプロジェクトが失敗したと感じる可能性がある。他の選択肢は、プロジェクトマネージャーが取るべき最も効果的な行動ではない。異なるユーザー機能ごとの具体的なニーズと要件を特定することは研修プロセスの重要なステップであるが、それだけでは研修が効果的に提供されることを保証しないため、最も効果的な単独の行動ではない。追加の研修担当者を採用することはリソースを多く消費する可能性があり、リソースが既に限られている場合は最も効率的な解決策ではない。また、新システム導入の初期段階を超えて追加の研修担当者が必要であるという根拠もない。重要な機能に基づいて研修の取り組みに優先順位を付けることは、研修をどのように効果的に提供するかという解決策を提供せず、研修において何を優先するかにのみ対応するものである。(出典：O'Reillyプラットフォーム『Project Stakeholder Management』Pernille Eskerod、Anna Lund Jepsen ミニケース1／PMBOKガイド第7版(2022) 2.3.6 デリバリーのケイデンス・開発アプローチ・ライフサイクルの整合、3.4 価値への注力)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-51",
     "source": "EE-2",
-    "question": "In the middle of a release, the project manager is replaced. Feedback provided by the team to the new project manager hinted at team friction caused by the previous project manager's constant demands for rapid delivery.\n\nWhat approach should the new project manager adopt to quickly establish credibility with the team?",
+    "question": "リリースの途中で、プロジェクトマネージャーが交代した。新しいプロジェクトマネージャーに対するチームからのフィードバックは、前任のプロジェクトマネージャーが常に迅速な納品を要求していたことによるチーム内の摩擦を示唆していた。新しいプロジェクトマネージャーがチームから迅速に信頼を得るために採用すべきアプローチは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Do what the team needs to be done, maintain the action log, and provide feedback."
+        "text": "チームが必要としていることを行い、アクションログを維持し、フィードバックを提供する。"
       },
       {
         "label": "B",
-        "text": "Help the team succeed with excellent service, on-time commitments, and an adequate budget."
+        "text": "優れたサービス、納期通りのコミットメント、十分な予算によってチームの成功を支援する。"
       },
       {
         "label": "C",
-        "text": "Assess the culture of the team, and observe and interact with them."
+        "text": "チームの文化を評価し、観察し、チームと交流する。"
       },
       {
         "label": "D",
-        "text": "Have the team explain what is needed, create tasks, and report progress on those tasks."
+        "text": "チームに必要なことを説明させ、タスクを作成し、それらのタスクの進捗を報告させる。"
       }
     ],
     "correctAnswers": [
@@ -542,29 +542,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "To quickly establish credibility, it is important that the new project manager first observe and understand how the team works and how to best serve them.\n\nThe other answer choices are incorrect. Helping the team succeed with excellent service, on-time commitments, and making sure that there is an adequate budget to cover the project scope is part of the project manager's role and is implicit and these actions will not help the project manager to quickly establish credibility with the team which is the primary objective. Going by the team's needs and wants and creating tasks and reports will not serve the primary objective. The team members may have conflicting views, wants, and needs. Ultimately, it is important to observe the team to identify where impactful changes can be made and to ensure that any changes are aligned with the culture of the organization and best support the intended outcome.",
+    "explanation": "迅速に信頼を確立するためには、新しいプロジェクトマネージャーがまずチームがどのように機能しているか、そしてチームに最善のサービスを提供する方法を観察し理解することが重要である。他の選択肢は誤り。優れたサービス、納期通りのコミットメント、十分な予算の確保によってチームの成功を支援することはプロジェクトマネージャーの役割の一部であり暗黙的に行われるべきことであるが、これらの行動はチームから迅速に信頼を得るという主目的には寄与しない。チームのニーズや要望に従ってタスクを作成し報告することも主目的には寄与しない。チームメンバーは互いに矛盾する見解、要望、ニーズを持っている可能性がある。最終的には、どこで効果的な変化を起こせるかを特定するためにチームを観察し、変化が組織の文化に合致し、意図した成果を最もよく支えるものであることを確認することが重要である。(出典：Agile Coaching Rachel Davies 第3章 自分自身を律する p.38-54／アジャイル実践ガイド(The Agile Practice Guide) PMI 第6章 p.75)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-54",
     "source": "EE-2",
-    "question": "An organizational transformation project has two workstreams running in parallel between corporate headquarters and an overseas office. Before kick-off, the project manager is scheduled to meet the overseas office leader.\n\nWhat should the focus of the meeting be?",
+    "question": "ある組織変革プロジェクトでは、本社と海外オフィスの間で2つの作業ストリームが並行して進められている。キックオフの前に、プロジェクトマネージャーは海外オフィスのリーダーと面談する予定である。この面談で重視すべき点は何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Informing the overseas office leader of the project's strategic value, key deliverables, and their expected involvement."
+        "text": "プロジェクトの戦略的価値、主要な成果物、および期待される関与について、海外オフィスのリーダーに伝える。"
       },
       {
         "label": "B",
-        "text": "Reaching an agreement on the choice of procurement strategies to be employed by the overseas office."
+        "text": "海外オフィスが採用する調達戦略の選択について合意に達する。"
       },
       {
         "label": "C",
-        "text": "Assisting the overseas office leader in communicating with the corporate headquarters staff about the project."
+        "text": "海外オフィスのリーダーが本社スタッフとこのプロジェクトについてコミュニケーションを取るのを支援する。"
       },
       {
         "label": "D",
-        "text": "Identifying and assigning a subject matter expert (SME) to represent the project at the overseas office."
+        "text": "海外オフィスでプロジェクトを代表する専門家(SME)を特定し、任命する。"
       }
     ],
     "correctAnswers": [
@@ -573,29 +573,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "Since the meeting is scheduled before the project kickoff, it is important to set expectations with all parties involved by informing the overseas office leader about the project's strategic value, key deliverables, and expected involvement. This will help to ensure that the overseas office leader is fully informed and prepared to contribute and that everyone is on the same page and working towards the same goals.\n\nThe other answer choices may occur after the project has been kicked off.",
+    "explanation": "この面談はキックオフ前に予定されているため、プロジェクトの戦略的価値、主要な成果物、期待される関与について海外オフィスのリーダーに伝えることで、関係者全員の期待値を設定することが重要である。これにより、海外オフィスのリーダーが十分な情報を得て貢献する準備ができ、全員が同じ目標に向かって取り組んでいることを確認できる。他の選択肢は、プロジェクトのキックオフ後に発生する可能性のあることである。(出典：The Project Management Tool Kit: 100 Tips and Techniques for Getting the Job Done Right p.55/135／PMBOKガイド第7版(2022) 2.5.4 プロジェクトのコミュニケーションとエンゲージメント)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-59",
     "source": "EE-2",
-    "question": "A project manager is leading a complex software development project. The project team cannot agree on which process to use when solving a specific problem.\n\nWhat approach should the project manager take to help bring the team to consensus?",
+    "question": "プロジェクトマネージャーは、複雑なソフトウェア開発プロジェクトを率いている。プロジェクトチームは、特定の問題を解決する際にどのプロセスを使用するかについて合意できていない。チームを合意に導くために、プロジェクトマネージャーが取るべきアプローチは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Exert expert authority and define the path forward for the team."
+        "text": "専門的権限を行使し、チームの進む方向を決定する。"
       },
       {
         "label": "B",
-        "text": "Update the responsible, accountable, consult, and inform (RACI) matrix and assign the work to a different team."
+        "text": "責任・説明責任・協議・報告(RACI)マトリックスを更新し、作業を別のチームに割り当てる。"
       },
       {
         "label": "C",
-        "text": "Assign a new team lead who has experience in solving similar software development problems."
+        "text": "同様のソフトウェア開発上の問題を解決した経験を持つ新しいチームリードを任命する。"
       },
       {
         "label": "D",
-        "text": "Facilitate a meeting and encourage team members to come up with potential solutions."
+        "text": "ミーティングを促進し、チームメンバーに解決策を考え出すよう促す。"
       }
     ],
     "correctAnswers": [
@@ -604,29 +604,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The best option is to facilitate a meeting with the team to work out the solution. A collaborative approach not only inspires creative problem solving but also fosters team member engagement and participation.\n\nThe other options are less than ideal as they do not promote team work.",
+    "explanation": "最善の選択肢は、チームと共にミーティングを促進し、解決策を見出すことである。協働的なアプローチは、創造的な問題解決を促すだけでなく、チームメンバーのエンゲージメントと参加も促進する。他の選択肢は、チームワークを促進しないため、理想的ではない。(出典：PMBOKガイド第6版(2018) PMI 8.2.2.7 p.295／Project Management: The Managerial Process 第11章 プロジェクトチームのマネジメント グループ意思決定のファシリテーション p.394)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-61",
     "source": "EE-2",
-    "question": "A software delivery team at a large bank is frustrated by the documentation requirements put in place by the governance department in charge of their change control board (CCB). The project manager approaches the governance department and requests that they work together to reduce the amount of paperwork required from the delivery team, explaining that it slows them down and adds overhead costs.\n\nThis is an example of what kind of leadership?",
+    "question": "大手銀行のソフトウェアデリバリーチームは、彼らの変更管理委員会(CCB)を担当するガバナンス部門が定めたドキュメント要件にフラストレーションを感じている。プロジェクトマネージャーはガバナンス部門に働きかけ、デリバリーチームに求められる事務作業の量を減らすために協力するよう依頼し、それがチームの作業を遅らせ、オーバーヘッドコストを増加させていることを説明した。これは、どのようなリーダーシップの例か？",
     "choices": [
       {
         "label": "A",
-        "text": "Servant leadership"
+        "text": "サーバントリーダーシップ"
       },
       {
         "label": "B",
-        "text": "Transactional leadership"
+        "text": "トランザクショナルリーダーシップ"
       },
       {
         "label": "C",
-        "text": "Directive leadership"
+        "text": "ディレクティブリーダーシップ"
       },
       {
         "label": "D",
-        "text": "Constructive leadership"
+        "text": "コンストラクティブリーダーシップ"
       }
     ],
     "correctAnswers": [
@@ -635,29 +635,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "This is an example of servant leadership because the project manager is offering the service of working with the governance board to resolve an issue for the software delivery team. The project manager has the software delivery team's interest in mind and is willing to work with the governance board to reduce the amount of paperwork.",
+    "explanation": "これはサーバントリーダーシップの例である。プロジェクトマネージャーは、ソフトウェアデリバリーチームのためにガバナンス委員会と協力してこの問題を解決するという「サービス」を提供している。プロジェクトマネージャーはソフトウェアデリバリーチームの利益を念頭に置き、ガバナンス委員会と協力して事務作業の量を減らそうとしている。(出典：Agile Foundations - Principles, practices and frameworks 第6章 6.3.1 サーバントリーダーとしてのアジャイルリード／アジャイル実践ガイド(The Agile Practice Guide) PMI 第4章 p.35)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-63",
     "source": "EE-2",
-    "question": "Although a project is performing within its time, scope, and budget constraints, the project manager learns that the project sponsor is unhappy with its progress.\n\nWhat should the project manager have done to avoid this situation?",
+    "question": "プロジェクトは時間、スコープ、予算の制約内で進行しているにもかかわらず、プロジェクトマネージャーは、プロジェクトスポンサーがその進捗に不満を抱いていることを知った。この状況を避けるために、プロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Conducted frequent reviews and assessments to identify and address any potential risks."
+        "text": "潜在的なリスクを特定し対処するために、頻繁にレビューと評価を実施する。"
       },
       {
         "label": "B",
-        "text": "Aligned project objectives with the expectations and requirements of the project sponsor."
+        "text": "プロジェクトの目標をプロジェクトスポンサーの期待や要件と一致させる。"
       },
       {
         "label": "C",
-        "text": "Communicated regularly with the project sponsor to provide updates and address any concerns."
+        "text": "プロジェクトスポンサーと定期的にコミュニケーションを取り、最新情報を提供し、懸念事項に対応する。"
       },
       {
         "label": "D",
-        "text": "Implemented strict control measures to ensure that project milestones and deliverables are met."
+        "text": "プロジェクトのマイルストーンと成果物が確実に達成されるよう、厳格な管理手段を実施する。"
       }
     ],
     "correctAnswers": [
@@ -666,29 +666,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project manager must communicate with the project sponsor effectively. The sponsor provides resources and support for the project and is accountable for enabling success. Without regular communication, the project manager can not ensure that the sponsor is sufficiently informed and engaged. In this case, the sponsor is unhappy despite the project's performance, so the source of the dissatisfaction is not known. If there was open and ample communication between the project manager and the sponsor, the project manager would have known that the sponsor was unhappy and could have addressed the disconnect between expectations and reality. Communication is the most important factor in engaging with stakeholders effectively.\n\nThe other options are incorrect because they do not address the core concern here, which is the unhappiness of the sponsor.\nConducting frequent reviews to identify and address any potential issues or risks does not address the source of the sponsor's dissatisfaction. The project is performing well and there is no evidence to suggest that the project team is not sufficiently identifying and addressing risks.\nAligning project objectives with the sponsor's expectations is important, but is incorrect because it requires effective communication. Without effective communication, there is no way to achieve or maintain alignment.\nImplementing strict control measures is incorrect because it does not address the sponsor's unhappiness.",
+    "explanation": "プロジェクトマネージャーはプロジェクトスポンサーと効果的にコミュニケーションを取らなければならない。スポンサーはプロジェクトに資源と支援を提供し、成功を実現する責任を負う。定期的なコミュニケーションなしには、プロジェクトマネージャーはスポンサーが十分な情報を得て関与しているかを確認できない。この場合、プロジェクトは順調に進行しているにもかかわらずスポンサーは不満を抱いており、その不満の原因は不明である。プロジェクトマネージャーとスポンサーの間で十分かつ開かれたコミュニケーションがあれば、プロジェクトマネージャーはスポンサーが不満を抱いていることを把握でき、期待と現実のギャップに対処できたはずである。コミュニケーションは、ステークホルダーと効果的に関わる上で最も重要な要素である。他の選択肢は、ここでの核心的な懸念事項であるスポンサーの不満に対応していないため誤りである。潜在的な課題やリスクを特定し対処するために頻繁にレビューを実施することは、スポンサーの不満の原因に対応していない。プロジェクトは順調に進行しており、プロジェクトチームがリスクを十分に特定・対処していないことを示す証拠はない。プロジェクトの目標をスポンサーの期待に一致させることは重要であるが、それには効果的なコミュニケーションが必要であるため誤りである。効果的なコミュニケーションがなければ、整合性を達成または維持する方法がない。厳格な管理手段を実施することは、スポンサーの不満に対応していないため誤りである。(出典：Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 10.6 ステークホルダー関係のマネジメント／PMBOKガイド第7版(2022) 2.5.4 プロジェクトのコミュニケーションとエンゲージメント)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-68",
     "source": "EE-2",
-    "question": "Due to economic implications, a company announces imminent layoffs. A project is nearing delivery, and the team is worried about losing their jobs. Team morale is very low, and the project manager is experiencing increased delivery delays from the team.\n\nWhat should the project manager do to address team morale?",
+    "question": "経済的な影響により、ある会社が近々のレイオフを発表した。プロジェクトはデリバリーが近づいており、チームは自分たちの仕事を失うことを心配している。チームの士気は非常に低く、プロジェクトマネージャーはチームによるデリバリーの遅延が増加していることを経験している。チームの士気に対処するために、プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Replace team members who are not delivering optimally to improve overall productivity."
+        "text": "全体的な生産性を向上させるため、最適なパフォーマンスを発揮していないチームメンバーを入れ替える。"
       },
       {
         "label": "B",
-        "text": "Provide regular updates on the layoff situation and discuss its impact on the team and the project."
+        "text": "レイオフの状況について定期的に最新情報を提供し、それがチームとプロジェクトに与える影響について話し合う。"
       },
       {
         "label": "C",
-        "text": "Keep all information about the layoffs confidential to avoid causing further anxiety."
+        "text": "さらなる不安を引き起こさないよう、レイオフに関するすべての情報を機密にする。"
       },
       {
         "label": "D",
-        "text": "Meet with the project team to assure them that they will not be laid off and their jobs are safe."
+        "text": "チームと面談し、レイオフされることはなく、雇用は安全であると保証する。"
       }
     ],
     "correctAnswers": [
@@ -697,33 +697,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The project manager should address the team's concerns by being transparent and supportive. Support can be demonstrated by providing encouragement, showing empathy, and engaging in active listening. Even if the team members are not laid off, the way they were treated during a time of high anxiety will continue to impact their morale and motivation. Addressing the situation inappropriately can lead to dissatisfaction, lack of trust, and reduced morale and motivation.\nThe other opinions are potentially misleading, inappropriate, and unethical.\nReplacing team members may not be possible, is irresponsible, and will likely lead to increased anxiety and worsening morale.\nKeeping all information about layoffs confidential is not transparent and may lead to mistrust and increased apprehension.\nThe project manager may not know who will be laid off and should not make assurances that are unfounded.",
+    "explanation": "プロジェクトマネージャーは、透明性を保ち、支援的であることでチームの懸念に対応すべきである。励励、共感の表明、積極的な傾聴によって支援を示すことができる。チームメンバーがレイオフされなかったとしても、不安が高まっている時期にどのように扱われたかは、その後も士気とモチベーションに影響を与え続ける。この状況に不適切に対処すると、不満、信頼の欠如、士気とモチベーションの低下につながる可能性がある。他の選択肢は、誤解を招く、不適切、または非倫理的なものである。チームメンバーを入れ替えることは不可能な場合があり、無責任であり、不安の増大とさらなる士気の低下につながる可能性が高い。レイオフに関する情報をすべて機密にすることは透明性に欠け、不信感や不安の増大につながる可能性がある。プロジェクトマネージャーは誰がレイオフされるかを知らない可能性があり、根拠のない保証をすべきではない。(出典：PMBOKガイド第7版(2022) PMI 2.2 チームパフォーマンスドメイン／アジャイル実践ガイド(The Agile Practice Guide) PMI 第4章 アジャイルの実践 p.35 4.2.1.1 サーバントリーダーのファシリテーション)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-69",
     "source": "EE-2",
-    "question": "In an environment subject to various elements of ambiguity and change, what should an agile project manager do to keep track of artifacts? (Choose two)",
+    "question": "様々な曖昧さや変化の要素を伴う環境において、アジャイルプロジェクトマネージャーはアーティファクトを管理するために何をすべきか？(2つ選択)",
     "choices": [
       {
         "label": "A",
-        "text": "Update the artifacts frequently and quickly in a transparent fashion."
+        "text": "アーティファクトを透明性のある方法で頻繁かつ迅速に更新する。"
       },
       {
         "label": "B",
-        "text": "Define which technology to use in the project management plan."
+        "text": "プロジェクトマネジメント計画書において、使用する技術を定義する。"
       },
       {
         "label": "C",
-        "text": "Define which technology to use in the communications management plan."
+        "text": "コミュニケーションマネジメント計画書において、使用する技術を定義する。"
       },
       {
         "label": "D",
-        "text": "Increase the use of social computing tools."
+        "text": "ソーシャルコンピューティングツールの利用を増やす。"
       },
       {
         "label": "E",
-        "text": "Use historical information from previous projects as a template."
+        "text": "過去のプロジェクトの履歴情報をテンプレートとして使用する。"
       }
     ],
     "correctAnswers": [
@@ -734,33 +734,33 @@ const REVIEW_DATA = [
       "A",
       "E"
     ],
-    "explanation": "A. Update the artifacts frequently and quickly in a transparent fashion.\n\nD. Increase the use of social computing tools.\n\nThe two best practices for an agile project manager to keep track of artifacts in an environment subject to various elements of ambiguity and change are updating the artifacts frequently and quickly in a transparent fashion and increasing the use of social computing tools. Updating the artifacts frequently and quickly in a transparent fashion will help to ensure that the artifacts are always up-to-date and that everyone involved in the project has access to the latest information. Increasing the use of social computing tools can help facilitate communication and collaboration among team members, which is essential for keeping track of artifacts in a changing environment.\n\nThe other answer choices are not as relevant or effective. Defining which technology to use in the project management plan is only important if the project is using a specific technology to manage artifacts. For example, if the project is using a project management software tool, then it is important to define which tool to use and how to use it. However, this is not a best practice for keeping track of artifacts in a changing environment. Defining which technology to use in the communications management plan is only important if the project is using a specific technology to communicate with team members. For example, if the project is using a team communication tool, such as Slack or Microsoft Teams, then it is important to define which tool to use and how to use it. However, this is not a best practice for keeping track of artifacts in a changing environment. Using historical information from previous projects as a template can be helpful for getting started, but it is important to keep in mind that every project is different. The artifacts that are needed for one project may not be the same as the artifacts that are needed for another project. It is also important to be flexible and adaptable, as the artifacts may need to be changed as the project progresses.",
+    "explanation": "様々な曖昧さや変化の要素を伴う環境において、アジャイルプロジェクトマネージャーがアーティファクトを管理するための2つの最善の実践は、アーティファクトを透明性のある方法で頻繁かつ迅速に更新することと、ソーシャルコンピューティングツールの利用を増やすことである。アーティファクトを透明性のある方法で頻繁かつ迅速に更新することは、アーティファクトが常に最新の状態であり、プロジェクトに関わる全員が最新の情報にアクセスできることを保証するのに役立つ。ソーシャルコンピューティングツールの利用を増やすことは、チームメンバー間のコミュニケーションとコラボレーションを促進するのに役立ち、これは変化する環境でアーティファクトを管理するために不可欠である。他の選択肢は、それほど関連性が高くも効果的でもない。プロジェクトマネジメント計画書において使用する技術を定義することは、プロジェクトがアーティファクトを管理するために特定の技術を使用している場合にのみ重要である。コミュニケーションマネジメント計画書において使用する技術を定義することも、特定のコミュニケーションツールを使用している場合にのみ重要であり、変化する環境でアーティファクトを管理するためのベストプラクティスではない。過去のプロジェクトの履歴情報をテンプレートとして使用することは、開始時には役立つが、プロジェクトごとに必要なアーティファクトは異なり、プロジェクトが進行するにつれて変更が必要になる可能性があるため、柔軟性と適応力を持つことが重要である。(出典：O'Reillyプラットフォーム『Effective Project Management』第8版 第15章／PMBOKガイド第7版(2022) PMI 4.2.2 コミュニケーションモデル)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-74",
     "source": "EE-2",
-    "question": "A team is transitioning from a predictive to an agile approach. Which two obstacles are the team most likely to encounter? (Choose two)",
+    "question": "チームは予測型アプローチからアジャイルアプローチへ移行している。チームが遭遇する可能性が最も高い2つの障害は何か？(2つ選択)",
     "choices": [
       {
         "label": "A",
-        "text": "Management provides freedom for the team to decide."
+        "text": "マネジメントがチームに決定の自由を与える。"
       },
       {
         "label": "B",
-        "text": "Management continues to control the processes of delivery."
+        "text": "マネジメントがデリバリーのプロセスを管理し続ける。"
       },
       {
         "label": "C",
-        "text": "Management would like the team to learn and adapt."
+        "text": "マネジメントがチームに学習し適応してほしいと望む。"
       },
       {
         "label": "D",
-        "text": "Management support is lacking for team empowerment."
+        "text": "チームのエンパワーメントに対するマネジメントの支援が不足している。"
       },
       {
         "label": "E",
-        "text": "Management expects the team to keep their performance level."
+        "text": "マネジメントがチームに現在のパフォーマンスレベルを維持することを期待する。"
       }
     ],
     "correctAnswers": [
@@ -771,29 +771,29 @@ const REVIEW_DATA = [
       "D",
       "E"
     ],
-    "explanation": "B. Management continues to control the processes of delivery.\n\nD. Management support is lacking for team empowerment.\n\nDuring the transformation from a predictive to an agile approach, the common impediments the team will face are the lack of empowerment and the management style of controlling the process of delivery. A significant part of any Agile transformation is enabling an organization to move away from a command and control culture to an environment that is more focused on collaboration and cultivation. Transitioning from predictive development approaches to adaptive approaches and then to using agile methods is more than just stating that the organization will now be agile. It entails shifting the mindset starting at the executive level throughout the organization. Organizational policies, ways of working, reporting structure, and attitude should all be aligned. Some agile approaches entail iterations that are 1 to 2 weeks in duration with a demonstration of the accomplishments at the end of each iteration. The project team is very engaged with the planning for each iteration. The project team will determine the scope they can achieve based on a prioritized backlog, estimate the work involved, and work collaboratively throughout the iteration to develop the scope.",
+    "explanation": "予測型アプローチからアジャイルアプローチへの変革において、チームが直面する一般的な障害は、エンパワーメントの欠如と、デリバリープロセスを管理しようとするマネジメントのスタイルである。アジャイル変革の重要な部分は、組織が指揮統制型の文化から、協働と育成に重点を置く環境へと移行できるようにすることである。予測型開発アプローチから適応型アプローチへ、そしてアジャイル手法を使用する段階への移行は、組織が単に「これからアジャイルになる」と宣言するだけでは済まない。それは、経営幹部レベルから組織全体にわたるマインドセットの転換を伴う。組織のポリシー、働き方、報告体制、姿勢はすべて整合させる必要がある。一部のアジャイルアプローチは1〜2週間のイテレーションで構成され、各イテレーションの終わりに成果を発表する。プロジェクトチームは各イテレーションの計画に非常に積極的に関与し、優先順位付けされたバックログに基づいて達成可能なスコープを決定し、作業量を見積もり、イテレーション全体を通じて協働してスコープを開発する。(出典：Agile Foundations - Principles, practices and frameworks Peter Measey 第3章 アジャイルとビジネス 3.2.1／アジャイル実践ガイド(The Agile Practice Guide) PMI 第4章／PMBOKガイド第7版(2022) 2.3.4.3 組織、2.3.3 開発アプローチ)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-76",
     "source": "EE-2",
-    "question": "A new program manager checks the status of a project. The forecast shows the project is slightly behind schedule. However, in reporting, the project manager stated that the project is on track. The program manager asks the project manager to explain the discrepancy. The project manager explains that the forecast discrepancy is due to a new estimation technique.\n\nWhat should the project manager have done to avoid this discrepancy?",
+    "question": "新しいプログラムマネージャーがプロジェクトのステータスを確認した。予測では、プロジェクトはわずかにスケジュールより遅れていることが示されている。しかし、報告では、プロジェクトマネージャーはプロジェクトが順調であると述べていた。プログラムマネージャーはプロジェクトマネージャーにこの不一致について説明を求めた。プロジェクトマネージャーは、予測の不一致は新しい見積り手法によるものだと説明した。この不一致を避けるために、プロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Asked the program manager to use the old forecasting technique"
+        "text": "プログラムマネージャーに古い予測手法を使用するよう依頼する。"
       },
       {
         "label": "B",
-        "text": "Educated the program manager on the new forecasting technique"
+        "text": "新しい予測手法についてプログラムマネージャーを教育する。"
       },
       {
         "label": "C",
-        "text": "Aligned the project artifacts with the new estimation technique and provided them to the program manager"
+        "text": "新しい見積り手法に合わせてプロジェクトのアーティファクトを整合させ、プログラムマネージャーに提供する。"
       },
       {
         "label": "D",
-        "text": "Ensured that the program manager has the necessary knowledge to understand estimation techniques"
+        "text": "プログラムマネージャーが見積り手法を理解するために必要な知識を持っていることを確認する。"
       }
     ],
     "correctAnswers": [
@@ -802,29 +802,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "In this case, the project manager used a new forecasting technique but did not update the basis of forecasting. Thus the discrepancy between the project manager's and the new program manager's understanding of the forecast. The project manager should have aligned the project artifacts with the new estimation technique and provided them to the program manager. This would have ensured that the program manager had access to the updated project artifacts reflecting the new estimation technique. This would have provided accurate and consistent information for the program manager to assess the project's status. \n\nThe other answer choices are incorrect. Reverting to the old forecasting technique, educating the program manager on the new forecasting technique, and ensuring the program manager's knowledge may not address the discrepancy caused by the use of a new estimation technique.",
+    "explanation": "この場合、プロジェクトマネージャーは新しい予測手法を使用したが、予測の基準を更新しなかった。そのため、プロジェクトマネージャーと新しいプログラムマネージャーの予測に対する理解に不一致が生じた。プロジェクトマネージャーは、新しい見積り手法に合わせてプロジェクトのアーティファクトを整合させ、プログラムマネージャーに提供すべきであった。これにより、プログラムマネージャーは新しい見積り手法を反映した最新のプロジェクトアーティファクトにアクセスでき、プロジェクトのステータスを評価するための正確で一貫した情報が得られたはずである。他の選択肢は誤りである。古い予測手法に戻すこと、新しい予測手法についてプログラムマネージャーを教育すること、プログラムマネージャーの知識を確認することは、新しい見積り手法の使用によって生じた不一致には対応できない可能性がある。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid Robert K. Wysocki 第13章／PMBOKガイド第6版(2018) PMI 4/89 プロジェクトのアーティファクト(この場合は見積りの根拠)は常に最新の状態に保ち、すべてのステークホルダーがアクセスできるようにすべきである)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-78",
     "source": "EE-2",
-    "question": "During a retrospective meeting, some team members expressed that they strongly disagree with how the product owner and scrum master handled some issues related to the scope of the last cycle.\n\nWhat should the project manager do first?",
+    "question": "レトロスペクティブミーティングにおいて、一部のチームメンバーが、前サイクルのスコープに関連するいくつかの問題に対するプロダクトオーナーとスクラムマスターの対応に強く反対していることを表明した。プロジェクトマネージャーが最初に行うべきことは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Review the backlog with the product owner to ensure the scope is appropriate."
+        "text": "スコープが適切であることを確認するため、プロダクトオーナーとバックログをレビューする。"
       },
       {
         "label": "B",
-        "text": "Collect all available information from the team and address the problem."
+        "text": "チームから得られるすべての情報を収集し、問題に対処する。"
       },
       {
         "label": "C",
-        "text": "Schedule a meeting with the specific team members to discuss the issue."
+        "text": "特定のチームメンバーとミーティングを設定し、この問題について話し合う。"
       },
       {
         "label": "D",
-        "text": "Discuss the team's concerns with the product owner and the scrum master."
+        "text": "チームの懸念事項についてプロダクトオーナーとスクラムマスターと話し合う。"
       }
     ],
     "correctAnswers": [
@@ -833,29 +833,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "Project managers realize that conflicts are inevitable, but that good procedures or techniques can help resolve them. Once a conflict occurs, the project manager must first collect all available information from the team, study and address the problem, develop a situational approach or methodology, and set the appropriate atmosphere or climate.\n\nThe other answer choices are incorrect because they are not the first thing the project manager should do. The project manager needs to first understand the root cause of the conflict before they can start to develop a solution. It is important to include the entire team and make sure that everyone involved in the conflict feels comfortable and respected. The project manager is key in establishing and maintaining a safe, respectful, nonjudgmental environment that allows the project team to communicate openly.",
+    "explanation": "プロジェクトマネージャーは、対立は避けられないものであるが、良い手順や技法がそれを解決するのに役立つことを理解している。対立が発生した場合、プロジェクトマネージャーはまずチームから得られるすべての情報を収集し、問題を検討して対処し、状況に応じたアプローチや方法論を策定し、適切な雰囲気や環境を整える必要がある。他の選択肢は、プロジェクトマネージャーが最初に行うべきことではないため誤りである。プロジェクトマネージャーは、解決策を策定する前に、まず対立の根本原因を理解する必要がある。チーム全体を含め、対立に関わるすべての人が安心し、尊重されていると感じられるようにすることが重要である。プロジェクトマネージャーは、プロジェクトチームが安全で、敬意があり、判断を下さない環境でオープンにコミュニケーションできるようにする上で重要な役割を担う。(出典：PMBOKガイド第7版(2022) 2.2.4 リーダーシップスキル／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第7章 7.5)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-79",
     "source": "EE-2",
-    "question": "After the transition and completion of a large equipment installation project, the project manager receives a request from the customer to add some operational cost to the project budget for team-building activities. The project was completed under budget, project contingency reserves were not spent, and the team-building activities will ensure the operational team's optimal performance.\n\nWhat should the project manager do?",
+    "question": "大規模な設備設置プロジェクトの移行と完了後、プロジェクトマネージャーは、運用チームのチームビルディング活動のために、プロジェクト予算に運用コストを追加してほしいという依頼を顧客から受けた。プロジェクトは予算内で完了し、プロジェクトのコンティンジェンシー予備は使用されておらず、チームビルディング活動は運用チームの最適なパフォーマンスを確保するものである。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Reject the request and close the project financials."
+        "text": "依頼を拒否し、プロジェクトの財務をクローズする。"
       },
       {
         "label": "B",
-        "text": "Perform the integrated change control process."
+        "text": "統合変更管理プロセスを実施する。"
       },
       {
         "label": "C",
-        "text": "Approve the expenditure to ensure customer satisfaction."
+        "text": "顧客満足を確保するため、支出を承認する。"
       },
       {
         "label": "D",
-        "text": "Document the request in the lessons learned repository."
+        "text": "教訓リポジトリにこの依頼を記録する。"
       }
     ],
     "correctAnswers": [
@@ -864,33 +864,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The request should be declined as the project had been completed already and transitioned to the customer. Even if the project is in the close out phase the request should still be declined as the contingency reserves are not to be used for operational items and any other items that are not related to the project's success. Financials should be closed and the budget released to the organization for other business opportunities.",
+    "explanation": "プロジェクトは既に完了し、顧客に移行されているため、この依頼は拒否すべきである。プロジェクトがクローズアウト段階にあったとしても、コンティンジェンシー予備は運用に関する項目やプロジェクトの成功に関連しないその他の項目には使用すべきではないため、依頼は拒否されるべきである。財務はクローズされ、予算は他の事業機会のために組織に返却されるべきである。(出典：O'Reillyプラットフォーム『Mastering Project Time Management, Cost Control and Quality Management』11.3 コスト管理技法／PMBOKガイド第6版(2018) PMI 7.4 コストのコントロール プロジェクトコストコントロールに含まれるもの)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-81",
     "source": "EE-2",
-    "question": "A project manager is assigned to a new project with a team that the project manager knows well and has worked with a number of projects. The team's average velocity is eight points per sprint. Another team has some time between projects and assists the team with sizing stories. The table below shows the estimated story points for each of the new features that will be built. The business wants to confirm a delivery date as soon as possible.\n\n \n\nFEATURE\tPOINTS\n1\t24\n2\t13\n3\t8\n4\t21\n5\t13\nWhich two actions should the project manager take? (Choose two)",
+    "question": "プロジェクトマネージャーは、よく知っており、多くのプロジェクトで一緒に仕事をしてきたチームと共に新しいプロジェクトに割り当てられた。このチームの平均ベロシティは1スプリントあたり8ポイントである。別のチームがプロジェクトの間に時間的余裕があり、このチームのストーリーのサイジングを支援した。下表は、構築予定の新機能ごとの見積りストーリーポイントを示している(機能1：24ポイント、機能2：13ポイント、機能3：8ポイント、機能4：21ポイント、機能5：13ポイント)。ビジネス側はできるだけ早くデリバリー日を確定したいと考えている。プロジェクトマネージャーが取るべき行動を2つ選べ。",
     "choices": [
       {
         "label": "A",
-        "text": "Explain to the business that the team will need ten sprints to deliver the features."
+        "text": "チームがこれらの機能をデリバリーするには10スプリントが必要であるとビジネス側に説明する。"
       },
       {
         "label": "B",
-        "text": "Inform the business that the team that will be doing the work needs to estimate the feature sizes."
+        "text": "実際に作業を行うチーム自身が機能のサイズを見積る必要があることをビジネス側に伝える。"
       },
       {
         "label": "C",
-        "text": "Set up a meeting between both project teams to understand how their estimation of story sizes works."
+        "text": "両方のプロジェクトチームの間でミーティングを設定し、ストーリーサイズの見積り方法について理解を深める。"
       },
       {
         "label": "D",
-        "text": "Explain to the team that the sizing was already done and they will need to deliver the project in ten sprints."
+        "text": "サイジングは既に完了しており、プロジェクトを10スプリントでデリバリーする必要があることをチームに説明する。"
       },
       {
         "label": "E",
-        "text": "Discuss the business request with the team and determine a solution to plan for a five-sprint schedule."
+        "text": "ビジネス側の依頼についてチームと話し合い、5スプリントのスケジュールを計画するための解決策を決定する。"
       }
     ],
     "correctAnswers": [
@@ -901,29 +901,29 @@ const REVIEW_DATA = [
       "A",
       "C"
     ],
-    "explanation": "B. Inform the business that the team that will be doing the work needs to estimate the feature sizes.\n\nC. Set up a meeting between both project teams to understand how their estimation of story sizes works\n\nThe number of story points a team can complete in a given time is unique to the team. Story point estimating involves project team members assigning abstract, but relative, points of effort required to implement a user story. It tells the project team about the difficulty of the story considering the complexity, risks, and effort involved. Each team’s capacity is different so it is important that both teams are aligned on estimation techniques. Teams consider their story size, so they do not try to commit to more stories than there is team capacity to complete. The product owner will refine the stories based on what stories are remaining.",
+    "explanation": "あるチームが一定期間で完了できるストーリーポイントの数は、そのチームに固有のものである。ストーリーポイントによる見積りとは、プロジェクトチームメンバーが、ユーザーストーリーの実装に必要な労力に対して、抽象的だが相対的なポイントを割り当てることである。これは、複雑さ、リスク、必要な労力を考慮した、そのストーリーの難易度をプロジェクトチームに伝えるものである。各チームのキャパシティは異なるため、両チームが見積り技法について整合性を保つことが重要である。チームはストーリーのサイズを考慮し、チームのキャパシティを超えるストーリーにコミットしないようにする。プロダクトオーナーは、残っているストーリーに基づいてストーリーを精緻化する。(出典：Agile Foundations - Principles, practices and frameworks Peter Measey 7.3.2／アジャイル実践ガイド(The Agile Practice Guide) PMI 第5章 p.66 チームがストーリーポイントを使用する場合、一定期間にチームが完了できるストーリーポイントの数はそのチームに固有のものであることに注意する)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-82",
     "source": "EE-2",
-    "question": "A project manager is working on a project charter and discovers that two key stakeholders are transferring to other departments and replacements have not been identified yet.\n\nWhat should the project manager do next?",
+    "question": "プロジェクトマネージャーがプロジェクト憲章に取り組んでいる際、2人の主要なステークホルダーが他の部署へ異動することになり、後任がまだ決まっていないことが判明した。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Put the project on hold until the replacements are identified."
+        "text": "後任が決まるまでプロジェクトを保留する。"
       },
       {
         "label": "B",
-        "text": "Involve senior management to resolve the challenge."
+        "text": "上級管理層を関与させ、課題を解決する。"
       },
       {
         "label": "C",
-        "text": "Obtain support from the project sponsor to continue the project."
+        "text": "プロジェクトを継続するためにプロジェクトスポンサーから支援を得る。"
       },
       {
         "label": "D",
-        "text": "Perform an impact analysis of the possible delays."
+        "text": "起こりうる遅延の影響分析を実施する。"
       }
     ],
     "correctAnswers": [
@@ -932,29 +932,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The project manager should perform an impact analysis of the possible delays. This will help them understand the potential impact of the stakeholders leaving and identify any risks associated with the changes. Based on the impact analysis, the project manager can determine the best course of action and communicate the findings to the appropriate parties.\n\nThe other options are incorrect.\n\nPutting the project on hold or obtaining support from the project sponsor to continue the project may not be necessary or feasible and could cause delays and impact the project.\n\nInvolving senior management should only be done after performing an impact analysis to ensure that senior management is aware of the potential risks and impacts.",
+    "explanation": "プロジェクトマネージャーは、起こりうる遅延の影響分析を実施すべきである。これにより、ステークホルダーが異動することによる潜在的な影響を理解し、変化に関連するリスクを特定することができる。影響分析の結果に基づき、プロジェクトマネージャーは最善の対応策を決定し、適切な関係者に調査結果を伝えることができる。他の選択肢は誤りである。プロジェクトを保留すること、またはプロジェクトを継続するためにスポンサーの支援を得ることは、必要でない、または実現可能でない場合があり、プロジェクトに遅延や影響を与える可能性がある。上級管理層を関与させることは、潜在的なリスクや影響について上級管理層が認識できるよう、影響分析を実施した後にのみ行うべきである。(出典：Process Groups: A Practice Guide (2022) PMI ［インプットとアウトプット］／Project Managers Portable HandBook 第3版 7/281 ［7.1.5 計画アクションの順序］)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-83",
     "source": "EE-2",
-    "question": "Project team members inform their project manager of a challenge they are facing. This challenge will likely impact project timelines.\n\nWhat should the project manager do next?",
+    "question": "プロジェクトチームメンバーが、プロジェクトマネージャーに自分たちが直面している課題を報告した。この課題はプロジェクトのスケジュールに影響を与える可能性が高い。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Determine if the team's challenges impact the critical path."
+        "text": "チームの課題がクリティカルパスに影響するかどうかを判断する。"
       },
       {
         "label": "B",
-        "text": "Initiate a change request to extend the project timeline."
+        "text": "プロジェクトのスケジュールを延長するための変更要求を発行する。"
       },
       {
         "label": "C",
-        "text": "Work with the team to assess the impact on the overall project."
+        "text": "チームと協力して、プロジェクト全体への影響を評価する。"
       },
       {
         "label": "D",
-        "text": "Escalate to the project sponsor for proper resolution."
+        "text": "適切な解決のためにプロジェクトスポンサーへエスカレーションする。"
       }
     ],
     "correctAnswers": [
@@ -963,33 +963,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The project manager should consider the impact of the challenge and work with the team members to understand and evaluate the impact on the overall project. When any new issue or change request occurs, it is necessary to first understand if it impacts the project and then initiate a change control procedure as needed.\n\nThe other answer choices are incorrect. \n\nDetermining the impact on the critical path should come after understanding the challenge. \n\nInitiating a change request or escalating to the sponsor without proper evaluation can lead to premature and potentially unnecessary actions.",
+    "explanation": "プロジェクトマネージャーは、課題の影響を考慮し、チームメンバーと協力してプロジェクト全体への影響を理解し評価すべきである。新しい問題や変更要求が発生した場合、まずそれがプロジェクトに影響を与えるかどうかを理解し、その後必要に応じて変更管理手順を開始する必要がある。他の選択肢は誤りである。クリティカルパスへの影響を判断することは、課題を理解した後に行うべきことである。適切な評価を行わずに変更要求を発行したり、スポンサーへエスカレーションしたりすることは、時期尚早で不必要な対応につながる可能性がある。(出典：Agile Foundations - Principles, practices, and frameworks Peter Measey 第6章／Coaching Agile Teams Lyssa Adkins 第6章)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-86",
     "source": "EE-2",
-    "question": "For an agile project, some team members have other commitments or responsibilities. The project manager faces the challenge of not having a team that is fully dedicated to the project. How should the project manager ensure good velocity, cycle duration, and on-time iteration completion with a non-dedicated team? (Choose two)",
+    "question": "アジャイルプロジェクトにおいて、一部のチームメンバーは他の業務や責任を抱えている。プロジェクトマネージャーは、プロジェクトに専念できるチームを確保できないという課題に直面している。専任ではないチームで良好なベロシティ、サイクル期間、イテレーションの期限内完了を確保するために、プロジェクトマネージャーはどうすべきか？(2つ選択)",
     "choices": [
       {
         "label": "A",
-        "text": "Tell team members to log their time to guarantee that they prioritize their time effectively."
+        "text": "チームメンバーに自分の時間を記録させ、時間を効果的に優先させるようにする。"
       },
       {
         "label": "B",
-        "text": "Request that the product owner and stakeholders provide cross-functional team members."
+        "text": "プロダクトオーナーとステークホルダーに、クロスファンクショナルなチームメンバーを提供するよう依頼する。"
       },
       {
         "label": "C",
-        "text": "Get buy-in from the product owner and stakeholders for obtaining full-time team members."
+        "text": "プロダクトオーナーとステークホルダーから、フルタイムのチームメンバーを確保することについて賛同を得る。"
       },
       {
         "label": "D",
-        "text": "Revisit the resource log to ensure the most skilled resources are on the project."
+        "text": "最もスキルの高いリソースがプロジェクトに配置されていることを確認するため、リソースログを見直す。"
       },
       {
         "label": "E",
-        "text": "Deploy additional team members, irrespective of the story points or iterations."
+        "text": "ストーリーポイントやイテレーションに関係なく、追加のチームメンバーを配置する。"
       }
     ],
     "correctAnswers": [
@@ -1000,29 +1000,29 @@ const REVIEW_DATA = [
       "A",
       "D"
     ],
-    "explanation": "B. Request that the product owner and stakeholders provide cross-functional team members.\n\nC. Get buy-in from the product owner and stakeholders for obtaining full-time team members.\n\nDedicated team members are highly recommended in agile project development. The project manager should work with the product owner and stakeholders to communicate the importance of cross-functional and full-time team members. \n\nThe other answer choices are incorrect. \n\nTelling members to log their time does not guarantee that the team member will prioritize their time effectively. \n\nRevisiting the resource log does not directly address the issue. If skilled resources are not fully dedicated to the project, it can still impact velocity and on-time completion.\n\nDeploying additional team members may not be feasible and could be counterproductive and may increase cycle durations and reduce velocity.",
+    "explanation": "アジャイルプロジェクト開発において、専任のチームメンバーは強く推奨される。プロジェクトマネージャーは、プロダクトオーナーやステークホルダーと協力して、クロスファンクショナルかつフルタイムのチームメンバーの重要性を伝えるべきである。他の選択肢は誤りである。メンバーに時間を記録させることは、チームメンバーが時間を効果的に優先させることを保証しない。リソースログを見直すことは、問題に直接対応していない。スキルの高いリソースがプロジェクトに専念できていない場合、ベロシティや期限内完了に依然として影響を与える可能性がある。追加のチームメンバーを配置することは実現可能でない場合があり、逆効果になり、サイクル期間を増加させベロシティを低下させる可能性がある。(出典：The Agile Practice Guide PMI 4/44-45 ［アジャイルプロジェクト開発において専任のチームメンバーは必須である］／The Project Management Tool Kit 第3版 Tom Kendrick 第62章)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-89",
     "source": "EE-2",
-    "question": "A project manager has just received news that a new regulation has been adopted and the expectation is that the project will be delivered compliant with this new regulation. This was previously documented as a risk item with a low probability and a moderate impact. \n\nWhat should the project manager do first?",
+    "question": "プロジェクトマネージャーは、新しい規制が採択され、プロジェクトはこの新しい規制に準拠して提供されることが期待されているという知らせを受けた。これは以前、発生確率が低く影響が中程度のリスク項目として文書化されていた。プロジェクトマネージャーが最初に行うべきことは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Revisit the risk register and update the rating and response."
+        "text": "リスク登録簿を見直し、評価と対応策を更新する。"
       },
       {
         "label": "B",
-        "text": "Update the issue log and apply corrective action."
+        "text": "課題ログを更新し、修正措置を適用する。"
       },
       {
         "label": "C",
-        "text": "Revise the project management plan."
+        "text": "プロジェクトマネジメント計画書を改訂する。"
       },
       {
         "label": "D",
-        "text": "Initiate a change request for the updated regulation."
+        "text": "更新された規制についての変更要求を発行する。"
       }
     ],
     "correctAnswers": [
@@ -1031,29 +1031,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project manager should first revisit the risk register and update the rating and response for the risk of the new regulation. The probability of the risk has now increased to 100%, as the regulation has been adopted. The impact of the risk may also have increased, as the project is now required to be compliant with the regulation.\n\nThe other answer choices are not as relevant or effective. Updating the issue log and applying corrective action is not the first thing that the project manager should do. The project manager should first update the risk register to reflect the new information. Revising the project management plan may be necessary if the new regulation requires significant changes to the project scope. However, the project manager should first update the risk register to assess the impact of the new regulation on the project. Initiating a change request for the updated regulation may be necessary if the new regulation requires significant changes to the project scope. However, the project manager should first update the risk register to assess the impact of the new regulation on the project.",
+    "explanation": "プロジェクトマネージャーは最初に、リスク登録簿を見直し、新規制のリスクに関する評価と対応策を更新すべきである。規制が採択されたため、このリスクの発生確率は現在100%に増加している。また、プロジェクトが規制に準拠する必要があるため、リスクの影響も増大している可能性がある。他の選択肢は、それほど関連性が高くも効果的でもない。課題ログを更新し修正措置を適用することは、プロジェクトマネージャーが最初に行うべきことではない。プロジェクトマネージャーはまずリスク登録簿を更新すべきである。プロジェクトマネジメント計画書の改訂は、新規制がプロジェクトのスコープに大きな変更を必要とする場合に必要になることがあるが、プロジェクトマネージャーはまずリスク登録簿を更新して新規制の影響を評価すべきである。更新された規制についての変更要求の発行も、プロジェクトのスコープに大きな変更が必要な場合に必要になることがあるが、まずリスク登録簿を更新して影響を評価すべきである。(出典：PMBOKガイド第7版 185頁／The AMA Handbook of Project Management 第3版(2011) Paul C. Dinsmore, Jeannette Cabanis-Brewin AMACOM 第14章 リスクマネジメントの実践)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-95",
     "source": "EE-2",
-    "question": "A developer is expressing concerns about the time spent on daily standups, updating stories, creating tasks, and reviewing dependencies between stories instead of developing code. Other team members support the comment.\n\nWhat should a servant leader do next?",
+    "question": "ある開発者が、コードの開発ではなく、デイリースタンドアップ、ストーリーの更新、タスクの作成、ストーリー間の依存関係のレビューに費やす時間について懸念を表明している。他のチームメンバーもこの意見に賛同している。サーバントリーダーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Ask for suggestions on how to manage their time more effectively."
+        "text": "時間をより効果的に管理する方法について提案を求める。"
       },
       {
         "label": "B",
-        "text": "Reduce the interactions among team members to increase development time."
+        "text": "チームメンバー間のやり取りを減らし、開発時間を増やす。"
       },
       {
         "label": "C",
-        "text": "Explain the definition of an information radiator to the project team."
+        "text": "プロジェクトチームに情報ラジエーターの定義を説明する。"
       },
       {
         "label": "D",
-        "text": "Acknowledge the developer's frustration and emphasize the benefit of each activity."
+        "text": "開発者のフラストレーションを認め、各活動の利点を強調する。"
       }
     ],
     "correctAnswers": [
@@ -1062,29 +1062,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "A key role of a servant leader is to coach the team in agile practices and highlight the benefits of each activity and agile ceremony and how they can help the team complete their tasks faster. This can lead to increased motivation and productivity, as the team sees how their work contributes to the overall success of the project.\n\nThe other answer choices are incorrect. A servant leader encourages the team to interact to find effective solutions that can reduce the development time. The scrum master is the master of all Scrum practices and asking the team for suggestions is inappropriate. Explaining the definition of an information radiator is not relevant in the present scenario.",
+    "explanation": "サーバントリーダーの重要な役割は、チームにアジャイルプラクティスを指導し、各活動やアジャイルセレモニーの利点、そしてそれらがどのようにチームのタスク完了を早めるのに役立つかを強調することである。これにより、チームが自分たちの仕事が全体的な成功にどのように貢献しているかを実感できれば、モチベーションと生産性の向上につながる。他の選択肢は誤りである。サーバントリーダーは、開発時間を減らせるような効果的な解決策を見つけるためにチームの交流を促す。スクラムマスターはすべてのスクラムプラクティスの専門家であり、チームに提案を求めることは適切ではない。情報ラジエーターの定義を説明することは、現在の状況には関連性がない。(出典：O'Reillyプラットフォーム『Agile Project Management for Business Transformation Success』第4章／O'Reillyプラットフォーム『Improving Agile Retrospectives』第4章「レトロスペクティブファシリテーター」)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-96",
     "source": "EE-2",
-    "question": "A company is transitioning from a predictive to an agile project management approach. The project manager has noticed that team members have valuable ideas on how to improve productivity.\n\nHow can the project manager leverage these ideas?",
+    "question": "ある企業は予測型からアジャイルのプロジェクトマネジメントアプローチへ移行している。プロジェクトマネージャーは、チームメンバーが生産性を向上させるための貴重なアイデアを持っていることに気づいた。プロジェクトマネージャーはこれらのアイデアをどのように活用できるか？",
     "choices": [
       {
         "label": "A",
-        "text": "Make use of project retrospective sessions for discussions and learning."
+        "text": "プロジェクトのレトロスペクティブセッションを議論と学習のために活用する。"
       },
       {
         "label": "B",
-        "text": "Use iteration planning to discuss and adopt new ways of working."
+        "text": "イテレーション計画を使って新しい働き方について議論し採用する。"
       },
       {
         "label": "C",
-        "text": "Develop and share guidelines for team training and mentoring."
+        "text": "チームの研修とメンタリングのためのガイドラインを作成し共有する。"
       },
       {
         "label": "D",
-        "text": "Engage with the product owner to facilitate fast-tracking of the transition."
+        "text": "プロダクトオーナーと協力し、移行のファストトラッキングを促進する。"
       }
     ],
     "correctAnswers": [
@@ -1093,29 +1093,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "Project retrospective sessions are a key tool for continuous improvement in agile project management. They provide an opportunity for the team to reflect on the previous sprint, identify areas for improvement, and develop a plan to address those areas in the next sprint. In this case, the project manager can use the retrospectives to collect ideas from the team on how to improve productivity in the new agile environment. The project manager can then work with the team to develop and implement a plan to implement these ideas.\n\nThe other answer choices are not as relevant or effective. Iteration planning is not the best forum for discussing and adopting new ways of working; it is meant for planning for the work to be completed in the upcoming iteration. Developing and sharing guidelines for team training and mentoring is not the best way to leverage the team's ideas in the immediate term. The product owner is responsible for prioritizing the product backlog and ensuring that the team is working on the most important requirements. It is not the product owner's responsibility to facilitate the transition to agile. Also, fast-tracking the transition does not guarantee the team members have learned how best to work in the new agile environment.",
+    "explanation": "プロジェクトのレトロスペクティブセッションは、アジャイルプロジェクトマネジメントにおける継続的改善のための重要なツールである。これらは、チームが前のスプリントを振り返り、改善すべき領域を特定し、次のスプリントでそれらに対応する計画を立てる機会を提供する。この場合、プロジェクトマネージャーは、新しいアジャイル環境での生産性向上に関するアイデアをチームから収集するためにレトロスペクティブを利用できる。その後、プロジェクトマネージャーはチームと協力して、これらのアイデアを実装する計画を策定し実行できる。他の選択肢は、それほど関連性が高くも効果的でもない。イテレーション計画は、新しい働き方について議論し採用するための最適な場ではなく、次のイテレーションで完了すべき作業を計画するためのものである。研修とメンタリングのガイドラインを作成し共有することは、即時的にチームのアイデアを活用する最良の方法ではない。プロダクトオーナーはプロダクトバックログの優先順位付けと、チームが最も重要な要件に取り組んでいることを確認する責任を負う。アジャイルへの移行を促進することはプロダクトオーナーの責任ではない。また、移行をファストトラッキングしても、チームメンバーが新しいアジャイル環境で最善の働き方を学んだことを保証するものではない。(出典：PMBOKガイド第7版 127頁、180頁／Agile Approaches on Large Projects in Large Organizations Brian Hobbs, Yvan Petit セクション4「伝統的手法からアジャイル手法への移行」／The Agile Practice Guide PMI 第6章 72-82頁「アジャイル変更管理に関連する課題とその回避方法」)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-98",
     "source": "EE-2",
-    "question": "During product demonstration, a stakeholder suggests that the product does not meet expectations. What artifact should the project manager use to assess the stakeholder's suggestion?",
+    "question": "プロダクトデモンストレーションの最中、あるステークホルダーが、プロダクトが期待に応えていないと指摘した。プロジェクトマネージャーは、このステークホルダーの指摘を評価するためにどのアーティファクトを使用すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Minimum viable product (MVP) description"
+        "text": "実用最小限の製品(MVP)の説明"
       },
       {
         "label": "B",
-        "text": "Definition of done (DoD)"
+        "text": "完了の定義(DoD)"
       },
       {
         "label": "C",
-        "text": "Definition of ready (DoR)"
+        "text": "レディの定義(DoR)"
       },
       {
         "label": "D",
-        "text": "Acceptance criteria on the user story"
+        "text": "ユーザーストーリーの受入基準"
       }
     ],
     "correctAnswers": [
@@ -1124,29 +1124,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project manager should use the acceptance criteria on the user story to assess the stakeholder's suggestion. The acceptance criteria are the specific requirements that must be met for the product to be considered complete and acceptable to the stakeholder. They are typically defined in the user story, which is a short description of a feature or functionality that the product must have.\n\nThe other answers are incorrect. The definition of done (DoD) and definition of ready (DoR) are also important artifacts, but they are more general in nature. The DoD defines the criteria that must be met for the product to be considered \"done,\" while the DoR defines the criteria that must be met for the product to be considered \"ready\" to be worked on. The MVP description is not as relevant to this situation, as it is typically used to define the minimum set of features that must be included in the product in order to be considered viable.",
+    "explanation": "プロジェクトマネージャーは、ステークホルダーの指摘を評価するためにユーザーストーリーの受入基準を使用すべきである。受入基準は、プロダクトが完了し、ステークホルダーにとって受け入れ可能であると見なされるために満たすべき特定の要件である。これらは通常、プロダクトが持つべき機能や特性についての短い説明であるユーザーストーリーで定義される。他の選択肢は誤りである。完了の定義(DoD)とレディの定義(DoR)も重要なアーティファクトであるが、より一般的な性質を持つ。DoDはプロダクトが「完了」と見なされるために満たすべき基準を定義し、DoRはプロダクトが取り組みを「開始できる」と見なされるために満たすべき基準を定義する。MVPの説明は、通常プロダクトが実用可能と見なされるために含むべき最小限の機能セットを定義するために使用されるため、この状況にはあまり関連性がない。(出典：Essential Scrum: A Practical Guide to the Most Popular Agile Process 第4章／The Agile Practice Guide PMI 「定義」 151頁)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-100",
     "source": "EE-2",
-    "question": "A project manager is experiencing issues with the functional manager of a project team member. The functional manager has given the team member another assignment and has told the team member that the previous project should be a lower priority.\n\nWhat should the project manager do?",
+    "question": "プロジェクトマネージャーは、プロジェクトチームメンバーのファンクショナルマネージャーとの間で問題を抱えている。このファンクショナルマネージャーは、そのチームメンバーに別の業務を割り当て、以前のプロジェクトの優先度を下げるべきだと伝えた。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Escalate the issue to senior management."
+        "text": "上級管理層へエスカレーションする。"
       },
       {
         "label": "B",
-        "text": "Communicate the importance of the project to the team."
+        "text": "チームにプロジェクトの重要性を伝える。"
       },
       {
         "label": "C",
-        "text": "Refer the functional manager to the project charter."
+        "text": "ファンクショナルマネージャーをプロジェクト憲章に従わせる。"
       },
       {
         "label": "D",
-        "text": "Request additional resources for your project."
+        "text": "プロジェクトのために追加リソースを要求する。"
       }
     ],
     "correctAnswers": [
@@ -1155,29 +1155,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The best way for a project manager to address an issue with a functional manager who is giving a team member a lower-priority assignment is to escalate the issue to senior management. This is the most direct and effective way to resolve the issue and ensure that the project team member has the time and resources they need to complete their project tasks.\n\nThe other answer choices are not as effective. Communicating the importance of the project to the team is important, but it is unlikely to resolve the issue with the functional manager. Referring the functional manager to the project charter may help to clarify the project's priorities, but it is unlikely to change the functional manager's behavior. Requesting additional resources for your project may be necessary, but it is important to address the issue with the functional manager first. By escalating the issue to senior management, the project manager can help to ensure that the project team member has the support they need to complete their project tasks.",
+    "explanation": "チームメンバーに低優先度の業務を割り当てるファンクショナルマネージャーとの問題に対処する最善の方法は、上級管理層へエスカレーションすることである。これは、問題を解決し、プロジェクトチームメンバーがプロジェクトのタスクを完了するために必要な時間とリソースを確保するための、最も直接的かつ効果的な方法である。他の選択肢はそれほど効果的ではない。チームにプロジェクトの重要性を伝えることは重要であるが、ファンクショナルマネージャーとの問題を解決する可能性は低い。ファンクショナルマネージャーをプロジェクト憲章に従わせることは、プロジェクトの優先順位を明確にするのに役立つかもしれないが、ファンクショナルマネージャーの行動を変える可能性は低い。プロジェクトのために追加リソースを要求することは必要かもしれないが、まずファンクショナルマネージャーとの問題に対応することが重要である。上級管理層へエスカレーションすることで、プロジェクトマネージャーはプロジェクトチームメンバーがプロジェクトのタスクを完了するために必要な支援を確実に受けられるようにすることができる。(出典：PMBOKガイド第7版(2021)／Project Management: The Managerial Process 4.3 チャータリング)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-103",
     "source": "EE-2",
-    "question": "An agile team is developing a product with strict budget constraints. The customer is requesting a new independent feature be added to the solution in development. The project manager is concerned that adding the new feature will exceed the budget. \n\nWhat should the project manager do next?",
+    "question": "あるアジャイルチームは、厳しい予算制約のもとでプロダクトを開発している。顧客は、開発中のソリューションに新しい独立した機能を追加するよう要求している。プロジェクトマネージャーは、新機能の追加が予算を超過することを懸念している。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Evaluate the new feature with the customer."
+        "text": "顧客と共に新機能を評価する。"
       },
       {
         "label": "B",
-        "text": "Reject adding the new feature."
+        "text": "新機能の追加を拒否する。"
       },
       {
         "label": "C",
-        "text": "Add the new feature to the product backlog."
+        "text": "新機能をプロダクトバックログに追加する。"
       },
       {
         "label": "D",
-        "text": "Reprioritize the product backlog."
+        "text": "プロダクトバックログの優先順位を再設定する。"
       }
     ],
     "correctAnswers": [
@@ -1186,29 +1186,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The project manager should first evaluate the new feature with the customer to determine if it is feasible and meets the customer's needs within the budget. This approach ensures that the project manager has a clear understanding of the feature's implications before making a decision. If the new feature is not feasible, the project manager should explain this to the customer and offer alternative solutions. If the new feature is feasible, the project manager can work with the customer to prioritize the feature and determine when it can be implemented. This evaluation allows for an informed decision-making process and ensures that customer needs are considered, which is a fundamental aspect of agile development. \n\nThe other options are incorrect.\n\nRejecting the new feature outright without evaluating it with the customer is incorrect because it is important to communicate with the customer and understand their needs. Agile encourages flexibility and collaboration with stakeholders, including the customer. By rejecting the feature without discussion, the project manager may miss valuable insights and potentially risk customer satisfaction.\n\nAdding the new feature to the product backlog without evaluating it first is incorrect because it assumes that the feature will definitely be implemented, even without considering budget constraints or customer priorities.\n\nReprioritizing the product backlog is incorrect because the project has a strict budget, and adding the new feature may not be feasible. Blindly reprioritizing the backlog without evaluating the new feature's value, impact, and alignment with the customer's needs and budget constraints could lead to poor decision-making and potential budget overruns.",
+    "explanation": "プロジェクトマネージャーはまず、顧客と共に新機能を評価し、それが予算内で実現可能であり顧客のニーズを満たすかどうかを判断すべきである。このアプローチにより、プロジェクトマネージャーは決定を下す前に機能の影響を明確に理解できる。新機能が実現可能でない場合、プロジェクトマネージャーはそれを顧客に説明し、代替の解決策を提示すべきである。新機能が実現可能であれば、プロジェクトマネージャーは顧客と協力して機能の優先順位付けと実装時期を決定できる。この評価により、情報に基づいた意思決定が可能になり、顧客のニーズが考慮されることが保証される。これはアジャイル開発の基本的な側面である。他の選択肢は誤りである。顧客と評価せずに新機能を拒否することは誤りであり、顧客とコミュニケーションを取り、そのニーズを理解することが重要である。アジャイルは、顧客を含むステークホルダーとの柔軟性と協働を促進する。議論せずに機能を拒否することで、プロジェクトマネージャーは貴重な洞察を見逃し、顧客満足度を損なうリスクがある。評価せずに新機能をプロダクトバックログに追加することは誤りである。これは予算制約や顧客の優先順位を考慮せずに、その機能が必ず実装されると仮定することになる。プロダクトバックログの優先順位を再設定することは誤りである。プロジェクトには厳しい予算があり、新機能の追加が実現可能でない可能性がある。新機能の価値、影響、顧客のニーズや予算制約との整合性を評価せずに闇雲にバックログを再設定することは、不適切な意思決定や予算超過につながる可能性がある。(出典：The Agile Practice Guide PMI 5.2.3「バックログのリファインメント」52頁／PMBOKガイド第7版(2022) 2.3.3 開発アプローチ、3.4 価値への注力)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-104",
     "source": "EE-2",
-    "question": "A group of agile team members have just completed in-person training for a number of critical and complex organizational processes. The next day, several team members voiced concerns and said they were having trouble remembering what they learned. Another training session is available next week, but the team is already behind schedule on some critical tasks, and the training takes a full workday.\n\nWhat should the project manager do to address this concern?",
+    "question": "一部のアジャイルチームメンバーが、いくつかの重要かつ複雑な組織のプロセスに関する対面研修を完了した。翌日、複数のチームメンバーが、学んだことを覚えていないことに懸念を示した。別の研修セッションは来週利用可能だが、チームは既に重要なタスクのスケジュールが遅れており、研修には1日全体を要する。プロジェクトマネージャーはこの懸念にどう対処すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Ask team members to partner with one another to share the information they learned."
+        "text": "チームメンバーに、学んだ情報を共有するためにペアを組むよう依頼する。"
       },
       {
         "label": "B",
-        "text": "Create an information radiator with the key takeaways from the training."
+        "text": "研修の重要なポイントをまとめた情報ラジエーターを作成する。"
       },
       {
         "label": "C",
-        "text": "Invite team members to reattend the training if they need a refresher."
+        "text": "復習が必要な場合は、研修への再参加をチームメンバーに勧める。"
       },
       {
         "label": "D",
-        "text": "Refer team members to training review notes to find the information they need."
+        "text": "チームメンバーに、必要な情報を見つけるために研修のレビューノートを参照させる。"
       }
     ],
     "correctAnswers": [
@@ -1217,29 +1217,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "Creating an information radiator with the key takeaways from the training is the most effective and time-sensitive solution. Information radiators, also known as big visible charts (BVCs), are visible, physical displays that provide information, enabling timely knowledge sharing. They are posted where people can easily see the information, allowing everyone to review key information at a glance and reinforcing learning. An information radiator provides a more visible and easily accessible solution, which is often preferred in agile contexts.\n\nThe other options are incorrect because they are not the most reliable or efficient ways to address the team's concerns given the time constraints.\n\nAsking the team to partner with one another and share information may not be efficient and could lead to inconsistent information sharing and does not address the problem of information recall. The information each team member retained could be incomplete, incorrect, or misinterpreted. \n\nReattending the training is not an optimal solution when the team is already behind schedule and can't afford to spend another full workday on training. This would further delay the completion of critical tasks and could negatively impact the project.\n\nWhile creating review notes might be helpful, an information radiator is a better solution in this agile environment. The main reason is that information radiators are always visible, making it easy for team members to quickly refer to the information when needed. Review notes might not be as readily accessible or visible.",
+    "explanation": "研修の重要なポイントをまとめた情報ラジエーターを作成することが、最も効果的かつ時間的制約に適した解決策である。情報ラジエーター(ビッグビジブルチャート、BVC)は、情報を提供し、タイムリーな知識共有を可能にする、目に見える物理的な掲示物である。これらは人々が容易に情報を確認できる場所に掲示され、誰もが一目で重要な情報を確認でき、学習を強化できる。情報ラジエーターは、より目に見えやすくアクセスしやすい解決策を提供し、アジャイルの文脈ではしばしば好まれる。他の選択肢は、時間的制約を考慮すると、チームの懸念に対処する最も信頼できる、または効率的な方法ではないため誤りである。チームにペアを組んで情報を共有するよう依頼することは効率的でない可能性があり、不整合な情報共有につながり、情報の記憶の問題に対応していない。各チームメンバーが保持した情報は不完全、不正確、または誤って解釈されている可能性がある。研修への再参加は、チームが既にスケジュールより遅れており、別の1日全体を研修に費やす余裕がない場合、最適な解決策ではない。これにより重要なタスクの完了がさらに遅れ、プロジェクトに悪影響を及ぼす可能性がある。レビューノートを作成することは役立つかもしれないが、このアジャイル環境では情報ラジエーターの方が優れた解決策である。主な理由は、情報ラジエーターが常に目に見える状態にあり、チームメンバーが必要なときに迅速に情報を参照できることである。レビューノートはそれほどアクセスしやすく、または目立つものではない可能性がある。(出典：PMBOKガイド第7版(2022) 2.7.3.2 情報ラジエーター)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-105",
     "source": "EE-2",
-    "question": "During the planning phase of a project, the project manager is having trouble identifying stakeholders. Without input from the correct stakeholders, getting user feedback will be challenging.\n\nWhat should the project manager do?",
+    "question": "プロジェクトの計画フェーズにおいて、プロジェクトマネージャーはステークホルダーの特定に苦労している。適切なステークホルダーからの入力がなければ、ユーザーフィードバックを得ることが難しくなる。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Review the stakeholder engagement plan."
+        "text": "ステークホルダーエンゲージメント計画書を見直す。"
       },
       {
         "label": "B",
-        "text": "Inform the project sponsors."
+        "text": "プロジェクトスポンサーに知らせる。"
       },
       {
         "label": "C",
-        "text": "Refer to the project charter to identify stakeholders."
+        "text": "プロジェクト憲章を参照してステークホルダーを特定する。"
       },
       {
         "label": "D",
-        "text": "Review the project scope document."
+        "text": "プロジェクトスコープ文書を見直す。"
       }
     ],
     "correctAnswers": [
@@ -1248,29 +1248,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "During the planning phase of a project, the project manager should refer to the project charter to identify stakeholders. The project charter typically includes information about the project's purpose, objectives, and stakeholders. By reviewing the project charter, the project manager can identify the stakeholders who are critical to the success of the project and ensure that they are included in the stakeholder engagement plan.\nReviewing the stakeholder engagement plan, informing the project sponsors, and reviewing the project scope document may also be helpful, but referring to the project charter is the most direct and effective way to identify stakeholders.\nThe stakeholder engagement plan is typically not created until stakeholders are identified and analyzed. \nInforming project sponsors is not a comprehensive or efficient approach. \nReviewing the scope document may not be as comprehensive as the project charter and is typically not used to identify stakeholders.",
+    "explanation": "プロジェクトの計画フェーズにおいて、プロジェクトマネージャーはプロジェクト憲章を参照してステークホルダーを特定すべきである。プロジェクト憲章には通常、プロジェクトの目的、目標、ステークホルダーに関する情報が含まれている。プロジェクト憲章を見直すことで、プロジェクトマネージャーはプロジェクトの成功に重要なステークホルダーを特定し、彼らがステークホルダーエンゲージメント計画に含まれるようにすることができる。ステークホルダーエンゲージメント計画書を見直すこと、プロジェクトスポンサーに知らせること、プロジェクトスコープ文書を見直すことも役立つ場合があるが、プロジェクト憲章を参照することがステークホルダーを特定する最も直接的で効果的な方法である。ステークホルダーエンゲージメント計画は通常、ステークホルダーが特定され分析されるまで作成されない。プロジェクトスポンサーに知らせることは、包括的または効率的なアプローチではない。スコープ文書を見直すことは、プロジェクト憲章ほど包括的ではない可能性があり、通常ステークホルダーを特定するために使用されるものではない。(出典：PMBOK第5版／PMBOKガイド第7版(2022) PMI 2.1 ステークホルダーパフォーマンスドメイン／Project Management: A Systems Approach to Planning, Scheduling, and Controlling(2013) Harold Kerzner John Wiley 第10章 480頁)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-106",
     "source": "EE-2",
-    "question": "The development of a final project schedule is delayed due to the inability to negotiate an agreement with one of the vendors needed for successful project delivery.\n\nWhat should the project manager do?",
+    "question": "最終的なプロジェクトスケジュールの策定が、プロジェクトの成功に必要なベンダーの1社との契約合意の交渉が成立しないために遅れている。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Circulate meeting minutes and discuss the agreed and outstanding clauses with the project team and customer."
+        "text": "議事録を回覧し、合意済みおよび未解決の条項についてプロジェクトチームと顧客と話し合う。"
       },
       {
         "label": "B",
-        "text": "Meet with the vendor to discuss a path forward and identify an alternative vendor if necessary."
+        "text": "ベンダーと面談し、今後の進め方について話し合い、必要に応じて代替ベンダーを特定する。"
       },
       {
         "label": "C",
-        "text": "Meet with the project sponsor and seek their support in replacing the vendor due to the inability to negotiate an agreement."
+        "text": "プロジェクトスポンサーと面談し、合意の交渉が成立しないことを理由にベンダーを変更することについて支援を求める。"
       },
       {
         "label": "D",
-        "text": "Communicate the project needs and influence the vendor to accept the terms as soon as possible for successful project delivery."
+        "text": "プロジェクトのニーズを伝え、プロジェクトを成功させるためにベンダーに条件を早急に受け入れるよう影響を与える。"
       }
     ],
     "correctAnswers": [
@@ -1279,29 +1279,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "It is in the best interest of the project to come to terms with the vendor; if not able to do so, the project manager should look for alternative vendors.\n\nThe other answer choices are incorrect. \n\nCirculating the meeting minutes does not address or resolve the issue.\n\nMeeting with the project sponsor and seeking their support in replacing the vendor is premature. It may be necessary in extreme cases, but it's typically a last resort. \n\nTrying to pressure the vendor does not guarantee a timely or satisfactory resolution.",
+    "explanation": "ベンダーと条件について合意することがプロジェクトの最善の利益であり、それができない場合、プロジェクトマネージャーは代替ベンダーを探すべきである。他の選択肢は誤りである。議事録を回覧することは問題に対応または解決しない。プロジェクトスポンサーと面談し、ベンダー変更の支援を求めることは時期尚早である。極端な場合には必要になることもあるが、それは通常最後の手段である。ベンダーに圧力をかけようとすることは、タイムリーまたは満足のいく解決を保証しない。(出典：PMBOKガイド第6版(2018) PMI 4/78 ［4.1.1 プロジェクト憲章の作成：インプット 4.1.1.2 合意書］［4.2.2 プロジェクトマネジメント計画書の作成：ツールと技法 4.2.2.4 会議］／The Project Management Tool Kit: 100 Tips and Techniques for Getting the Job Done Right 第41章「契約の交渉」)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-107",
     "source": "EE-2",
-    "question": "A project manager was recently assigned to an information technology project. The project is in the initiation stage, and the team found a compatibility issue in the technical infrastructure used by the vendor and the organization.\n\nWhat initial step should the project manager take to address this issue effectively?",
+    "question": "プロジェクトマネージャーは最近、ある情報技術プロジェクトに割り当てられた。プロジェクトは立ち上げ段階にあり、チームはベンダーと組織が使用する技術基盤に互換性の問題があることを発見した。この問題に効果的に対処するために、プロジェクトマネージャーが最初に取るべきステップは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Examine if there is an alternate solution."
+        "text": "代替策があるかどうかを検討する。"
       },
       {
         "label": "B",
-        "text": "Escalate the issue to the technical infrastructure team."
+        "text": "技術基盤チームへ問題をエスカレーションする。"
       },
       {
         "label": "C",
-        "text": "Check the lessons learned database."
+        "text": "教訓データベースを確認する。"
       },
       {
         "label": "D",
-        "text": "Consult the project sponsor about the issue."
+        "text": "この問題についてプロジェクトスポンサーに相談する。"
       }
     ],
     "correctAnswers": [
@@ -1310,29 +1310,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "Lessons learned register must be used to retrieve information from previous projects to help other projects during initiation. The project manager needs to check if this compatibility issue happened before in other projects within the organization. \n\nThe other answer choices are incorrect.\n\nExamining if there is an alternate solution should be the next step if the project manager does not find this issue in the lessons learned. The lessons learned database may have information regarding alternate solutions, what has been considered, what has been tried in the past, and other information that could provide insight and potentially save time by avoiding solutions that have already been disqualified.\n\nEscalating the issue to the technical infrastructure team is incorrect because the project manager cannot escalate any issue before assessing it first. \n\nConsulting the project sponsor about the issue is incorrect because the project manager should not consult the project sponsor for technical issues as a first option, even if the project sponsor has technical expertise.",
+    "explanation": "教訓登録簿は、立ち上げ段階で他のプロジェクトを支援するために、過去のプロジェクトからの情報を取得するために使用されなければならない。プロジェクトマネージャーは、この互換性の問題が組織内の他のプロジェクトで以前に発生したかどうかを確認する必要がある。他の選択肢は誤りである。代替策があるかどうかを検討することは、プロジェクトマネージャーが教訓の中にこの問題を見つけられなかった場合の次のステップであるべきである。教訓データベースには、代替策に関する情報、過去に検討されたこと、試みられたことなど、すでに不採用となった解決策を避けることで時間を節約できる洞察が含まれている可能性がある。技術基盤チームへ問題をエスカレーションすることは、プロジェクトマネージャーが最初に評価せずに問題をエスカレーションすることはできないため誤りである。この問題についてプロジェクトスポンサーに相談することは誤りである。プロジェクトマネージャーは、プロジェクトスポンサーが技術的な専門知識を持っていたとしても、技術的な問題について最初の選択肢としてスポンサーに相談すべきではない。(出典：PMBOKガイド第6版(2018) PMI 4/104／Project Management: The Managerial Process 第14章 511頁)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-108",
     "source": "EE-2",
-    "question": "A project team realizes that the product's architecture will not support the growing number of users.\n\nWhat should the project manager do?",
+    "question": "プロジェクトチームは、プロダクトのアーキテクチャが増加するユーザー数をサポートできないことに気づいた。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Assign a team member to execute performance testing and ensure the product's performance is acceptable."
+        "text": "チームメンバーにパフォーマンステストの実施を割り当て、プロダクトのパフォーマンスが許容範囲であることを確認する。"
       },
       {
         "label": "B",
-        "text": "Hire external experts to assess the product architecture and come up with a resolution plan."
+        "text": "外部の専門家を雇い、プロダクトアーキテクチャを評価し解決計画を策定する。"
       },
       {
         "label": "C",
-        "text": "Engage with the product owner on the new development and prioritize the solution on the product backlog."
+        "text": "プロダクトオーナーと協力し、新しい開発に取り組み、プロダクトバックログでソリューションの優先順位を上げる。"
       },
       {
         "label": "D",
-        "text": "Negotiate with the stakeholders to slow down product development until a viable solution is available."
+        "text": "プロダクトの開発を、実行可能な解決策が得られるまで遅らせることについてステークホルダーと交渉する。"
       }
     ],
     "correctAnswers": [
@@ -1341,29 +1341,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The first step for the project manager will be to share this vital information with the product owner, so that business stakeholders may be invited to share their thoughts and value considerations made, then the product backlog can be reprioritized to reflect this. This sequence allows for company, team, and business stakeholder concerns to be adequately addressed.\n\nThe other answer choices are incorrect. Performance testing happens concurrently during development or at the end of the iteration/release and will not solve the identified gap but only highlight it down the road. Hiring external experts may be premature and may not be approved/available in the budget. Negotiating with the stakeholders to slow down product development until a viable solution is available may not be the best option for the company.",
+    "explanation": "プロジェクトマネージャーが最初に行うべきことは、この重要な情報をプロダクトオーナーと共有し、ビジネスステークホルダーが自分たちの考えや価値の検討事項を共有できるようにし、その上でプロダクトバックログを再優先順位付けしてこれを反映させることである。この順序により、会社、チーム、ビジネスステークホルダーの懸念事項に適切に対処できる。他の選択肢は誤りである。パフォーマンステストは開発中またはイテレーション/リリースの終わりに並行して行われるものであり、特定されたギャップを解決するものではなく、後でそれを浮き彫りにするだけである。外部の専門家を雇うことは時期尚早であり、予算で承認されていない、または利用できない可能性がある。実行可能な解決策が得られるまでプロダクトの開発を遅らせることについてステークホルダーと交渉することは、会社にとって最善の選択肢ではない可能性がある。(出典：PMBOKガイド第7版 76頁、185頁、レトロスペクティブ 127頁、180頁／The Agile Practice Guide PMI 附属書A1 「第8章 プロジェクト品質マネジメント」)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-111",
     "source": "EE-2",
-    "question": "During the testing phase of a technical project, the project manager discovers some issues with the final product and subsequently learns that after negotiations, important product features were excluded from the contract's scope in an effort to minimize costs for the client.\n\nWhat should the project manager do to resolve the issue?",
+    "question": "技術プロジェクトのテストフェーズにおいて、プロジェクトマネージャーは最終製品にいくつかの問題を発見し、その後、クライアントのコストを最小化するための交渉の結果、重要なプロダクト機能が契約のスコープから除外されていたことを知った。この問題を解決するためにプロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Escalate the issue to the sponsor to make a decision to redefine the scope and solve the problem."
+        "text": "スポンサーへ問題をエスカレーションし、スコープを再定義して問題を解決する決定をしてもらう。"
       },
       {
         "label": "B",
-        "text": "Work with the client to negotiate and ensure the inclusion of the missing crucial features in the project."
+        "text": "クライアントと協力して交渉し、不足している重要な機能がプロジェクトに含まれるようにする。"
       },
       {
         "label": "C",
-        "text": "Continue with the project as planned and register the contract scope issue in the issue log."
+        "text": "計画通りにプロジェクトを継続し、契約スコープの問題を課題ログに記録する。"
       },
       {
         "label": "D",
-        "text": "Review the lessons learned to find a solution for contract negotiation and scope issues."
+        "text": "教訓を見直し、契約交渉とスコープの問題に対する解決策を見つける。"
       }
     ],
     "correctAnswers": [
@@ -1372,29 +1372,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "In this case, the project manager has discovered a deficiency in the scope and needs to remedy it, which includes informing the client and negotiating a strategy for the client to deliver the product with the important features. Negotiating with the client to include the missing features is a proactive and collaborative approach to resolving the problem.\n\nThe other answer choices are incorrect. \n\nEscalating the issue to the sponsor is not the best course of action at this stage, as the project manager should take a more proactive approach before escalating the issue.\n\nAdding the issue to the issue log and reviewing the lessons learned will not solve the problem. Continuing with the project as planned will likely lead to dissatisfied customers and additional costs down the road.",
+    "explanation": "この場合、プロジェクトマネージャーはスコープの欠陥を発見しており、それを修正する必要がある。これには、クライアントに通知し、重要な機能を含めてプロダクトを提供するための戦略を交渉することが含まれる。クライアントと交渉して不足している機能を含めることは、問題を解決するための積極的かつ協働的なアプローチである。他の選択肢は誤りである。この段階でスポンサーへ問題をエスカレーションすることは最善の対応ではない。プロジェクトマネージャーはエスカレーションする前に、より積極的なアプローチを取るべきである。課題ログに問題を追加し教訓を見直すことは問題を解決しない。計画通りにプロジェクトを継続することは、顧客の不満や追加コストにつながる可能性が高い。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid Robert K. Wysocki 第13章「スコーピングプロセスグループ」／PMBOKガイド第7版(2022) 2.5 プロジェクト作業パフォーマンスドメイン)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-112",
     "source": "EE-2",
-    "question": "An experienced project manager joins an ongoing project and wants to estimate the amount of time required to tackle several complex tasks. The team uses a kanban board but is open to new approaches. The project manager suggests using story points.\n\nWhat is the first thing the team should do before implementing this new approach?",
+    "question": "経験豊富なプロジェクトマネージャーが進行中のプロジェクトに参加し、いくつかの複雑なタスクに必要な時間を見積りたいと考えている。チームはカンバンボードを使用しているが、新しいアプローチにも前向きである。プロジェクトマネージャーはストーリーポイントの使用を提案した。この新しいアプローチを導入する前に、チームが最初に行うべきことは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Calculate the story points only for new backlog items."
+        "text": "新しいバックログ項目のみについてストーリーポイントを算出する。"
       },
       {
         "label": "B",
-        "text": "Estimate the story points required for the entire task board."
+        "text": "タスクボード全体に必要なストーリーポイントを見積る。"
       },
       {
         "label": "C",
-        "text": "Convert all work in progress (WIP) items to story points."
+        "text": "進行中(WIP)のすべての項目をストーリーポイントに変換する。"
       },
       {
         "label": "D",
-        "text": "Measure and track story points over several sprints."
+        "text": "複数のスプリントにわたってストーリーポイントを測定・追跡する。"
       }
     ],
     "correctAnswers": [
@@ -1403,29 +1403,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The first thing the team should do before adopting the new approach of using story points is to convert all work in progress limits to story points. A WIP item is any task or activity that is currently being worked on by a team or individual. WIP items can be converted to story points in order to help the team better understand the scale used to quantify effort. By converting WIP items to story points, the team can estimate how many story points they can complete in a sprint and determine how many sprints it will take to complete all work.\n\nThe other options are incorrect.\n\nCalculating story points only for new backlog items does not account for the work that is already in progress. \n\nCalculating story points required for the entire task board would include completed work and does not focus on the work that is currently in progress. \n\nMeasuring story points over several sprints is not the first thing the team should do before adopting the new approach of using story points.",
+    "explanation": "ストーリーポイントを使用する新しいアプローチを採用する前に、チームが最初に行うべきことは、進行中(WIP)のすべての制限項目をストーリーポイントに変換することである。WIP項目とは、チームまたは個人が現在取り組んでいるタスクや活動である。WIP項目をストーリーポイントに変換することで、チームは労力を定量化するために使用される尺度をよりよく理解できる。WIP項目をストーリーポイントに変換することで、チームは1スプリントで完了できるストーリーポイント数を見積もり、すべての作業を完了するために必要なスプリント数を決定できる。他の選択肢は誤りである。新しいバックログ項目のみについてストーリーポイントを算出することは、既に進行中の作業を考慮していない。タスクボード全体に必要なストーリーポイントを算出することは、完了済みの作業を含んでしまい、現在進行中の作業に焦点を当てていない。複数のスプリントにわたってストーリーポイントを測定することは、ストーリーポイントを使用する新しいアプローチを採用する前に最初に行うべきことではない。(出典：Lean-Agile Software Development Alan Shalloway, Guy Beaver, James R. Trott 第8章「エンタープライズチームのためのビジュアルコントロールと情報ラジエーター」／The Agile Practice Guide PMI 5.4 アジャイルプロジェクトにおける測定)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-116",
     "source": "EE-2",
-    "question": "A project manager has been assigned to a project that is currently late and over budget. The project uses a predictive approach integrated with agile iterations for the most critical part of the scope. During the project assessment, the project manager notices that the team is afraid of making mistakes and is seeking individual recognition, while lacking accountability.\n\nHow should the project manager improve productivity?",
+    "question": "プロジェクトマネージャーは、現在遅延し予算超過しているプロジェクトに割り当てられた。このプロジェクトでは、スコープの中で最も重要な部分について予測型アプローチとアジャイルイテレーションを統合したアプローチを使用している。プロジェクトの評価中、プロジェクトマネージャーは、チームがミスを恐れ、個人としての評価を求めており、説明責任が欠けていることに気づいた。プロジェクトマネージャーは生産性をどのように向上させるべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Develop a performance management plan for each project team member and share the performance results with the team."
+        "text": "プロジェクトチームメンバーごとにパフォーマンスマネジメント計画を策定し、パフォーマンス結果をチームに共有する。"
       },
       {
         "label": "B",
-        "text": "Enable collaboration, create common goals, and celebrate group achievements, while providing group rewards."
+        "text": "コラボレーションを可能にし、共通の目標を設定し、グループの成果を称え、グループへの報酬を提供する。"
       },
       {
         "label": "C",
-        "text": "Reinforce and communicate the next milestone, following individual performance and execution on a detailed level."
+        "text": "個人レベルでのパフォーマンスと実行を詳細に追跡しながら、次のマイルストーンを強化し伝達する。"
       },
       {
         "label": "D",
-        "text": "Request approval to replace a few team members so the project team can understand the importance of meeting goals."
+        "text": "プロジェクトチームが目標達成の重要性を理解できるよう、一部のチームメンバーの交代を承認してもらう。"
       }
     ],
     "correctAnswers": [
@@ -1434,29 +1434,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The project manager needs to create a collaborative environment that focuses on common goals and group rewards, and moving away from working in silos.\n\nThe other answer choices are incorrect. Developing a performance management plan for each project team member and sharing the performance results with the team or creating milestones at an individual level will only deteriorate the working relationship among the team members. Replacing a few team members may not improve the team morale or productivity unless the team is focused on common goals and working together as a team and focusing on group achievements.",
+    "explanation": "プロジェクトマネージャーは、共通の目標とグループへの報酬に焦点を当てた協働的な環境を作り、サイロ化した働き方から脱却する必要がある。他の選択肢は誤りである。チームメンバーごとにパフォーマンスマネジメント計画を策定しその結果をチームに共有すること、または個人レベルでマイルストーンを設定することは、チームメンバー間の協力関係を悪化させるだけである。チームが共通の目標に焦点を当て、チームとして協力し、グループの成果に焦点を当てない限り、一部のチームメンバーを交代させてもチームの士気や生産性は向上しない。(出典：PMBOKガイド第6版(2018) PMI 3.4.4.2/62／Project Management: A Managerial Approach 第8版 Jack R. Meredith, Samuel J. Mantel Jr. 3.1 プロジェクトマネジメントとプロジェクトマネージャー)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-125",
     "source": "EE-2",
-    "question": "During project execution, a key stakeholder is replaced with a new team member who has approval authority. The new member states that the project deliverables are not aligned with the design and does not approve them. However, a few weeks later the project manager learns that the new team member had not been informed of changes during execution.\n\nWhat should the project manager have done to avoid this miscommunication?",
+    "question": "プロジェクトの実行中、主要なステークホルダーが承認権限を持つ新しいチームメンバーに交代した。新しいメンバーは、プロジェクトの成果物が設計と一致していないと述べ、それらを承認しなかった。しかし、数週間後、プロジェクトマネージャーは、新しいチームメンバーが実行中の変更について知らされていなかったことを知った。この行き違いを避けるためにプロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Organized a meeting with the sponsor before the execution began."
+        "text": "実行開始前にスポンサーとのミーティングを開催する。"
       },
       {
         "label": "B",
-        "text": "Updated the stakeholder register to include the new team member."
+        "text": "新しいチームメンバーを含めるようにステークホルダー登録簿を更新する。"
       },
       {
         "label": "C",
-        "text": "Asked the previous stakeholder to hold a meeting with the new team member before leaving."
+        "text": "退任するステークホルダーに、退任前に新しいチームメンバーとのミーティングを開催するよう依頼する。"
       },
       {
         "label": "D",
-        "text": "Updated the project charter during the execution phase to include all the changes."
+        "text": "実行フェーズ中にすべての変更を含めるようプロジェクト憲章を更新する。"
       }
     ],
     "correctAnswers": [
@@ -1465,29 +1465,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "The project manager should have updated the stakeholder register to include the new team member. This would have ensured that the project manager was aware of all of the stakeholders on the project and that they were communicating with the new team member on a regular basis.\n\nThe other answer choices are not as effective or relevant. Organizing a meeting with the sponsor before the execution begins is a good practice, but it is not enough to avoid the miscommunication that occurred in this situation.\nAsking the previous stakeholder to hold a meeting with the new team member before leaving is a good practice, but it is not always possible. For example, if the previous stakeholder left the company suddenly, then there may not have been time to hold a meeting. Updating the project charter during the execution phase to include all the changes. The project charter is a document that authorizes the project and defines its scope, goals, objectives, and success criteria; it is not typically updated during the execution phase.",
+    "explanation": "プロジェクトマネージャーは、新しいチームメンバーを含めるようにステークホルダー登録簿を更新すべきであった。これにより、プロジェクトマネージャーがプロジェクトのすべてのステークホルダーを把握し、新しいチームメンバーと定期的にコミュニケーションを取っていることが保証されたはずである。他の選択肢はそれほど効果的または関連性が高くない。実行開始前にスポンサーとのミーティングを開催することは良い実践であるが、この状況で発生した行き違いを避けるには十分でない。退任するステークホルダーに退任前に新しいチームメンバーとのミーティングを開催するよう依頼することは良い実践であるが、常に可能とは限らない。例えば、前任のステークホルダーが突然会社を去った場合、ミーティングを開催する時間がない可能性がある。実行フェーズ中にすべての変更を含めるようプロジェクト憲章を更新することについては、プロジェクト憲章はプロジェクトを承認しそのスコープ、目標、目的、成功基準を定義する文書であり、通常実行フェーズ中には更新されない。(出典：Agile Foundations - Principles, practices, and frameworks Peter Measey 第13章／PMBOKガイド第7版(2022) PMI 第10章 プロジェクトコミュニケーションマネジメント [2.5.4 プロジェクトのコミュニケーションとエンゲージメント、表2-7 アウトカムの確認 - プロジェクト作業パフォーマンスドメイン、4.6.3 計画書、表4-3 各パフォーマンスドメインで使用される可能性のあるアーティファクトのマッピング])",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-126",
     "source": "EE-2",
-    "question": "The leadership team of a company asked a project manager for an ad-hoc status update on the latest iteration of a project. The project manager directed the leadership team to the project folder. The leadership team informed the project manager that some information was missing.\n\nWhat should the project manager have done to avoid this situation?",
+    "question": "ある企業の経営層が、プロジェクトの最新イテレーションについて臨時のステータス更新をプロジェクトマネージャーに求めた。プロジェクトマネージャーは経営層をプロジェクトフォルダに案内した。経営層は、プロジェクトマネージャーにいくつかの情報が欠落していることを伝えた。この状況を避けるためにプロジェクトマネージャーは何をすべきだったか？",
     "choices": [
       {
         "label": "A",
-        "text": "Told the team to review the folder before sharing it and add the missing information."
+        "text": "チームに、共有前にフォルダを確認し欠落している情報を追加するよう伝える。"
       },
       {
         "label": "B",
-        "text": "Scheduled a team meeting to discuss the missing information with the leadership team."
+        "text": "経営層と欠落している情報について話し合うためのチームミーティングを設定する。"
       },
       {
         "label": "C",
-        "text": "Inspected the project folder carefully before sharing it with the leadership team."
+        "text": "経営層に共有する前にプロジェクトフォルダを注意深く確認する。"
       },
       {
         "label": "D",
-        "text": "Updated the project folder regularly to ensure project artifacts were always current."
+        "text": "プロジェクトのアーティファクトが常に最新の状態であることを確認するため、定期的にプロジェクトフォルダを更新する。"
       }
     ],
     "correctAnswers": [
@@ -1496,29 +1496,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project manager can minimize the risk of missing information when providing status updates to the leadership team by consistently updating the project folder to ensure that all relevant information is up to date.\n\nThe other answer choices are less effective or efficient in preventing missing information.\n\nAsking the team to add missing information before sharing the folder is not a reliable solution, as the team may not always be able to identify missing information.\n\nScheduling a team meeting to discuss the missing information with the leadership team is reactive and does not directly address the issue of keeping project artifacts up to date. \n\nInspecting the project folder before sharing it may be helpful, but it is not as effective or efficient as updating the folder in real time.",
+    "explanation": "プロジェクトマネージャーは、プロジェクトフォルダを一貫して更新し、関連するすべての情報が最新であることを確認することで、経営層へのステータス更新時に情報が欠落するリスクを最小限に抑えることができる。他の選択肢は、情報の欠落を防ぐ上であまり効果的または効率的ではない。共有前にチームに欠落情報を追加するよう求めることは、チームが常に欠落している情報を特定できるとは限らないため、信頼できる解決策ではない。欠落情報について経営層とのチームミーティングを設定することは事後的な対応であり、プロジェクトのアーティファクトを最新の状態に保つという問題に直接対応していない。共有前にプロジェクトフォルダを確認することは役立つかもしれないが、フォルダをリアルタイムで更新するほど効果的または効率的ではない。(出典：Choose Your WoW! A Disciplined Agile Delivery Handbook for Optimizing Your Way of Working (2019) Scott W Ambler, Mark Lines 26/369／PMBOKガイド第7版(2022) 3.3 ステークホルダーと効果的に関わる)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-127",
     "source": "EE-2",
-    "question": "A newly hired project manager is assigned to a school construction project. The school serves students from surrounding neighborhoods and must be completely energy efficient. The project manager must provide a final report.\n\nHow can the project manager determine whether the planned business value was delivered?",
+    "question": "新しく採用されたプロジェクトマネージャーが、学校建設プロジェクトに配属された。この学校は近隣地域の児童・生徒に対応するもので、完全にエネルギー効率の良い建物でなければならない。プロジェクトマネージャーは最終報告書を提出する必要がある。プロジェクトマネージャーは、計画されたビジネス価値が提供されたかどうかをどのように判断できるか？",
     "choices": [
       {
         "label": "A",
-        "text": "Inspect the approved technical specifications to confirm that they match the final product deliverables."
+        "text": "承認された技術仕様書を確認し、最終的なプロダクト成果物と一致しているかを確認する。"
       },
       {
         "label": "B",
-        "text": "Consult with the team and confirm that the customer was satisfied with the construction of the school."
+        "text": "チームと協議し、顧客が学校の建設に満足したことを確認する。"
       },
       {
         "label": "C",
-        "text": "Review the project charter and business case to determine if the deliverables achieved the intended benefits."
+        "text": "プロジェクト憲章とビジネスケースを見直し、成果物が意図されたベネフィットを達成したかどうかを判断する。"
       },
       {
         "label": "D",
-        "text": "Demonstrate that the school construction project was delivered on schedule and within budget."
+        "text": "学校建設プロジェクトがスケジュール通りかつ予算内で提供されたことを示す。"
       }
     ],
     "correctAnswers": [
@@ -1527,29 +1527,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "Prior to the final closeout, the project charter and the business case should be reviewed to determine if the deliverables achieved the intended benefits and value. The project charter and business case outline the goals and objectives of the project, including the intended benefits. By reviewing these documents, the project manager can determine if the deliverables achieved the intended benefits and therefore if the planned business value was delivered.\nThe other answer options are not as effective. \nInspecting the technical specifications only confirms that the final product matches the approved specifications, but it does not necessarily ensure that the intended benefits are achieved. \nConsulting with the team and confirming customer satisfaction only provides subjective feedback and does not necessarily measure the project's success in delivering business value. \nDemonstrating that the project was delivered on schedule and within budget does not necessarily demonstrate that the intended benefits were achieved.",
+    "explanation": "最終クローズアウトの前に、成果物が意図されたベネフィットと価値を達成したかどうかを判断するために、プロジェクト憲章とビジネスケースを見直すべきである。プロジェクト憲章とビジネスケースには、意図されたベネフィットを含むプロジェクトの目標と目的が概説されている。これらの文書を見直すことで、プロジェクトマネージャーは成果物が意図されたベネフィットを達成したかどうか、つまり計画されたビジネス価値が提供されたかどうかを判断できる。他の選択肢はそれほど効果的ではない。技術仕様書を確認することは、最終製品が承認された仕様と一致していることを確認するだけであり、必ずしも意図されたベネフィットが達成されたことを保証するものではない。チームと協議し顧客満足を確認することは、主観的なフィードバックを提供するだけであり、プロジェクトがビジネス価値を提供したかどうかを必ずしも測定するものではない。プロジェクトがスケジュール通りかつ予算内で提供されたことを示すことは、必ずしも意図されたベネフィットが達成されたことを示すものではない。(出典：Effective Project Management: Traditional, Agile, Extreme, Hybrid Robert K. Wysocki 第8章 306/699／PMBOKガイド第7版(2021) 2.3.8 アウトカムの測定)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-128",
     "source": "EE-2",
-    "question": "During a progress meeting, the project team learns that an identified risk materialized. The project manager decides to execute the risk response plan, but the contingency reserve does not cover the total budget for that plan.\n\nWhat should the project manager do?",
+    "question": "進捗会議において、プロジェクトチームは特定済みのリスクが顕在化したことを知った。プロジェクトマネージャーはリスク対応計画を実行することを決定したが、コンティンジェンシー予備ではその計画の総予算をカバーできない。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Ask the project sponsor to apply the management reserve to cover the remaining cost of the response."
+        "text": "スポンサーに、対応の残りのコストをカバーするためマネジメント予備を適用するよう依頼する。"
       },
       {
         "label": "B",
-        "text": "Ask the project sponsor to provide an additional budget to compensate for the cost overage."
+        "text": "スポンサーに、コスト超過分を補うための追加予算の提供を依頼する。"
       },
       {
         "label": "C",
-        "text": "Issue a change request to modify the scope, cost, and schedule baselines to support the new plan."
+        "text": "新しい計画を支える形でスコープ・コスト・スケジュールのベースラインを変更するための変更要求を発行する。"
       },
       {
         "label": "D",
-        "text": "Use the contingency reserve and assess options to reduce the budget to cover the remaining work."
+        "text": "コンティンジェンシー予備を使用し、残りの作業をカバーするために予算を削減する選択肢を検討する。"
       }
     ],
     "correctAnswers": [
@@ -1558,29 +1558,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The implementation of a risk response plan necessitates a change in the current project management plan. Issuing a change request is the appropriate action to request the necessary budget, address rescheduling, and incorporate new activities into the scope.\n\nThe management reserve is typically reserved for unidentified risks. Since the risk has already been identified, the management reserve cannot be used to cover the cost of the risk response plan.\n\nAsking the project sponsor for an additional budget would require a change request.\n\nIf the contingency reserve is not sufficient to cover the cost of the risk response plan, then the project manager should issue a change request to ask for additional funding.",
+    "explanation": "リスク対応計画の実施には、現在のプロジェクトマネジメント計画書の変更が必要である。変更要求を発行することは、必要な予算を要求し、スケジュールの再調整に対応し、新しい活動をスコープに組み込むための適切な行動である。マネジメント予備は通常、未特定のリスクのために確保されている。このリスクは既に特定されているため、マネジメント予備をリスク対応計画のコストに使用することはできない。スポンサーに追加予算を依頼するには変更要求が必要である。コンティンジェンシー予備がリスク対応計画のコストをカバーするのに十分でない場合、プロジェクトマネージャーは追加資金を要求するための変更要求を発行すべきである。(出典：Business Ethics 第4版 A Stakeholder and Issues Management Approach (2009) Joseph W. Weiss ［プロジェクトの課題］／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第17章 17.11 リスク対応の計画、17.12 リスクの監視とコントロール／PMBOKガイド第7版(2022) 2.8.5 リスク)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-131",
     "source": "EE-2",
-    "question": "A project manager is working on a new healthcare management application. One of the team members will be leaving the organization and a new team member is taking over their tasks. The new team member is concerned that several parts of the new application cannot be tested yet, despite sign-off by the outgoing team member. How should the project manager address this situation?",
+    "question": "プロジェクトマネージャーは、新しいヘルスケア管理アプリケーションに取り組んでいる。あるチームメンバーが組織を退職することになり、新しいチームメンバーがその業務を引き継ぐ。新しいチームメンバーは、退職するチームメンバーによる承認(サインオフ)があったにもかかわらず、新しいアプリケーションの複数の部分がまだテストできていないことを懸念している。プロジェクトマネージャーはこの状況にどう対応すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Trust the sign-off from the outgoing team member and proceed with the project as planned."
+        "text": "退職するチームメンバーによる承認を信頼し、計画通りにプロジェクトを進める。"
       },
       {
         "label": "B",
-        "text": "Conduct a thorough review of the untested parts of the application before proceeding."
+        "text": "進める前に、未テストの部分について徹底的なレビューを実施する。"
       },
       {
         "label": "C",
-        "text": "Inform the new team member that testing will happen in a later phase of the project."
+        "text": "テストはプロジェクトの後のフェーズで行われると新しいチームメンバーに伝える。"
       },
       {
         "label": "D",
-        "text": "Ensure that the outgoing team member creates a knowledge transfer document for the new team member."
+        "text": "退職するチームメンバーに、新しいチームメンバーのためのナレッジ移行文書を作成させる。"
       }
     ],
     "correctAnswers": [
@@ -1589,29 +1589,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "Ensuring that the outgoing team member creates a knowledge transfer document is the most comprehensive and reliable way to ensure that the new team member has all the information they need to understand and test the untested parts of the application. By doing this, the project manager ensures that the new team member has all the necessary information to understand the current state of the project and can make informed decisions about whether further testing or review is needed. It also helps mitigate risks associated with relying solely on the sign-off from the outgoing team member without a proper handover of knowledge.\n\nThe other options are incorrect because they are not as reliable. \n\nTrusting the sign-off from the outgoing team member is a risky option, as it could lead to problems if the untested parts of the application are not working properly. \n\nConducting a thorough review of the untested parts of the application before proceeding could delay the project. \n\nInforming the new team member that testing will happen in a later phase of the project is not an acceptable option, as it would put the project at risk.",
+    "explanation": "退職するチームメンバーにナレッジ移行文書を作成させることは、新しいチームメンバーがアプリケーションの未テスト部分を理解しテストするために必要なすべての情報を確実に持てるようにする、最も包括的で信頼できる方法である。これにより、プロジェクトマネージャーは、新しいチームメンバーがプロジェクトの現状を理解するために必要なすべての情報を持ち、さらなるテストやレビューが必要かどうかについて十分な情報に基づいた判断を下せるようにすることができる。また、退職するチームメンバーの承認のみに依存し、適切な引き継ぎを行わないことに伴うリスクを軽減するのに役立つ。他の選択肢は、それほど信頼できないため誤りである。退職するチームメンバーの承認を信頼することは、アプリケーションの未テスト部分が正常に機能していない場合に問題を引き起こす可能性があるリスクの高い選択肢である。進める前に未テスト部分の徹底的なレビューを実施することは、プロジェクトを遅延させる可能性がある。テストはプロジェクトの後のフェーズで行われると新しいチームメンバーに伝えることは、プロジェクトを危険にさらすことになるため、許容できる選択肢ではない。(出典：PMBOKガイド第7版(2022) 2.5.8 プロジェクト全体を通じた学習)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-133",
     "source": "EE-2",
-    "question": "A project manager is working on a project to modernize a bank's information technology (IT) infrastructure. The project manager recently received approval of the project's change management plan from the project sponsor. The project sponsor now requests that the project manager implement a new piece of technology in the solution.\n\nWhat should the project manager do next?",
+    "question": "プロジェクトマネージャーは、銀行の情報技術(IT)基盤を最新化するプロジェクトに取り組んでいる。プロジェクトマネージャーは最近、プロジェクトスポンサーから変更管理計画書の承認を受けた。プロジェクトスポンサーは現在、ソリューションに新しい技術を実装するようプロジェクトマネージャーに要求している。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Add the new technology as a risk in the risk register."
+        "text": "新しい技術をリスク登録簿にリスクとして追加する。"
       },
       {
         "label": "B",
-        "text": "Submit a change request to the change control board (CCB)."
+        "text": "変更管理委員会(CCB)へ変更要求を提出する。"
       },
       {
         "label": "C",
-        "text": "Update the schedule and cost baselines with the new technology."
+        "text": "新しい技術に合わせてスケジュールベースラインとコストベースラインを更新する。"
       },
       {
         "label": "D",
-        "text": "Request the project sponsor to procure the new technology."
+        "text": "プロジェクトスポンサーに新しい技術の調達を依頼する。"
       }
     ],
     "correctAnswers": [
@@ -1620,29 +1620,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "When there's a proposed change to a project, such as implementing a new piece of technology, the change should be formally documented, evaluated, and approved or rejected through a change control process. The project manager should submit a change request to the CCB, which will then decide whether to approve or reject the change based on its impact on project objectives.\n\nThe other options are incorrect because they do not align with the standard project management practice of addressing scope changes through a formal change control process.\n\nAdding the new technology to the risk register is incorrect because it is not the immediate action to take when the project sponsor requests to implement a new piece of technology.\n\nBefore updating any baselines, the proposed change should go through the change control process. The project manager would only update the appropriate project management plan components if the change is approved.\n\nTaking steps to procure the new technology should not be the immediate next step. The change request needs to be submitted and approved before any action is taken toward implementing the new technology.",
+    "explanation": "新しい技術の実装のような、プロジェクトに対する変更案がある場合、その変更は正式に文書化、評価され、変更管理プロセスを通じて承認または却下される必要がある。プロジェクトマネージャーはCCBへ変更要求を提出すべきであり、CCBはプロジェクト目標への影響に基づいてその変更を承認するか却下するかを決定する。他の選択肢は、正式な変更管理プロセスを通じてスコープの変更に対応するという標準的なプロジェクトマネジメントの実践に合致しないため誤りである。新しい技術をリスク登録簿に追加することは誤りである。これは、プロジェクトスポンサーが新しい技術の実装を要求した際に取るべき即時の行動ではない。ベースラインを更新する前に、提案された変更は変更管理プロセスを経るべきである。プロジェクトマネージャーは、変更が承認された場合にのみ、適切なプロジェクトマネジメント計画コンポーネントを更新すべきである。新しい技術を調達するための手続きを取ることは、即時の次のステップであるべきではない。新しい技術の実装に向けた行動を取る前に、変更要求が提出され承認される必要がある。(出典：PMBOKガイド第7版(2022) 2.5.7 新しい作業と変更のモニタリング／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第4章 4.6 統合変更管理の実施)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-140",
     "source": "EE-2",
-    "question": "A new agile team is forming and the project manager notices that the team is struggling in many areas. The team is experiencing both the inability to meet iteration commitments and team member conflicts.\n\nWhat should the project manager do next?",
+    "question": "新しいアジャイルチームが結成されたが、プロジェクトマネージャーは、チームが多くの領域で苦労していることに気づいた。チームはイテレーションのコミットメントを満たせないことと、チームメンバー間の対立の両方を経験している。プロジェクトマネージャーは次に何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Involve management to help resolve the conflicts."
+        "text": "対立を解決するために経営層を関与させる。"
       },
       {
         "label": "B",
-        "text": "Inform management that commitments will not be met."
+        "text": "コミットメントが満たされないことを経営層に伝える。"
       },
       {
         "label": "C",
-        "text": "Raise the issues in the retrospective and propose solutions."
+        "text": "レトロスペクティブで問題を提起し解決策を提案する。"
       },
       {
         "label": "D",
-        "text": "Coach the team both as a whole and individually."
+        "text": "チーム全体および個々のメンバーをコーチングする。"
       }
     ],
     "correctAnswers": [
@@ -1651,29 +1651,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The project manager should coach the team both as a whole and individually because coaching helps the team’s performance get better, in a series of steps.\n\nThe other answer choices are incorrect. Involving management is not going to help the team to meet the iteration commitment not resolve the conflicts. Informing management that commitments will not be met is not the best choice because as a project manager it is required to inform the management about missing the commitment, but in agile teams, coaching is the best thing to do instead of directly informing to the management. Raising the issues is not the best choice as waiting until the retrospective is too late.",
+    "explanation": "プロジェクトマネージャーは、チーム全体と個々のメンバーの両方をコーチングすべきである。コーチングは、段階的な手順を通じてチームのパフォーマンスを向上させるのに役立つ。他の選択肢は誤りである。経営層を関与させることは、チームがイテレーションのコミットメントを満たし、対立を解決するのに役立たない。コミットメントが満たされないことを経営層に伝えることは最善の選択ではない。プロジェクトマネージャーとしてコミットメントが満たされないことを経営層に伝える必要はあるが、アジャイルチームにおいては、経営層に直接伝えるのではなくコーチングを行うことが最善である。問題を提起することは、レトロスペクティブまで待つのは遅すぎるため、最善の選択ではない。(出典：Coaching Agile Teams Lyssa Adkins 第5章 78頁／The Agile Practice Guide PMI 第4章 38頁 4.2.3 プロジェクトマネージャーによるサーバントリーダーシップの活用)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-145",
     "source": "EE-2",
-    "question": "After emailing a recent project status report, the project manager learns that a number of recipients are no longer involved with the project. The project manager needs to verify the distribution list for future status reports.\n\nWhat should the project manager do?",
+    "question": "最近のプロジェクトステータス報告書をメールで送信した後、プロジェクトマネージャーは、複数の受信者がもはやプロジェクトに関与していないことを知った。プロジェクトマネージャーは、今後のステータス報告のために配布リストを確認する必要がある。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Review and update the communications management plan."
+        "text": "コミュニケーションマネジメント計画書を見直し更新する。"
       },
       {
         "label": "B",
-        "text": "Review and update the schedule management plan."
+        "text": "スケジュールマネジメント計画書を見直し更新する。"
       },
       {
         "label": "C",
-        "text": "Review and update the responsibility assignment matrix."
+        "text": "責任分担マトリックス(RAM)を見直し更新する。"
       },
       {
         "label": "D",
-        "text": "Review and update the resource management plan."
+        "text": "資源マネジメント計画書を見直し更新する。"
       }
     ],
     "correctAnswers": [
@@ -1682,29 +1682,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The communications management plan is the document that identifies the stakeholders who need to receive project status reports. Therefore, it is the first document that the project manager should review and update to ensure that the distribution list is accurate.\n\nThe other answer choices are not as relevant or effective. The schedule management plan does not identify the stakeholders who need to receive project status reports; the responsibility assignment matrix identifies the individuals who are responsible for each task on the project, but it does not identify the stakeholders who need to receive project status reports; and the resource management plan identifies the resources that are needed to complete the project, but it does not identify the stakeholders who need to receive project status reports.",
+    "explanation": "コミュニケーションマネジメント計画書は、プロジェクトのステータス報告を受け取る必要があるステークホルダーを特定する文書である。したがって、配布リストが正確であることを確認するために、プロジェクトマネージャーが最初に見直し更新すべき文書である。他の選択肢はそれほど関連性が高くも効果的でもない。スケジュールマネジメント計画書はプロジェクトステータス報告を受け取るべきステークホルダーを特定しない。責任分担マトリックスはプロジェクトの各タスクの責任者を特定するが、プロジェクトステータス報告を受け取るべきステークホルダーを特定しない。資源マネジメント計画書はプロジェクト完了に必要なリソースを特定するが、プロジェクトステータス報告を受け取るべきステークホルダーを特定しない。(出典：Information Technology Project Management 第10章 416頁／PMBOKガイド第7版 10-12頁、31-33頁)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-149",
     "source": "EE-2",
-    "question": "The research and development team is planning to build a new facility that will focus on improving existing products the organization has developed. It will be a multi-year initiative.\n\nWhat should the project manager do first?",
+    "question": "研究開発チームは、組織が開発した既存製品の改善に重点を置く新しい施設を建設する予定である。これは複数年にわたる取り組みとなる。プロジェクトマネージャーが最初に行うべきことは何か？",
     "choices": [
       {
         "label": "A",
-        "text": "Develop a scope management plan that will focus on the expected objectives of the initiative."
+        "text": "この取り組みの期待される目標に重点を置いたスコープマネジメント計画書を策定する。"
       },
       {
         "label": "B",
-        "text": "Develop a business case document that covers the return on investment (ROI) of the initiative."
+        "text": "この取り組みの投資対効果(ROI)を対象とするビジネスケース文書を策定する。"
       },
       {
         "label": "C",
-        "text": "Develop a resource management plan to cover resources and contingency planning."
+        "text": "リソースとコンティンジェンシー計画を対象とする資源マネジメント計画書を策定する。"
       },
       {
         "label": "D",
-        "text": "Develop a communications management plan to address stakeholder needs."
+        "text": "ステークホルダーのニーズに対応するコミュニケーションマネジメント計画書を策定する。"
       }
     ],
     "correctAnswers": [
@@ -1713,29 +1713,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The first step in planning for any project is to develop a scope management plan. This plan will define the project's goals, objectives, and deliverables. It will also identify the project's boundaries and constraints.\n\nThe other answer choices are important, but they are not the first step that the project manager should take. The business case document is important for justifying the project and securing funding, but it is not the first step in the planning process. The resource management plan is important for ensuring that the project has the resources it needs to be successful, but it is not the first step in the planning process. The communications management plan is important for keeping stakeholders informed of the project's progress and managing their expectations, but it is not the first step in the planning process. By developing a scope management plan first, the project manager can ensure that the project is well-defined and that everyone involved in the project has a clear understanding of its goals and objectives.",
+    "explanation": "どんなプロジェクトの計画における最初のステップは、スコープマネジメント計画書を策定することである。この計画書は、プロジェクトの目標、目的、成果物を定義する。また、プロジェクトの境界と制約を特定する。他の選択肢も重要であるが、プロジェクトマネージャーが最初に取るべきステップではない。ビジネスケース文書はプロジェクトを正当化し資金を確保するために重要であるが、計画プロセスの最初のステップではない。資源マネジメント計画書はプロジェクトが成功するために必要なリソースを確保する上で重要であるが、計画プロセスの最初のステップではない。コミュニケーションマネジメント計画書はステークホルダーにプロジェクトの進捗を知らせ期待を管理するために重要であるが、計画プロセスの最初のステップではない。スコープマネジメント計画書を最初に策定することで、プロジェクトマネージャーはプロジェクトが適切に定義され、プロジェクトに関わる全員がその目標と目的を明確に理解できるようにすることができる。(出典：PMBOKガイド第7版 171頁、240頁／Project Management: The Managerial Process 第7章)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-151",
     "source": "EE-2",
-    "question": "A project manager has been assigned to an important project with stakeholders who have different expectations for the project. Some stakeholders also have a high degree of influence on the project.\n\nHow should the project manager handle this situation?",
+    "question": "プロジェクトマネージャーは、期待が異なるステークホルダーが存在する重要なプロジェクトに割り当てられた。一部のステークホルダーはプロジェクトに対して高い影響力を持っている。プロジェクトマネージャーはこの状況にどう対応すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Control the degree of stakeholder influence to better align with the project objectives."
+        "text": "ステークホルダーの影響力の度合いをコントロールし、プロジェクト目標とより一致させる。"
       },
       {
         "label": "B",
-        "text": "Include the influential stakeholders' requirements and ensure other stakeholders are aligned with the project goals."
+        "text": "影響力のあるステークホルダーの要件を含め、他のステークホルダーがプロジェクトの目標に一致するようにする。"
       },
       {
         "label": "C",
-        "text": "Elicit and negotiate stakeholder requirements according to each stakeholder's influence."
+        "text": "各ステークホルダーの影響力に応じて、ステークホルダーの要件を引き出し交渉する。"
       },
       {
         "label": "D",
-        "text": "Manage the stakeholders carefully and apply stakeholder expectations without impacting the project objectives."
+        "text": "ステークホルダーを注意深く管理し、プロジェクト目標に影響を与えないようにステークホルダーの期待に対応する。"
       }
     ],
     "correctAnswers": [
@@ -1744,33 +1744,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The project manager will first need to understand each stakeholder's influence and interest in the project thoroughly. Based on these two factors, the project manager can then negotiate and align each stakeholder's needs with the project goals. Thus, eliciting and negotiating stakeholder requirements according to each stakeholder's influence is the correct answer.\n\nThe other answer choices are incorrect. It is not possible for the project manager to control the degree of stakeholder influence; include influential stakeholder's requests and make other stakeholders align with the project goals; or be able to manage stakeholder expectations and apply their expectations without accessing each one of the stakeholder's influence in the project.",
+    "explanation": "プロジェクトマネージャーは、まず各ステークホルダーのプロジェクトに対する影響力と関心を十分に理解する必要がある。これら2つの要素に基づき、プロジェクトマネージャーは各ステークホルダーのニーズをプロジェクトの目標と交渉し整合させることができる。したがって、各ステークホルダーの影響力に応じてステークホルダーの要件を引き出し交渉することが正解である。他の選択肢は誤りである。プロジェクトマネージャーがステークホルダーの影響力の度合いをコントロールすること、影響力のあるステークホルダーの要求を含め他のステークホルダーをプロジェクトの目標に一致させること、または各ステークホルダーの影響力を評価せずにステークホルダーの期待を管理し対応することは不可能である。(出典：Making Projects Work: Effective Stakeholder and Communication Management Lynda Bourne 第8章「交渉」／O'Reillyプラットフォーム『Project Management: A Managerial Approach』第8版 Jack R. Meredith, Samuel J. Mantel Jr. 4.2 交渉の性質)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-154",
     "source": "EE-2",
-    "question": "The project teams are having difficulties coordinating their tasks due to several constraints and dependencies. The project management office (PMO) suggests a monthly project report be distributed to stakeholders. However, the customer is concerned about not knowing the progress and what is holding up the project.\n\nWhat three solutions can the project manager use to resolve this situation? (Choose three)",
+    "question": "プロジェクトチームは、複数の制約と依存関係のためにタスクの調整に苦労している。プロジェクトマネジメントオフィス(PMO)は、ステークホルダーに毎月のプロジェクト報告書を配布することを提案している。しかし、顧客は進捗状況とプロジェクトの遅延要因が分からないことを懸念している。プロジェクトマネージャーがこの状況を解決するために使用できる3つの解決策は何か？(3つ選択)",
     "choices": [
       {
         "label": "A",
-        "text": "Add a daily meeting to review project status and impediments."
+        "text": "プロジェクトのステータスと障害を確認するためのデイリーミーティングを追加する。"
       },
       {
         "label": "B",
-        "text": "Share missing performance information in the monthly status meeting."
+        "text": "月次ステータスミーティングで不足しているパフォーマンス情報を共有する。"
       },
       {
         "label": "C",
-        "text": "Add a daily or weekly project status report that includes dependencies."
+        "text": "依存関係を含む日次または週次のプロジェクトステータス報告を追加する。"
       },
       {
         "label": "D",
-        "text": "Adapt a project status report to include missing information."
+        "text": "不足している情報を含めるようにプロジェクトステータス報告を適応させる。"
       },
       {
         "label": "E",
-        "text": "Ask vendors to provide a monthly status report for the customer."
+        "text": "ベンダーに顧客向けの月次ステータス報告を提供するよう依頼する。"
       }
     ],
     "correctAnswers": [
@@ -1783,29 +1783,29 @@ const REVIEW_DATA = [
       "C",
       "D"
     ],
-    "explanation": "A. Add a daily meeting to review project status and impediments.\n\nC. Add a daily or weekly project status report that includes dependencies.\n\nD. Adapt a project status report to include missing information.\n\nThese are the three best choices because with this information the customer will have visibility on the project progress and what are the blockers holding the progress. Customers should not wait for a month to receive updates, it will be better to have more frequent communications with customers and team, as well as adapting the standard PMO report to the requirements of the current stakeholders.\n\nThe other options do not directly address the need for more frequent and detailed communication to keep the customer informed about the project's progress and issues.",
+    "explanation": "これら3つは最善の選択肢である。この情報により、顧客はプロジェクトの進捗状況と、進捗を妨げている要因についての可視性を得ることができる。顧客は更新情報を受け取るために1か月待つべきではなく、顧客やチームとより頻繁にコミュニケーションを取り、標準のPMO報告書を現在のステークホルダーの要件に適応させる方が良い。他の選択肢は、プロジェクトの進捗状況や問題について顧客に情報を提供するための、より頻繁で詳細なコミュニケーションの必要性に直接対応していない。(出典：PMBOKガイド第7版(2022) 2.5 プロジェクト作業パフォーマンスドメイン／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第6章)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-158",
     "source": "EE-2",
-    "question": "A project manager is beginning a new financial software project in a very competitive environment. The regulations for compliance are clear, but the requirements are not clear. The customer stresses that they need results as soon as possible. \n\nWhich implementation approach should the project manager choose for this project?",
+    "question": "プロジェクトマネージャーは、非常に競争の激しい環境で新しい金融ソフトウェアプロジェクトを開始する。コンプライアンスに関する規制は明確だが、要件は明確ではない。顧客は、できるだけ早く結果が必要であると強調している。このプロジェクトに対して、プロジェクトマネージャーはどの実装アプローチを選択すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Repeating and refining project phases in multiple iterations."
+        "text": "複数のイテレーションでプロジェクトフェーズを繰り返し精緻化する。"
       },
       {
         "label": "B",
-        "text": "Progressing through a linear sequence of stages."
+        "text": "一連の線形な段階を順に進める。"
       },
       {
         "label": "C",
-        "text": "Embracing change and focusing on delivering value."
+        "text": "変化を受け入れ、価値の提供に重点を置く。"
       },
       {
         "label": "D",
-        "text": "Focusing on delivering the project in multiple increments."
+        "text": "複数のインクリメントでプロジェクトを提供することに重点を置く。"
       }
     ],
     "correctAnswers": [
@@ -1814,29 +1814,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "Focusing on delivering the project in multiple increments is correct because it delivers value to the customer before the final project release. Incremental delivery ensures that the customer gets usable and valuable functionality early in the project. This aligns with the customer's desire for quick results and allows for their feedback to be incorporated. Since the requirements are unclear and the environment is competitive, getting feedback from the customer early will reduce rework, promote stakeholder involvement, and provide an early return on investment.\n\nThe other options are incorrect because they are not as well-suited for this project.\n\nRepeating and refining project phases in multiple iterations is incorrect because, although this approach allows for early deployment of some functionalities of the project, clarifying requirements with the customer before developing any aspect of the project is more cost effective.\n\nProgressing through a linear sequence of stages is incorrect because it assumes that all requirements can be defined upfront, which is not the case when requirements are unclear. It does not allow for early deployment and the customer will not have an opportunity to clarify requirements until after major development work is done. \n\nEmbracing change and focusing on delivering value is a valuable mindset but lacks a specific implementation approach tailored to the challenges of this project.",
+    "explanation": "複数のインクリメントでプロジェクトを提供することに重点を置くことが正しい。これは、最終的なプロジェクトリリースの前に顧客に価値を提供するためである。インクリメンタルなデリバリーにより、顧客はプロジェクトの早期に使用可能で価値のある機能を得ることができる。これは、迅速な結果を求める顧客の希望に合致し、顧客のフィードバックを取り入れることを可能にする。要件が不明確で環境が競争的であるため、早期に顧客からフィードバックを得ることで、やり直し作業を減らし、ステークホルダーの関与を促進し、早期の投資対効果を提供することができる。他の選択肢は、このプロジェクトに適していないため誤りである。複数のイテレーションでプロジェクトフェーズを繰り返し精緻化することは、このアプローチによりプロジェクトの一部の機能を早期に展開できるものの、プロジェクトのどの側面も開発する前に顧客と要件を明確にすることがより費用効果が高いため誤りである。一連の線形な段階を順に進めることは、すべての要件を事前に定義できることを前提としているが、要件が不明確な場合はそうではないため誤りである。早期の展開を許容せず、顧客が要件を明確にする機会は主要な開発作業が完了した後にしか得られない。変化を受け入れ価値の提供に重点を置くことは、貴重な考え方ではあるが、このプロジェクトの課題に合わせた具体的な実装アプローチを示していない。(出典：PMBOKガイド第7版(2022) PMI 2.3.3 開発アプローチ)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-160",
     "source": "EE-2",
-    "question": "A stakeholder complains that a product component is not easy to use. What should be the immediate next step for the project manager?",
+    "question": "あるステークホルダーが、プロダクトのコンポーネントが使いにくいと不満を述べた。プロジェクトマネージャーの直後の次のステップは何であるべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Check if the component meets the design and performance specifications."
+        "text": "コンポーネントが設計仕様とパフォーマンス仕様を満たしているかを確認する。"
       },
       {
         "label": "B",
-        "text": "Collaborate with the stakeholder to confirm the acceptance criteria for the product."
+        "text": "ステークホルダーと協力して、プロダクトの受入基準を確認する。"
       },
       {
         "label": "C",
-        "text": "Ask a user experience expert to meet with the stakeholder and explain the component design."
+        "text": "ユーザーエクスペリエンスの専門家にステークホルダーと面談し、コンポーネントの設計を説明させる。"
       },
       {
         "label": "D",
-        "text": "Raise a change request according to the stakeholder’s requirement concerns."
+        "text": "ステークホルダーの要件に関する懸念に基づいて変更要求を発行する。"
       }
     ],
     "correctAnswers": [
@@ -1845,29 +1845,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "B"
     ],
-    "explanation": "The immediate next step for the project manager is to check if the component meets the design and performance specifications. It is important that the project manager discovers the root cause of the problem before moving forward. This will help the project manager determine if the issue is with the component or a user experience issue. \nThe other answer options should not be the next immediate step. Without knowing the root cause of the issue, the project manager can not confidently discern how to address it.\nClarifying the product acceptance criteria or asking a user experience expert to explain the component design to the stakeholder may not resolve the issue depending on the findings during the initial investigation. \nRaising a change request may be necessary if the component does not meet the design and performance specifications, but is a premature action at this point.",
+    "explanation": "プロジェクトマネージャーの直後の次のステップは、コンポーネントが設計仕様とパフォーマンス仕様を満たしているかを確認することである。プロジェクトマネージャーが先に進む前に問題の根本原因を発見することが重要である。これにより、プロジェクトマネージャーは、問題がコンポーネント自体にあるのか、ユーザーエクスペリエンスの問題なのかを判断できる。他の選択肢は直後の次のステップとすべきではない。問題の根本原因が分からなければ、プロジェクトマネージャーは確信を持ってその対処方法を判断できない。プロダクトの受入基準を明確にすることや、ユーザーエクスペリエンスの専門家にコンポーネントの設計をステークホルダーに説明させることは、初期調査の結果次第では問題を解決しない可能性がある。変更要求を発行することは、コンポーネントが設計仕様とパフォーマンス仕様を満たしていない場合には必要になることもあるが、この時点では時期尚早な行動である。(出典：Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 第20章「品質マネジメント」／Quality Management for Projects and Programs (1991) Lewis R. Ireland PMI)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-162",
     "source": "EE-2",
-    "question": "During a final inspection of a new product, the project team discovers a significant defect in one of the key deliverables. This defect poses a security risk to the client, who expects to start using the deliverable in two weeks. \n\nWhat should the project manager do?",
+    "question": "新しいプロダクトの最終検査中、プロジェクトチームは主要な成果物の1つに重大な欠陥を発見した。この欠陥は顧客にセキュリティリスクをもたらし、顧客は2週間後にこの成果物の使用を開始する予定である。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Conduct a quality investigation and initiate corrective action."
+        "text": "品質調査を実施し、修正措置を開始する。"
       },
       {
         "label": "B",
-        "text": "Use the contingency reserve to cover the cost of the defect."
+        "text": "コンティンジェンシー予備を使用して欠陥のコストをカバーする。"
       },
       {
         "label": "C",
-        "text": "Meet with the client to explain the cause of the defect."
+        "text": "顧客と面談し、欠陥の原因を説明する。"
       },
       {
         "label": "D",
-        "text": "Send the client a letter apologizing for the inconvenience."
+        "text": "顧客に不便をかけたことへの謝罪状を送る。"
       }
     ],
     "correctAnswers": [
@@ -1876,29 +1876,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "The most appropriate approach is to assess the situation to identify the root cause of the defect and take corrective action. In this case, key deliverables fail to reach quality standards, pose a security risk to the client, and were discovered late in the product lifecycle, so the initial response should be to assess and resolve the issue quickly. In doing so, the project manager prioritizes the client's interests, safety, and project success.\n\nThe other options are incorrect because they are less effective and should not be the project manager's first step.\n\nUsing the contingency reserve is premature because the project manager should not determine a response strategy without first understanding the root cause of the defect.\n\nHolding a meeting with the client should come after the issue has been investigated and corrective actions have been taken.\n\nSending a letter of apology to the client is premature and addressing the issue should be the immediate action.",
+    "explanation": "最も適切なアプローチは、状況を評価して欠陥の根本原因を特定し、修正措置を取ることである。この場合、主要な成果物が品質基準を満たしておらず、顧客にセキュリティリスクをもたらし、プロダクトライフサイクルの後期に発見されたため、最初の対応は問題を迅速に評価し解決することであるべきである。これにより、プロジェクトマネージャーは顧客の利益、安全性、プロジェクトの成功を優先することができる。他の選択肢は効果が低く、プロジェクトマネージャーの最初のステップとすべきではないため誤りである。コンティンジェンシー予備を使用することは時期尚早である。プロジェクトマネージャーは、欠陥の根本原因を理解する前に対応戦略を決定すべきではない。顧客とのミーティングは、問題が調査され修正措置が取られた後に行うべきである。顧客への謝罪状の送付は時期尚早であり、問題への対処が直ちに取るべき行動であるべきである。(出典：O'Reillyプラットフォーム『Managing Project Quality』Joseph A. Petrick, Timothy J. Kloppenborg 第1章／PMBOKガイド第7版(2022) 2.6 デリバリーパフォーマンスドメイン)",
     "difficulty": "Moderate"
   },
   {
     "id": "EE-2-164",
     "source": "EE-2",
-    "question": "In the most recent sprint review meeting, the client announced that they need to implement two of the five modules committed for the project in a few weeks. \n\nWhat should the project manager do?",
+    "question": "直近のスプリントレビューミーティングで、顧客は、プロジェクトでコミットされている5つのモジュールのうち2つを数週間以内に実装する必要があると発表した。プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Conduct a brainstorming meeting."
+        "text": "ブレインストーミングミーティングを実施する。"
       },
       {
         "label": "B",
-        "text": "Employ the nominal group technique."
+        "text": "ノミナルグループ技法を用いる。"
       },
       {
         "label": "C",
-        "text": "Conduct a release plan meeting."
+        "text": "リリース計画ミーティングを実施する。"
       },
       {
         "label": "D",
-        "text": "Use prototypes to refine the design."
+        "text": "プロトタイプを使用して設計を精緻化する。"
       }
     ],
     "correctAnswers": [
@@ -1907,29 +1907,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "Release planning meetings identify a high-level plan for releasing or transitioning a product, deliverable, or increment of value. The project manager should conduct a release plan meeting to discuss the upcoming release and create a plan for delivering it. This would allow them to re-prioritize the work to deliver the two modules first.\n\nConducting a brainstorming meeting, employing the nominal group technique, or using prototypes, can be valuable tools in different contexts but do not directly address the client's immediate request to reprioritize and plan for the delivery of specific modules within a short timeframe.",
+    "explanation": "リリース計画ミーティングは、プロダクト、成果物、または価値のインクリメントをリリースまたは移行するためのハイレベルな計画を特定するものである。プロジェクトマネージャーは、今後のリリースについて話し合い、それを提供するための計画を作成するために、リリース計画ミーティングを実施すべきである。これにより、2つのモジュールを最初に提供するように作業の優先順位を再設定できる。ブレインストーミングミーティングの実施、ノミナルグループ技法の利用、またはプロトタイプの使用は、異なる文脈では有用なツールとなり得るが、短期間で特定のモジュールを再優先順位付けして提供計画を立てるという顧客の直接の要求には対応していない。(出典：Agile Estimating and Planning Mike Cohn 第13章 133頁「リリースプラン」／O'Reillyプラットフォーム『Lean-Agile Software Development』Guy Beaver 第7章／PMBOKガイド第7版(2022) 2.4.2 計画変数)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-167",
     "source": "EE-2",
-    "question": "A new project manager is assigned to an ongoing agile project. The project is now starting its second 4-week iteration cycle. The project manager finds there are significant differences of opinion within the project team, leading to major setbacks for the project.\n\nWhat should the project manager do in order to help overcome differences and bring the project back on track?",
+    "question": "新しいプロジェクトマネージャーが、進行中のアジャイルプロジェクトに割り当てられた。プロジェクトは現在、2回目の4週間のイテレーションサイクルを開始している。プロジェクトマネージャーは、プロジェクトチーム内に大きな意見の相違があり、プロジェクトに大きな後退をもたらしていることに気づいた。意見の相違を解消し、プロジェクトを軌道に戻すために、プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Promote conversation among team members in upcoming review meetings to help solve the problem."
+        "text": "今後のレビューミーティングでチームメンバー間の対話を促し、問題の解決を支援する。"
       },
       {
         "label": "B",
-        "text": "Schedule a team out activity to allow people to know each other better and feel comfortable talking."
+        "text": "チームアウト(社外)活動を計画し、メンバーが互いをよりよく知り、安心して話せるようにする。"
       },
       {
         "label": "C",
-        "text": "Allow the team to self-organize before the next iteration to solve the problem."
+        "text": "次のイテレーションの前に、チームが自己組織化して問題を解決できるようにする。"
       },
       {
         "label": "D",
-        "text": "Reach out to their functional managers so they can talk to the team members and solve the problem."
+        "text": "ファンクショナルマネージャーに連絡し、チームメンバーと話して問題を解決してもらう。"
       }
     ],
     "correctAnswers": [
@@ -1938,29 +1938,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "C"
     ],
-    "explanation": "Conflict is an inevitable consequence of team interaction. The project manager should take a proactive approach to resolve this conflict. Servant leaders promote collaboration and conversation within the team and between teams.\n\nThe other answer choices are incorrect because they do not fully address the problem and suggest a project manager is not proactively involved in conflict resolution and promoting cohesion. The project manager needs to ensure that they work with the team to promote understanding, facilitate conflict resolution, and address the issues to address the project setbacks.",
+    "explanation": "対立はチームの相互作用の必然的な結果である。プロジェクトマネージャーは、この対立を解決するために積極的なアプローチを取るべきである。サーバントリーダーは、チーム内およびチーム間のコラボレーションと対話を促進する。他の選択肢は、問題に完全に対応しておらず、プロジェクトマネージャーが対立解消とチームの結束促進に積極的に関与していないことを示唆するため誤りである。プロジェクトマネージャーは、チームと協力して相互理解を促進し、対立解消を促し、プロジェクトの後退に対処するために問題に取り組む必要がある。(出典：O'Reillyプラットフォーム「コラボレーションの促進」「John Hancockにおけるチーム志向の文化の育成」／The Agile Practice Guide PMI 第4章 35頁 4.2.1.1 サーバントリーダーによるファシリテーション)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-169",
     "source": "EE-2",
-    "question": "A hybrid project is using an iterative design process for product development. However, there are separate teams for design and execution, which is causing concerns.\n\nWhat should the project manager do to address these concerns?",
+    "question": "あるハイブリッドプロジェクトでは、プロダクト開発に反復的な設計プロセスを使用している。しかし、設計チームと実行チームが別々であることが懸念を引き起こしている。これらの懸念に対処するために、プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Establish a centralized repository for project documentation and product validation."
+        "text": "プロジェクトの文書化とプロダクトの妥当性確認のための一元化されたリポジトリを構築する。"
       },
       {
         "label": "B",
-        "text": "Request that the design team be made responsible for project execution as well."
+        "text": "設計チームに実行も担当させるよう要求する。"
       },
       {
         "label": "C",
-        "text": "Communicate to the project management office (PMO) that a hybrid approach is too risky."
+        "text": "ハイブリッドアプローチはリスクが高すぎることをプロジェクトマネジメントオフィス(PMO)に伝える。"
       },
       {
         "label": "D",
-        "text": "Enhance team skills by providing training on an adaptive project management framework."
+        "text": "適応型プロジェクトマネジメントフレームワークに関する研修を提供し、チームのスキルを向上させる。"
       }
     ],
     "correctAnswers": [
@@ -1969,29 +1969,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The project manager should establish a centralized repository for project documentation and product validation to address concerns caused by separate teams for design and execution. This will allow for knowledge transfer and foster a collaborative working environment. \n\nThe other options are incorrect.\n\nRequesting that one team be responsible for both development and execution may not be feasible and may not improve the chances of success.\n\nEnhancing team skills by providing training on an adaptive project management framework may not be necessary if the teams are already skilled in working with hybrid methods. There is no indication that the teams are not skilled or experienced in working with hybrid methods.\n\nTelling the PMO that a hybrid approach is too risky is unfounded and is not an effective or practical way to address this situation.",
+    "explanation": "プロジェクトマネージャーは、設計チームと実行チームが別々であることによって生じる懸念に対処するために、プロジェクトの文書化とプロダクトの妥当性確認のための一元化されたリポジトリを構築すべきである。これにより、知識の移転が可能になり、協働的な作業環境が促進される。他の選択肢は誤りである。一方のチームに開発と実行の両方を担当させることを要求することは実現可能でない場合があり、成功の可能性を改善しない可能性がある。適応型プロジェクトマネジメントフレームワークに関する研修を提供してチームのスキルを向上させることは、チームが既にハイブリッド手法の経験がある場合は必要ない可能性がある。チームがハイブリッド手法に経験やスキルがないという示唆はない。PMOにハイブリッドアプローチがリスクが高すぎると伝えることは根拠がなく、この状況に対処するための効果的または実用的な方法ではない。(出典：Choose Your WoW! A Disciplined Agile Delivery Handbook for Optimizing Your Way of Working (2019) Scott W Ambler, Mark Lines セクション2.7 115頁／PMBOKガイド第7版(2021) 2.5 プロジェクト作業パフォーマンスドメイン)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-172",
     "source": "EE-2",
-    "question": "A project manager is working on a virtual project with a global team for the first time and encounters an issue with stakeholder participation in team meetings. Some stakeholders do not participate, others complain about scheduling, and others do not acknowledge meeting invitations. \n\nWhat should the project manager do to address these issues and ensure smoother meetings?",
+    "question": "プロジェクトマネージャーは初めてグローバルチームとのバーチャルプロジェクトに取り組んでおり、チームミーティングへのステークホルダーの参加に関する問題に遭遇した。一部のステークホルダーは参加せず、他のステークホルダーはスケジュールについて不満を述べ、また他のステークホルダーはミーティングの招待に応答していない。これらの問題に対処し、ミーティングをよりスムーズにするために、プロジェクトマネージャーは何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Allow the stakeholders to participate in asynchronous meetings using written communication."
+        "text": "ステークホルダーが文書によるコミュニケーションを用いて非同期で参加できるようにする。"
       },
       {
         "label": "B",
-        "text": "Inform the project sponsor of the situation and ask for support in enforcing meeting attendance."
+        "text": "プロジェクトスポンサーに状況を伝え、ミーティングへの出席を強制するための支援を求める。"
       },
       {
         "label": "C",
-        "text": "Review the organizational culture and structure to properly coordinate meetings."
+        "text": "組織の文化と構造を見直し、ミーティングを適切に調整する。"
       },
       {
         "label": "D",
-        "text": "Reschedule meetings for different times and dates according to time zones."
+        "text": "タイムゾーンに応じて、ミーティングを異なる時間や日にちに再スケジュールする。"
       }
     ],
     "correctAnswers": [
@@ -2000,29 +2000,29 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The project manager should review the organizational culture and structure to properly coordinate the meetings and avoid team discomfort and rejection during work. By conducting a review, the project manager can better understand the needs and expectations of the stakeholders and develop a meeting schedule and format that is more likely to work for everyone. \n\nAsynchronous meetings do not address or solve issues related to stakeholder engagement, scheduling complaints, or unacknowledged invitations. \n\nAsking the sponsor to help enforce meeting attendance should be a last resort and should only be considered if the project manager tries to address the issues and is not successful. \n\nRescheduling meetings for different times and dates according to time zones does not guarantee stakeholder attendance and can be disruptive and time-consuming.",
+    "explanation": "プロジェクトマネージャーは、組織の文化と構造を見直し、ミーティングを適切に調整して、業務中のチームの不快感や拒絶を避けるべきである。見直しを行うことで、プロジェクトマネージャーはステークホルダーのニーズと期待をよりよく理解し、全員にとってより機能しやすいミーティングのスケジュールと形式を策定できる。非同期ミーティングは、ステークホルダーのエンゲージメント、スケジュールに関する不満、または未回答の招待に関連する問題に対応または解決しない。スポンサーにミーティングへの出席を強制する支援を求めることは最後の手段であるべきで、プロジェクトマネージャーが問題に対処しようとしても成功しない場合にのみ検討すべきである。タイムゾーンに応じてミーティングを再スケジュールすることは、ステークホルダーの出席を保証するものではなく、混乱を招き時間がかかる可能性がある。(出典：PMBOKガイド第7版(2022) 3.2 協働的なプロジェクトチーム環境の構築、2.2 チームパフォーマンスドメイン)",
     "difficulty": "Difficult"
   },
   {
     "id": "EE-2-173",
     "source": "EE-2",
-    "question": "During a weekly team meeting, the project manager reviewed task progress and found that a senior team member did not follow the plan. They performed tasks by personal preference, without communicating with the project manager. The senior team member is an expert and a critical resource for the project.\n\nHow should the project manager address this?",
+    "question": "週次のチームミーティング中、プロジェクトマネージャーはタスクの進捗を確認し、シニアチームメンバーが計画に従っていなかったことに気づいた。彼らはプロジェクトマネージャーに連絡することなく、自分の好みに従ってタスクを実行していた。このシニアチームメンバーは専門家であり、プロジェクトにとって重要なリソースである。プロジェクトマネージャーはこれにどう対応すべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Discuss this with the resource personally, then update the resource management plan if necessary."
+        "text": "このリソースと直接話し合い、その後必要に応じて資源マネジメント計画書を更新する。"
       },
       {
         "label": "B",
-        "text": "Discuss this with the functional manager, then update the resource management plan if necessary."
+        "text": "ファンクショナルマネージャーと話し合い、その後必要に応じて資源マネジメント計画書を更新する。"
       },
       {
         "label": "C",
-        "text": "Discuss this with the functional manager, then update the team charter if necessary."
+        "text": "ファンクショナルマネージャーと話し合い、その後必要に応じてチーム憲章を更新する。"
       },
       {
         "label": "D",
-        "text": "Discuss this with the resource personally, then update the team charter if necessary."
+        "text": "このリソースと直接話し合い、その後必要に応じてチーム憲章を更新する。"
       }
     ],
     "correctAnswers": [
@@ -2031,33 +2031,33 @@ const REVIEW_DATA = [
     "userAnswers": [
       "A"
     ],
-    "explanation": "To solve this issue, the first thing the project manager should do is talk to the resource instead of the functional manager to understand the reason and try to solve the problem before escalating.\n\nIf the senior team member has a suggestion that is a better option for the project, then update the team charter if required. A team charter is a document that establishes team values, agreements, and operating guidelines.",
+    "explanation": "この問題を解決するために、プロジェクトマネージャーが最初に行うべきことは、ファンクショナルマネージャーではなくそのリソース本人と話し、その理由を理解し、エスカレーションする前に問題を解決しようとすることである。シニアチームメンバーがプロジェクトにとってより良い選択肢となる提案を持っている場合は、必要に応じてチーム憲章を更新する。チーム憲章は、チームの価値観、合意事項、運用ガイドラインを定める文書である。(出典：PMBOKガイド第6版(2018) PMI 9.1.3.2/319／The AMA Handbook of Project Management 第3版(2011) Paul C. Dinsmore, Jeannette Cabanis-Brewin AMACOM 第17章「プロジェクトマネジメントのモデル」)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-174",
     "source": "EE-2",
-    "question": "At the beginning of a project, the project manager meets the product owner and the business analyst to work on a requirements-gathering process to create the list of requirements, features, and product backlog. Which elements should be considered to ensure all user stories are well-written and sized correctly to allow for smooth agile project delivery? (Choose two)",
+    "question": "プロジェクトの開始時に、プロジェクトマネージャーはプロダクトオーナーとビジネスアナリストと面談し、要件、機能、プロダクトバックログのリストを作成するための要件収集プロセスに取り組む。スムーズなアジャイルプロジェクトのデリバリーを可能にするために、すべてのユーザーストーリーが適切に記述され、適切なサイズになっていることを確認するために考慮すべき要素はどれか？(2つ選択)",
     "choices": [
       {
         "label": "A",
-        "text": "Independent, negotiable, and estimatable"
+        "text": "独立している(Independent)、交渉可能である(negotiable)、見積り可能である(estimatable)"
       },
       {
         "label": "B",
-        "text": "Unique, applicable, and replicable"
+        "text": "一意である(unique)、適用可能である(applicable)、複製可能である(replicable)"
       },
       {
         "label": "C",
-        "text": "Subdivisible, suitable, and considerable"
+        "text": "分割可能である(subdivisible)、適切である(suitable)、重要である(considerable)"
       },
       {
         "label": "D",
-        "text": "Concise, detailed, and executable"
+        "text": "簡潔である(concise)、詳細である(detailed)、実行可能である(executable)"
       },
       {
         "label": "E",
-        "text": "Valuable, small, and testable"
+        "text": "価値がある(valuable)、小さい(small)、テスト可能である(testable)"
       }
     ],
     "correctAnswers": [
@@ -2068,29 +2068,29 @@ const REVIEW_DATA = [
       "A",
       "C"
     ],
-    "explanation": "A. Independent, negotiable, and estimatable\n\nE. Valuable, small, and testable\n\nIn order to create good user stories, start by remembering to INVEST in good user stories. INVEST is an acronym that encompasses the following concepts which make up a good user story:\n\nIndependent - stories should be as independent as possible.\nNegotiable - a story is not a contract. A story is an invitation to a conversation.\nValuable - if a story does not have discernable value it should not be done.\nEstimatable - a story has to be able to be estimated or sized so it can be properly prioritized.\nSmall - stories should be small chunks of work (eg. two-week iterations average 3-4 days of work)\nTestable - every story needs to be testable in order to be \"done\".",
+    "explanation": "良いユーザーストーリーを作成するには、まず良いユーザーストーリーを構成する「INVEST」という頭字語の概念を念頭に置くことから始める。INVESTは以下を表す。Independent(独立している) - ストーリーは可能な限り独立しているべきである。Negotiable(交渉可能である) - ストーリーは契約ではない。ストーリーは対話への招待である。Valuable(価値がある) - ストーリーに明確な価値がない場合、それは行うべきではない。Estimatable(見積り可能である) - ストーリーは適切に優先順位付けできるよう、見積りまたはサイズを測定できる必要がある。Small(小さい) - ストーリーは小さな作業の集合であるべきである(例：2週間のイテレーションでは平均3〜4日分の作業)。Testable(テスト可能である) - すべてのストーリーは「完了」とみなされるためにテスト可能である必要がある。(出典：Agile Project Management: Creating Innovative Products 第2版 Jim Highsmith 第7章「思索フェーズ - プロダクトとプロジェクトの思索」／User Stories Applied Mike Cohn 第2章 641頁)",
     "difficulty": "Expert"
   },
   {
     "id": "EE-2-175",
     "source": "EE-2",
-    "question": "A firm is currently facing a cost overrun and needs liquidity to overcome the financial crisis. A critical project is underway and is expected to bring a reasonable monetary return for the firm, yet, the project is over budget. Senior management needs to assess the project's alignment with organizational objectives and requests that the project manager provide a report on the matter.\n\nWhat should the project manager do to prepare a report for management?",
+    "question": "ある企業は現在コスト超過に陥っており、財務危機を乗り越えるための流動性が必要である。重要なプロジェクトが進行中であり、企業に相応の金銭的リターンをもたらすことが期待されているが、プロジェクトは予算を超過している。上級管理層は、プロジェクトが組織の目標と整合しているかを評価する必要があり、プロジェクトマネージャーにこの問題に関する報告書の提出を求めている。プロジェクトマネージャーは管理層向けの報告書を準備するために何をすべきか？",
     "choices": [
       {
         "label": "A",
-        "text": "Examine and evaluate documents to gain insights and extract meaningful information."
+        "text": "文書を調査・評価し、洞察を得て有意義な情報を抽出する。"
       },
       {
         "label": "B",
-        "text": "Compare actual results to planned ones by analyzing the differences between actual performance and budgeted values."
+        "text": "実際のパフォーマンスと予算値の差異を分析することで、実際の結果と計画された結果を比較する。"
       },
       {
         "label": "C",
-        "text": "Identify and analyze patterns, tendencies, or changes in data over a specific period of time."
+        "text": "特定の期間にわたるデータのパターン、傾向、または変化を特定し分析する。"
       },
       {
         "label": "D",
-        "text": "Assess the economic feasibility of the project, by comparing the costs with the benefits expected by senior management."
+        "text": "上級管理層が期待するベネフィットとコストを比較し、プロジェクトの経済的実現可能性を評価する。"
       }
     ],
     "correctAnswers": [
@@ -2099,7 +2099,7 @@ const REVIEW_DATA = [
     "userAnswers": [
       "D"
     ],
-    "explanation": "The project manager should compare the actual results of the project to the planned ones by analyzing the differences between actual performance and budgeted values. Comparing actual results to planned ones allows the project manager to assess the project's financial performance and understand where it deviates from the budgeted values. Once the project manager has identified the specific areas where the project is over budget and the root causes of these overruns, they can develop recommendations for addressing these problems and getting the project back on track.\nThe other options are incorrect because they are not the most directly relevant actions to take when cost overruns and organizational alignment are the primary concerns.\nExamining and evaluating documents lacks specificity in addressing the financial crisis and the need to assess the project's alignment with organizational objectives. \nIdentifying and analyzing patterns may help identify broader trends in the project's performance, but it is not the most directly relevant action.\nAssessing the economic feasibility of the project focuses more on the overall economic viability of the project rather than the immediate concerns of cost overruns and organizational alignment.",
+    "explanation": "プロジェクトマネージャーは、実際のパフォーマンスと予算値の差異を分析することで、プロジェクトの実際の結果と計画された結果を比較すべきである。実際の結果を計画された結果と比較することで、プロジェクトマネージャーはプロジェクトの財務パフォーマンスを評価し、予算値からの逸脱箇所を理解できる。プロジェクトマネージャーが予算超過の特定領域とその根本原因を特定したら、これらの問題に対処しプロジェクトを軌道に戻すための提言を策定できる。他の選択肢は、コスト超過と組織との整合性が主要な懸念事項である場合に取るべき、最も直接的に関連する行動ではないため誤りである。文書を調査・評価することは、財務危機への対応や、プロジェクトが組織の目標と整合しているかを評価する必要性への対応において具体性に欠ける。パターンを特定し分析することは、プロジェクトのパフォーマンスにおけるより広範な傾向を特定するのに役立つかもしれないが、最も直接的に関連する行動ではない。プロジェクトの経済的実現可能性を評価することは、コスト超過と組織との整合性という直近の懸念事項よりも、プロジェクト全体の経済的な妥当性に焦点を当てている。(出典：PMBOKガイド第7版(2022) 2.7 測定パフォーマンスドメイン／Project Management: A Systems Approach to Planning, Scheduling, and Controlling Harold Kerzner 14.17)",
     "difficulty": "Expert"
   },
   {
