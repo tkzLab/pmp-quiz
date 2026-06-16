@@ -4,6 +4,7 @@
 const SHEET_NAME = 'シート1';
 const LOG_SHEET_NAME = '回答ログ';
 const MASTERED_COL = 15; // 列O（選択肢6追加により1列シフト）
+const FAVORITE_COL = 16; // 列P: お気に入り
 const WRITE_TOKEN = 'mVSNq3Pf-GSwhXvi1yL_nKxYfwvR1ocZ';
 
 function doGet(e) {
@@ -19,6 +20,9 @@ function doGet(e) {
     } else if (action === 'resetAll') {
       if (e.parameter.token !== WRITE_TOKEN) return forbidden();
       result = resetAll();
+    } else if (action === 'setFavorite') {
+      if (e.parameter.token !== WRITE_TOKEN) return forbidden();
+      result = setFavorite(e.parameter.questionId, e.parameter.favorite === 'true');
     } else {
       result = { error: 'Unknown action: ' + action };
     }
@@ -28,6 +32,61 @@ function doGet(e) {
 
   return ContentService
     .createTextOutput(JSON.stringify(result))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  try {
+    const body = JSON.parse(e.postData.contents);
+    const action = body.action || '';
+
+    if (action === 'addQuestion') {
+      if (body.token !== WRITE_TOKEN) return forbidden();
+      return addQuestion(body);
+    }
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ error: 'Unknown action: ' + action }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ error: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function addQuestion(data) {
+  const sheet = getSheet();
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow >= 2) {
+    const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
+    if (ids.includes(data.id)) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ error: 'Duplicate ID: ' + data.id }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+  }
+
+  sheet.appendRow([
+    data.id            || '',  // A: 問題番号
+    data.difficulty    || '',  // B: 難易度
+    data.domain        || '',  // C: PMBOK領域
+    data.question      || '',  // D: 問題文
+    data.choice1       || '',  // E: 選択肢1
+    data.choice2       || '',  // F: 選択肢2
+    data.choice3       || '',  // G: 選択肢3
+    data.choice4       || '',  // H: 選択肢4
+    data.choice5       || '',  // I: 選択肢5
+    data.choice6       || '',  // J: 選択肢6
+    data.correctAnswer || '',  // K: 正解（全文）
+    data.userAnswer    || '',  // L: 自分の回答（参考用）
+    data.explanation   || '',  // M: 解説
+    '',                        // N: 空欄
+    false,                     // O: マスター済み
+  ]);
+  return ContentService
+    .createTextOutput(JSON.stringify({ success: true }))
     .setMimeType(ContentService.MimeType.JSON);
 }
 
@@ -48,14 +107,22 @@ function ensureMasteredColumn(sheet) {
   }
 }
 
+function ensureFavoriteColumn(sheet) {
+  const headerVal = sheet.getRange(1, FAVORITE_COL).getValue();
+  if (headerVal !== 'お気に入り') {
+    sheet.getRange(1, FAVORITE_COL).setValue('お気に入り');
+  }
+}
+
 function getQuestions() {
   const sheet = getSheet();
   ensureMasteredColumn(sheet);
+  ensureFavoriteColumn(sheet);
 
   const lastRow = sheet.getLastRow();
   if (lastRow < 2) return [];
 
-  const data = sheet.getRange(2, 1, lastRow - 1, MASTERED_COL).getValues();
+  const data = sheet.getRange(2, 1, lastRow - 1, FAVORITE_COL).getValues();
   const questions = [];
 
   data.forEach((row) => {
@@ -82,7 +149,8 @@ function getQuestions() {
 
     if (choices.length < 2 || correctIndices.length === 0) return;
 
-    const mastered = row[MASTERED_COL - 1]; // N列: マスター済み
+    const mastered = row[MASTERED_COL - 1]; // O列: マスター済み
+    const favorite = row[FAVORITE_COL - 1]; // P列: お気に入り
 
     questions.push({
       id:             String(row[0]),  // A列: 問題番号
@@ -94,6 +162,7 @@ function getQuestions() {
       isMultiple:     correctIndices.length > 1,
       explanation:    String(row[12] || ''), // M列: 解説
       mastered:       mastered === true || mastered === 'TRUE',
+      favorite:       favorite === true || favorite === 'TRUE',
     });
   });
 
@@ -120,6 +189,27 @@ function recordAnswer(questionId, correct, selected) {
         console.error('appendLog failed: ' + err);
       }
       return { success: true };
+    }
+  }
+
+  return { error: 'Question not found: ' + questionId };
+}
+
+function setFavorite(questionId, favorite) {
+  if (!questionId) return { error: 'questionId is required' };
+
+  const sheet = getSheet();
+  ensureFavoriteColumn(sheet);
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return { error: 'No data' };
+
+  const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+
+  for (let i = 0; i < ids.length; i++) {
+    if (String(ids[i][0]) === questionId) {
+      sheet.getRange(i + 2, FAVORITE_COL).setValue(favorite === true);
+      return { success: true, favorite: favorite === true };
     }
   }
 

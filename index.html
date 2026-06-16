@@ -320,6 +320,30 @@
     .result-banner.correct   { background: var(--success-bg); color: var(--success); }
     .result-banner.incorrect { background: var(--error-bg);   color: var(--error);   }
 
+    .answer-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .fav-btn {
+      flex-shrink: 0;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      background: var(--card);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .fav-btn.active {
+      border-color: #f0b400;
+      background: #fff8e1;
+      color: #b07a00;
+    }
+
     .answer-label {
       font-size: 12px;
       font-weight: 700;
@@ -423,6 +447,7 @@
        REVIEW SCREEN
     ====================================== */
     #screen-review { gap: 12px; }
+    #screen-favorites { gap: 12px; }
 
     .review-filter-row { display: flex; gap: 8px; }
     .review-filter-btn {
@@ -555,6 +580,7 @@
     <button class="btn btn-secondary btn-sm" onclick="confirmResetAll()">マスターをリセット</button>
   </div>
 
+  <button class="btn btn-secondary ref-open-btn" onclick="openFavorites()">⭐ お気に入りの問題（<span id="fav-count">0</span>）</button>
   <button class="btn btn-secondary ref-open-btn" onclick="openReference()">📋 解き方ガイドを見る</button>
   <button class="btn btn-secondary ref-open-btn" onclick="openReview()">📝 誤答問題の振り返り（EE-2 / J-15）</button>
 </div>
@@ -595,6 +621,14 @@
 <div id="screen-answer" class="screen">
   <div id="answer-banner" class="result-banner"></div>
 
+  <div class="answer-meta-row">
+    <div class="question-meta">
+      <span class="tag tag-primary" id="answer-domain"></span>
+      <span class="tag" id="answer-difficulty" style="background:var(--bg); color:var(--text-muted)"></span>
+    </div>
+    <button class="fav-btn" id="answer-fav-btn" onclick="toggleFavorite()">☆ お気に入り</button>
+  </div>
+
   <div class="card">
     <div class="answer-label">あなたの回答</div>
     <p class="answer-text" id="answer-user"></p>
@@ -603,6 +637,11 @@
   <div class="card">
     <div class="answer-label">正解</div>
     <p class="answer-text correct-ans" id="answer-correct"></p>
+  </div>
+
+  <div class="card">
+    <div class="answer-label">すべての選択肢</div>
+    <div class="choices" id="answer-all-choices"></div>
   </div>
 
   <div class="card">
@@ -746,6 +785,20 @@
   <div class="review-list" id="review-list"></div>
 </div>
 
+<!-- ==================== FAVORITES ==================== -->
+<div id="screen-favorites" class="screen">
+  <div class="quiz-top-row">
+    <span class="quiz-progress-text">お気に入りの問題</span>
+    <button class="quiz-abort-btn" onclick="closeFavorites()">✕ 閉じる</button>
+  </div>
+
+  <p id="favorites-empty" class="explanation-text" style="display:none; color:var(--text-muted)">
+    お気に入りに登録した問題はまだありません。回答後の画面で「☆ お気に入り」を押すと、ここに保存されます。
+  </p>
+
+  <div class="review-list" id="favorites-list"></div>
+</div>
+
 <script src="review-data.js"></script>
 <script>
   // ============================================================
@@ -777,6 +830,7 @@
 
   function goHome() {
     updateStats();
+    updateFavCount();
     showScreen('screen-home');
   }
 
@@ -924,6 +978,7 @@
 
       allQuestions = data;
       updateStats();
+      updateFavCount();
       hideNotice();
       showScreen('screen-home');
     } catch (err) {
@@ -1129,6 +1184,10 @@
     banner.textContent = isCorrect ? '正解' : '不正解';
     banner.className   = 'result-banner ' + (isCorrect ? 'correct' : 'incorrect');
 
+    document.getElementById('answer-domain').textContent     = currentQ.domain;
+    document.getElementById('answer-difficulty').textContent = currentQ.difficulty;
+    updateFavBtn();
+
     document.getElementById('answer-user').textContent =
       selectedArr
         .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length)
@@ -1149,6 +1208,27 @@
         ? validCorrect.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n')
         : '（正解データを取得できませんでした）';
 
+    const selectedSet = new Set(selectedArr.filter(i => typeof i === 'number' && !isNaN(i)));
+    const correctSet  = new Set(validCorrect);
+    document.getElementById('answer-all-choices').innerHTML =
+      currentQ.choices.map((c, i) => {
+        const isCorrect = correctSet.has(i);
+        const isUser    = selectedSet.has(i);
+        let cls = 'choice-btn disabled';
+        let tag = '';
+        if (isCorrect && isUser) {
+          cls += ' state-correct';
+          tag = '<span class="tag tag-success review-choice-tag">正解（あなたの回答）</span>';
+        } else if (isCorrect) {
+          cls += ' state-correct';
+          tag = '<span class="tag tag-success review-choice-tag">正解</span>';
+        } else if (isUser) {
+          cls += ' state-incorrect';
+          tag = '<span class="tag tag-error review-choice-tag">あなたの回答（誤り）</span>';
+        }
+        return `<div class="${cls}"><span class="choice-num">${i + 1}</span><span>${escapeHtml(c)}${tag}</span></div>`;
+      }).join('');
+
     document.getElementById('answer-explanation').textContent =
       currentQ.explanation || '解説なし';
 
@@ -1156,6 +1236,135 @@
     document.getElementById('btn-next').textContent = isLast ? '結果を見る' : '次の問題へ';
 
     showScreen('screen-answer');
+  }
+
+  // ---- Favorites (お気に入り：スプレッドシートに保存し端末間で同期) ----
+  function getFavorites() {
+    return allQuestions.filter(q => q.favorite);
+  }
+
+  function isFavorite(id) {
+    const q = allQuestions.find(q => q.id === id);
+    return !!(q && q.favorite);
+  }
+
+  // サーバー（スプレッドシート）にお気に入り状態を保存
+  async function sendFavorite(questionId, favorite) {
+    if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+      throw new Error('SCRIPT_URL が未設定です');
+    }
+    const url = `${SCRIPT_URL}?action=setFavorite`
+      + `&questionId=${encodeURIComponent(questionId)}`
+      + `&favorite=${favorite}`
+      + `&token=${WRITE_TOKEN}`;
+    const res  = await fetch(url);
+    const data = await res.json();
+    if (data && data.error) throw new Error(data.error);
+    return data;
+  }
+
+  // 指定IDのお気に入り状態を切り替え（楽観的更新・失敗時はロールバック）
+  async function setFavoriteState(id, favorite, btn) {
+    const q = allQuestions.find(q => q.id === id);
+    if (!q) return;
+
+    q.favorite = favorite;          // 楽観的に反映
+    updateFavBtn();
+    updateFavCount();
+    if (btn) btn.disabled = true;
+
+    try {
+      await sendFavorite(id, favorite);
+    } catch (e) {
+      q.favorite = !favorite;       // 失敗したので元に戻す
+      updateFavBtn();
+      updateFavCount();
+      alert('お気に入りの保存に失敗しました。通信環境を確認してください。\n詳細: ' + e.message);
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  function toggleFavorite() {
+    if (!currentQ) return;
+    const btn = document.getElementById('answer-fav-btn');
+    setFavoriteState(currentQ.id, !isFavorite(currentQ.id), btn);
+  }
+
+  function updateFavBtn() {
+    const btn = document.getElementById('answer-fav-btn');
+    if (!btn || !currentQ) return;
+    const fav = isFavorite(currentQ.id);
+    btn.classList.toggle('active', fav);
+    btn.textContent = fav ? '★ お気に入り済み' : '☆ お気に入り';
+  }
+
+  function updateFavCount() {
+    const el = document.getElementById('fav-count');
+    if (el) el.textContent = getFavorites().length;
+  }
+
+  function buildFavoriteChoiceHtml(q) {
+    return (q.choices || []).map((c, i) => {
+      const isCorrect = (q.correctIndices || []).includes(i);
+      let cls = 'choice-btn disabled';
+      let tag = '';
+      if (isCorrect) {
+        cls += ' state-correct';
+        tag = '<span class="tag tag-success review-choice-tag">正解</span>';
+      }
+      return `<div class="${cls}"><span class="choice-num">${i + 1}</span><span>${escapeHtml(c)}${tag}</span></div>`;
+    }).join('');
+  }
+
+  function openFavorites() {
+    renderFavoritesList();
+    showScreen('screen-favorites');
+  }
+
+  function closeFavorites() {
+    goHome();
+  }
+
+  function toggleFavoriteItem(id) {
+    const el = document.getElementById('fav-item-' + id);
+    if (el) el.classList.toggle('open');
+  }
+
+  async function removeFavorite(id) {
+    await setFavoriteState(id, false, null);
+    renderFavoritesList();
+  }
+
+  function renderFavoritesList() {
+    const listEl = document.getElementById('favorites-list');
+    const emptyEl = document.getElementById('favorites-empty');
+    const items = getFavorites();
+
+    if (items.length === 0) {
+      listEl.innerHTML = '';
+      emptyEl.style.display = 'block';
+      return;
+    }
+    emptyEl.style.display = 'none';
+
+    listEl.innerHTML = items.map(q => `
+      <div class="review-item" id="fav-item-${q.id}">
+        <div class="review-item-header" onclick="toggleFavoriteItem('${q.id}')">
+          <span class="tag tag-primary review-item-id">${escapeHtml(q.id)}</span>
+          <span class="tag tag-muted">${escapeHtml(q.difficulty || '')}</span>
+          <span class="review-q-preview">${escapeHtml(q.question.split('\n').find(l => l.trim()) || '')}</span>
+          <span class="review-chevron">▾</span>
+        </div>
+        <div class="review-item-body">
+          <p class="question-text">${escapeHtml(q.question)}</p>
+          <div class="choices">${buildFavoriteChoiceHtml(q)}</div>
+          <div class="answer-label">解説</div>
+          <p class="explanation-text">${escapeHtml(q.explanation || '解説なし')}</p>
+          <button class="btn btn-secondary btn-sm" onclick="removeFavorite('${q.id}')">★ お気に入りから外す</button>
+        </div>
+      </div>
+    `).join('');
   }
 
   // ---- Next / Complete ----
@@ -1242,6 +1451,7 @@
 
   // ---- Init ----
   document.addEventListener('DOMContentLoaded', () => {
+    updateFavCount();
     if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
       showNotice('SCRIPT_URL が未設定です。Apps Script を設定してから index.html の SCRIPT_URL を書き換えてください。', true);
     } else {
