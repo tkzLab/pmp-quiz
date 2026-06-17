@@ -630,13 +630,8 @@
   </div>
 
   <div class="card">
-    <div class="answer-label">あなたの回答</div>
-    <p class="answer-text" id="answer-user"></p>
-  </div>
-
-  <div class="card">
-    <div class="answer-label">正解</div>
-    <p class="answer-text correct-ans" id="answer-correct"></p>
+    <div class="answer-label">問題</div>
+    <p class="question-text" id="answer-question"></p>
   </div>
 
   <div class="card">
@@ -1186,13 +1181,8 @@
 
     document.getElementById('answer-domain').textContent     = currentQ.domain;
     document.getElementById('answer-difficulty').textContent = currentQ.difficulty;
+    document.getElementById('answer-question').textContent   = currentQ.question;
     updateFavBtn();
-
-    document.getElementById('answer-user').textContent =
-      selectedArr
-        .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length)
-        .map(i => `${i + 1}. ${currentQ.choices[i]}`)
-        .join('\n');
 
     const validCorrect = (currentQ.correctIndices || [])
       .filter(i => typeof i === 'number' && !isNaN(i) && i >= 0 && i < currentQ.choices.length);
@@ -1202,11 +1192,6 @@
       console.warn('[quiz] correctIndices に不正な値:', JSON.stringify(currentQ.correctIndices),
         '| choices数:', currentQ.choices.length, '| 問題ID:', currentQ.id);
     }
-
-    document.getElementById('answer-correct').textContent =
-      validCorrect.length > 0
-        ? validCorrect.map(i => `${i + 1}. ${currentQ.choices[i]}`).join('\n')
-        : '（正解データを取得できませんでした）';
 
     const selectedSet = new Set(selectedArr.filter(i => typeof i === 'number' && !isNaN(i)));
     const correctSet  = new Set(validCorrect);
