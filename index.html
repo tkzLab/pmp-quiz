@@ -547,10 +547,6 @@
     <div class="section-label">絞り込み（任意）</div>
     <select id="filter-difficulty">
       <option value="">難易度: すべて</option>
-      <option value="Easy">Easy（3問）</option>
-      <option value="Moderate">Moderate（37問）</option>
-      <option value="Difficult">Difficult（115問）</option>
-      <option value="Expert">Expert（56問）</option>
     </select>
     <select id="filter-domain">
       <option value="">領域: すべて</option>
@@ -984,6 +980,32 @@
 
   function reloadQuestions() { loadQuestions(); }
 
+  function populateDifficultyFilter() {
+    const order = ['Easy', 'Moderate', 'Difficult', 'Expert'];
+    const sel = document.getElementById('filter-difficulty');
+    const current = sel.value;
+
+    const counts = {};
+    allQuestions.forEach(q => {
+      if (!q.mastered) counts[q.difficulty] = (counts[q.difficulty] || 0) + 1;
+    });
+
+    const allDiffs = [...new Set(allQuestions.map(q => q.difficulty))];
+    const sorted = [
+      ...order.filter(d => allDiffs.includes(d)),
+      ...allDiffs.filter(d => !order.includes(d)).sort(),
+    ];
+
+    sel.innerHTML = '<option value="">難易度: すべて</option>';
+    sorted.forEach(d => {
+      const opt = document.createElement('option');
+      opt.value = d;
+      opt.textContent = `${d}（${counts[d] || 0}問）`;
+      sel.appendChild(opt);
+    });
+    sel.value = current;
+  }
+
   function populateDomainFilter() {
     const domains = [...new Set(allQuestions.map(q => q.domain))].sort();
     const sel = document.getElementById('filter-domain');
@@ -997,6 +1019,7 @@
   }
 
   function updateStats() {
+    populateDifficultyFilter();
     const mastered   = allQuestions.filter(q => q.mastered).length;
     const remaining  = allQuestions.length - mastered;
     document.getElementById('stat-total').textContent     = allQuestions.length;
